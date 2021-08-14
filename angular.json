@@ -100,6 +100,37 @@
           }
         }
       }
+    },
+    "Rustic": {
+      "projectType": "library",
+      "root": "projects/rustic",
+      "sourceRoot": "projects/rustic/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/rustic/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/rustic/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/rustic/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rustic/src/test.ts",
+            "tsConfig": "projects/rustic/tsconfig.spec.json",
+            "karmaConfig": "projects/rustic/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "RusticUIAngular"
