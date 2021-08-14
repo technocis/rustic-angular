@@ -1,6 +1,12 @@
 {
   "name": "@technocis/rustic-angular",
   "version": "0.0.5",
+  "schematics": "./schematics/collection.json",
+  "scripts": {
+    "build": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
+    "copy:collection": "cp schematics/collection.json ../../dist/rustic/schematics/collection.json",
+    "postbuild": "npm run copy:collection"
+  },
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
