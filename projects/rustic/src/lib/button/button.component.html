@@ -1,0 +1,15 @@
+<button
+  class="button {{
+    type == 'primary'
+      ? 'button--primary'
+      : type == 'secondary'
+      ? 'button--secondary'
+      : type == 'warning'
+      ? 'button--warning'
+      : ''
+  }} {{
+    size == 'small' ? 'button--small' : size == 'large' ? 'button--large' : ''
+  }}"
+>
+  <ng-content></ng-content>
+</button>
