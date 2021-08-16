@@ -5,6 +5,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { ListComponent } from './list/list.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ListComponent } from './list/list.component';
     SpinnerComponent,
     ListItemComponent,
     ListComponent,
+    RadioButtonComponent,
   ],
   imports: [],
   exports: [

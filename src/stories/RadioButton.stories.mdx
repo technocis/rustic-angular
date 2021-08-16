@@ -1,0 +1,30 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { RadioButtonComponent } from "../../projects/rustic/src/lib/radio-button/radio-button.component";
+
+<Meta title="Components/Radio Button" component={RadioButtonComponent} />
+
+# Radio Button
+
+export const Template = (args) => ({
+  component: RadioButtonComponent,
+  props: {},
+  template: `<cis-radio-button>
+    <input id="yes" type="radio" name="demo" checked />
+    <label for="yes">Yes</label>
+    <input id="no" type="radio" name="demo" />
+    <label for="no">No</label>
+  </cis-radio-button>`,
+});
+
+<Canvas>
+  <Story name="Radio Button">{Template.bind({})}</Story>
+</Canvas>
+
+```html
+<cis-radio-button>
+  <input id="yes" type="radio" name="demo" checked />
+  <label for="yes">Yes</label>
+  <input id="no" type="radio" name="demo" />
+  <label for="no">No</label>
+</cis-radio-button>
+```
