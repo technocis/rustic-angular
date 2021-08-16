@@ -82,7 +82,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-65ce52e753dc6e530d530d474420517d",
+            "id": "component-ButtonComponent-cdb52a674465f702820a164b957189bb",
             "file": "projects/rustic/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -105,7 +105,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 10,
-                    "type": "string"
+                    "type": "\"small\" | \"medium\" | \"large\""
                 },
                 {
                     "name": "type",
@@ -113,7 +113,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 9,
-                    "type": "string"
+                    "type": "\"primary\" | \"secondary\" | \"warning\""
                 }
             ],
             "outputsClass": [],
@@ -137,11 +137,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent implements OnInit {\n  @Input() type: string = 'primary';\n  @Input() size: string = 'medium';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent implements OnInit {\n  @Input() type: 'primary' | 'secondary' | 'warning' = 'primary';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\n  margin: 0.5rem;\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border: none;\n  font-weight: bold;\n  font-size: 100%;\n}\n\n.button--secondary {\n  background-color: #fbbf24;\n  color: #1f2937;\n}\n\n.button--secondary:hover {\n  background-color: #f59e0b;\n}\n\n.button--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.button--primary:hover {\n  background-color: #1f2937;\n}\n\n.button--warning {\n  background-color: #ef4444;\n  color: #ffffff;\n}\n\n.button--warning:hover {\n  background-color: #dc2626;\n}\n\n.button--small {\n  font-size: 75%;\n}\n.button--large {\n  font-size: 125%;\n}\n",
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.button {\n  margin: 0.5rem;\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border: none;\n  font-weight: bold;\n  font-size: 100%;\n}\n\n.button--secondary {\n  background-color: #fbbf24;\n  color: #1f2937;\n}\n\n.button--secondary:hover {\n  background-color: #f59e0b;\n}\n\n.button--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.button--primary:hover {\n  background-color: #1f2937;\n}\n\n.button--warning {\n  background-color: #ef4444;\n  color: #ffffff;\n}\n\n.button--warning:hover {\n  background-color: #dc2626;\n}\n\n.button--small {\n  font-size: 75%;\n}\n.button--large {\n  font-size: 125%;\n}\n",
                     "styleUrl": "./button.component.css"
                 }
             ],
@@ -158,6 +158,77 @@
                 "OnInit"
             ],
             "templateData": "<button\n  class=\"button {{\n    type == 'primary'\n      ? 'button--primary'\n      : type == 'secondary'\n      ? 'button--secondary'\n      : type == 'warning'\n      ? 'button--warning'\n      : ''\n  }} {{\n    size == 'small' ? 'button--small' : size == 'large' ? 'button--large' : ''\n  }}\"\n>\n  <ng-content></ng-content>\n</button>\n"
+        },
+        {
+            "name": "CheckboxComponent",
+            "id": "component-CheckboxComponent-7a83e4262c16dc378a3267de7ed0e9a6",
+            "file": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-checkbox",
+            "styleUrls": [
+                "./checkbox.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./checkbox.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.css'],\n})\nexport class CheckboxComponent implements OnInit {\n  @Input() label: string = '';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.checkbox {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n}\n\n.checkbox svg {\n  display: none;\n  width: 1rem;\n  height: 1rem;\n  color: #374151;\n}\n\n::ng-deep .checkbox input {\n  display: none;\n}\n\n::ng-deep .checkbox input:checked + svg {\n  display: block;\n}\n\n.checkbox__box {\n  border: 2px solid #fbbf24;\n  border-radius: 0.25rem;\n  width: 1.25rem;\n  height: 1.25rem;\n  display: flex;\n  flex-shrink: 0;\n  justify-content: center;\n  align-items: center;\n  margin-right: 0.5rem;\n}\n\n.checkbox__label {\n  user-select: none;\n  font: inherit;\n  font-weight: bold;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n",
+                    "styleUrl": "./checkbox.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<label class=\"checkbox\">\n  <div class=\"checkbox__box\">\n    <ng-content select=\"input\"></ng-content>\n    <svg viewBox=\"0 0 20 20\">\n      <path d=\"M0 11l2-2 5 5L18 3l2 2L7 18z\"></path>\n    </svg>\n  </div>\n  <div class=\"checkbox__label\">{{ label }}</div>\n</label>\n"
         },
         {
             "name": "RusticComponent",
@@ -300,13 +371,13 @@
         },
         {
             "name": "RusticModule",
-            "id": "module-RusticModule-db3709ac695ebef34259883ff7dab8ef",
+            "id": "module-RusticModule-a878bde117d8b06c8d6676bb0d2ff7c0",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/rustic/src/lib/rustic.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\n\n@NgModule({\n  declarations: [RusticComponent, ButtonComponent],\n  imports: [],\n  exports: [RusticComponent, ButtonComponent],\n})\nexport class RusticModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\n\n@NgModule({\n  declarations: [RusticComponent, ButtonComponent, CheckboxComponent],\n  imports: [],\n  exports: [RusticComponent, ButtonComponent, CheckboxComponent],\n})\nexport class RusticModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -317,6 +388,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
                         },
                         {
                             "name": "RusticComponent"
@@ -332,6 +406,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
                         },
                         {
                             "name": "RusticComponent"
@@ -351,6 +428,16 @@
     ],
     "miscellaneous": {
         "variables": [
+            {
+                "name": "Checkbox",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
             {
                 "name": "context",
                 "ctype": "miscellaneous",
@@ -420,6 +507,16 @@
                 "type": "literal type"
             },
             {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -428,6 +525,26 @@
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
                 "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      size: args.size,\n    },\n  },\n  template: `<cis-button [type]=\"propInput.type\" [size]=\"propInput.size\"> Hello World </cis-button>`,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CheckboxComponent>",
+                "defaultValue": "(args: CheckboxComponent) => ({\n  props: {\n    propInput: {\n      label: args.label,\n    },\n  },\n  template: `<cis-checkbox [label]=\"propInput.label\"><input type=\"checkbox\"></cis-checkbox>`,\n})"
+            },
+            {
+                "name": "Warning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             }
         ],
         "functions": [
@@ -462,6 +579,28 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/stories/Checkbox.stories.ts": [
+                {
+                    "name": "Checkbox",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CheckboxComponent>",
+                    "defaultValue": "(args: CheckboxComponent) => ({\n  props: {\n    propInput: {\n      label: args.label,\n    },\n  },\n  template: `<cis-checkbox [label]=\"propInput.label\"><input type=\"checkbox\"></cis-checkbox>`,\n})"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -540,6 +679,16 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -548,6 +697,16 @@
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
                     "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      size: args.size,\n    },\n  },\n  template: `<cis-button [type]=\"propInput.type\" [size]=\"propInput.size\"> Hello World </cis-button>`,\n})"
+                },
+                {
+                    "name": "Warning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
                 }
             ]
         },
@@ -620,6 +779,15 @@
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CheckboxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -701,6 +869,46 @@
             },
             {
                 "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Warning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Checkbox",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

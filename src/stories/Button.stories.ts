@@ -32,3 +32,15 @@ Primary.args = {
   type: 'primary',
   size: 'medium',
 };
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  type: 'secondary',
+  size: 'medium',
+};
+
+export const Warning = Template.bind({});
+Warning.args = {
+  type: 'warning',
+  size: 'medium',
+};
