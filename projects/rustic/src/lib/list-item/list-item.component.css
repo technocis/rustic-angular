@@ -1,0 +1,25 @@
+.list__item {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  color: #1f2937;
+  cursor: pointer;
+  width: calc(100% - 2rem);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.list__item--hover:hover {
+  background-color: #f3f4f6;
+}
+
+::ng-deep .list__item cis-subtitle {
+  font-size: 0.75em;
+  font-weight: normal;
+}

@@ -1,0 +1,43 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { CheckboxComponent } from "../../projects/rustic/src/lib/checkbox/checkbox.component";
+
+<Meta
+  title="Components/Checkbox"
+  component={CheckboxComponent}
+  argTypes={{
+    label: {
+      control: {
+        type: "text",
+      },
+    },
+  }}
+/>
+
+# Checkbox
+
+export const Template = (args) => ({
+  component: CheckboxComponent,
+  props: {
+    propInput: {
+      label: args.label,
+    },
+  },
+  template: `<cis-checkbox [label]="propInput.label"><input type="checkbox"></cis-checkbox>`,
+});
+
+<Canvas>
+  <Story
+    name="Checkbox"
+    args={{ label: "I Agree to the Terms and Conditions" }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-checkbox label="I Agree to the Terms and Conditions">
+  <input type="checkbox" />
+</cis-checkbox>
+```
+
+<ArgsTable of={CheckboxComponent} />
