@@ -292,13 +292,8 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-<<<<<<< HEAD
-                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.checkbox {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n}\n\n::ng-deep .checkbox__box input + svg {\n  display: none;\n  width: 1rem;\n  height: 1rem;\n  color: #374151;\n}\n\n::ng-deep .checkbox__box input {\n  opacity: 0;\n}\n\n::ng-deep .checkbox__box input:checked + svg {\n  display: block;\n  position: absolute;\n}\n\n.checkbox__box {\n  border: 2px solid #fbbf24;\n  border-radius: 0.25rem;\n  width: 1.25rem;\n  height: 1.25rem;\n  display: flex;\n  flex-shrink: 0;\n  justify-content: center;\n  align-items: center;\n  margin-right: 0.5rem;\n}\n\n.checkbox__label {\n  user-select: none;\n  font: inherit;\n  font-weight: bold;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n",
-                    "styleUrl": "./checkbox.component.css"
-=======
-                    "data": ".list__item {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  font-weight: bold;\n  color: #1f2937;\n  cursor: pointer;\n  width: calc(100% - 2rem);\n  list-style: none;\n  display: flex;\n  flex-direction: column;\n}\n\n.list__item--hover:hover {\n  background-color: #f3f4f6;\n}\n\n::ng-deep .list__item cis-subtitle {\n  font-size: 0.75em;\n  font-weight: normal;\n}\n",
+                    "data": ".list__item {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  font-weight: bold;\n  color: #1f2937;\n  cursor: pointer;\n  width: calc(100% - 2rem);\n  list-style: none;\n  display: flex;\n  flex-direction: column;\n  border-bottom: 1px solid #f3f4f6;\n}\n\n.list__item--hover:hover {\n  background-color: #f3f4f6;\n}\n\n::ng-deep .list__item cis-subtitle {\n  font-size: 0.75em;\n  font-weight: normal;\n}\n",
                     "styleUrl": "./list-item.component.css"
->>>>>>> dev
                 }
             ],
             "stylesData": "",
@@ -311,6 +306,54 @@
                 "line": 9
             },
             "templateData": "<li class=\"list__item {{ hover == true ? 'list__item--hover' : '' }}\">\n  <ng-content select=\"cis-title\"></ng-content>\n  <ng-content select=\"cis-subtitle\"></ng-content>\n</li>\n"
+        },
+        {
+            "name": "RadioButtonComponent",
+            "id": "component-RadioButtonComponent-96c6eb755300f5d93673c0f98e4cc7c0",
+            "file": "projects/rustic/src/lib/radio-button/radio-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-radio-button",
+            "styleUrls": [
+                "./radio-button.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./radio-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-radio-button',\n  templateUrl: './radio-button.component.html',\n  styleUrls: ['./radio-button.component.css'],\n})\nexport class RadioButtonComponent {\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "::ng-deep [type=\"radio\"]:checked,\n::ng-deep [type=\"radio\"]:not(:checked) {\n  position: absolute;\n  opacity: 0;\n  /* left: -9999px; */\n}\n::ng-deep [type=\"radio\"]:checked + label,\n::ng-deep [type=\"radio\"]:not(:checked) + label {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  font-weight: bold;\n  position: relative;\n  padding-left: 28px;\n  cursor: pointer;\n  line-height: 20px;\n  display: inline-block;\n  color: #374151;\n  margin: 0.5rem;\n}\n::ng-deep [type=\"radio\"]:checked + label:before,\n::ng-deep [type=\"radio\"]:not(:checked) + label:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 18px;\n  height: 18px;\n  border: 2px solid #fbbf24;\n  border-radius: 100%;\n}\n::ng-deep [type=\"radio\"]:checked + label:after,\n::ng-deep [type=\"radio\"]:not(:checked) + label:after {\n  content: \"\";\n  width: 12px;\n  height: 12px;\n  background: #374151;\n  position: absolute;\n  top: 5px;\n  left: 5px;\n  border-radius: 100%;\n  -webkit-transition: all 0.2s ease;\n  transition: all 0.2s ease;\n}\n::ng-deep [type=\"radio\"]:not(:checked) + label:after {\n  opacity: 0;\n  -webkit-transform: scale(0);\n  transform: scale(0);\n}\n::ng-deep [type=\"radio\"]:checked + label:after {\n  opacity: 1;\n  -webkit-transform: scale(1);\n  transform: scale(1);\n}\n",
+                    "styleUrl": "./radio-button.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "templateData": "<ng-content></ng-content>\n"
         },
         {
             "name": "RusticComponent",
@@ -526,13 +569,13 @@
         },
         {
             "name": "RusticModule",
-            "id": "module-RusticModule-d0c6957248d90b3ffd3c461d20c15ed1",
+            "id": "module-RusticModule-65594e1051358293536d2f591193e332",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/rustic/src/lib/rustic.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n  ],\n  imports: [],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n  ],\n})\nexport class RusticModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -554,6 +597,9 @@
                             "name": "ListItemComponent"
                         },
                         {
+                            "name": "RadioButtonComponent"
+                        },
+                        {
                             "name": "RusticComponent"
                         },
                         {
@@ -573,6 +619,15 @@
                         },
                         {
                             "name": "CheckboxComponent"
+                        },
+                        {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "ListItemComponent"
+                        },
+                        {
+                            "name": "RadioButtonComponent"
                         },
                         {
                             "name": "RusticComponent"
@@ -914,6 +969,15 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/rustic/src/lib/radio-button/radio-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RadioButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/rustic/src/lib/rustic.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -985,36 +1049,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "environment",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Spinner.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Spinner.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Ellipsis",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Spinner.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
