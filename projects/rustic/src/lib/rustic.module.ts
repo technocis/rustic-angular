@@ -6,6 +6,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { ListComponent } from './list/list.component';
 import { RadioButtonComponent } from './radio-button/radio-button.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,15 @@ import { RadioButtonComponent } from './radio-button/radio-button.component';
     ListComponent,
     RadioButtonComponent,
   ],
-  imports: [],
+  imports: [CommonModule],
   exports: [
     RusticComponent,
     ButtonComponent,
     CheckboxComponent,
     SpinnerComponent,
+    ListItemComponent,
+    ListComponent,
+    RadioButtonComponent,
   ],
 })
 export class RusticModule {}
