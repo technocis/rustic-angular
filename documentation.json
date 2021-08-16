@@ -82,7 +82,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-cdb52a674465f702820a164b957189bb",
+            "id": "component-ButtonComponent-1a7c8b2fdba099f6f572aa713a1738c9",
             "file": "projects/rustic/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -118,18 +118,7 @@
             ],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 14,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -137,7 +126,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent implements OnInit {\n  @Input() type: 'primary' | 'secondary' | 'warning' = 'primary';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent {\n  @Input() type: 'primary' | 'secondary' | 'warning' = 'primary';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -154,14 +143,11 @@
                 "args": [],
                 "line": 10
             },
-            "implements": [
-                "OnInit"
-            ],
             "templateData": "<button\n  class=\"button {{\n    type == 'primary'\n      ? 'button--primary'\n      : type == 'secondary'\n      ? 'button--secondary'\n      : type == 'warning'\n      ? 'button--warning'\n      : ''\n  }} {{\n    size == 'small' ? 'button--small' : size == 'large' ? 'button--large' : ''\n  }}\"\n>\n  <ng-content></ng-content>\n</button>\n"
         },
         {
             "name": "CheckboxComponent",
-            "id": "component-CheckboxComponent-7a83e4262c16dc378a3267de7ed0e9a6",
+            "id": "component-CheckboxComponent-e1cf60734fdd13f3010063241bbd52d4",
             "file": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -189,18 +175,7 @@
             ],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 13,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -208,7 +183,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.css'],\n})\nexport class CheckboxComponent implements OnInit {\n  @Input() label: string = '';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.css'],\n})\nexport class CheckboxComponent {\n  @Input() label: string = '';\n\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -225,9 +200,6 @@
                 "args": [],
                 "line": 9
             },
-            "implements": [
-                "OnInit"
-            ],
             "templateData": "<label class=\"checkbox\">\n  <div class=\"checkbox__box\">\n    <ng-content select=\"input\"></ng-content>\n    <svg viewBox=\"0 0 20 20\">\n      <path d=\"M0 11l2-2 5 5L18 3l2 2L7 18z\"></path>\n    </svg>\n  </div>\n  <div class=\"checkbox__label\">{{ label }}</div>\n</label>\n"
         },
         {
@@ -619,16 +591,6 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "Checkbox",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Checkbox.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -647,16 +609,6 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/ListItem.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Default",
@@ -699,26 +651,6 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
-                "name": "Lists",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/List.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -737,66 +669,6 @@
                 "type": "literal type"
             },
             {
-                "name": "Secondary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "SubTemplate",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/ListItem.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ListItemComponent>",
-                "defaultValue": "(args: ListItemComponent) => ({\n  props: {\n    propInput: {\n      hover: true,\n    },\n  },\n  template: `<cis-list-item>\n    <cis-title>List Item</cis-title>\n    <cis-subtitle>With Subtitle Here</cis-subtitle>\n  </cis-list-item>`,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Checkbox.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CheckboxComponent>",
-                "defaultValue": "(args: CheckboxComponent) => ({\n  props: {\n    propInput: {\n      label: args.label,\n    },\n  },\n  template: `<cis-checkbox [label]=\"propInput.label\"><input type=\"checkbox\"></cis-checkbox>`,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      size: args.size,\n    },\n  },\n  template: `<cis-button [type]=\"propInput.type\" [size]=\"propInput.size\"> Hello World </cis-button>`,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/List.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ListComponent>",
-                "defaultValue": "(args: ListComponent) => ({\n  props: {\n    propInput: {},\n  },\n  template: `<cis-list>\n    <cis-list-item>\n      <cis-title>Item 1: </cis-title>\n      <cis-subtitle>Hello</cis-subtitle>\n    </cis-list-item>\n    <cis-list-item>\n      <cis-title>Item 2: </cis-title>\n      <cis-subtitle>Hi</cis-subtitle>\n    </cis-list-item>\n    <cis-list-item>\n      <cis-title>Item 3: </cis-title>\n      <cis-subtitle>Hope you're enjoying Rustic UI</cis-subtitle>\n    </cis-list-item>\n    <cis-list-item>\n      <cis-title>Item 4: </cis-title>\n      <cis-subtitle>Rustic UI</cis-subtitle>\n    </cis-list-item>\n  </cis-list>`,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/ListItem.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ListItemComponent>",
-                "defaultValue": "(args: ListItemComponent) => ({\n  props: {\n    propInput: {\n      hover: true,\n    },\n  },\n  template: `<cis-list-item>\n    <cis-title>List Item 1</cis-title>\n  </cis-list-item>`,\n})"
-            },
-            {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -805,26 +677,6 @@
                 "deprecationMessage": "",
                 "type": "Story<SpinnerComponent>",
                 "defaultValue": "(args: SpinnerComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      text: args.text,\n      textAlign: args.textAlign,\n    },\n  },\n  template: `<cis-spinner [type]=\"propInput.type\" [text]=\"propInput.text\" [textAlign]=\"propInput.textAlign\"></cis-spinner>`,\n})"
-            },
-            {
-                "name": "Warning",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "WithSubtitle",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/ListItem.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "SubTemplate.bind({})"
             }
         ],
         "functions": [
@@ -859,28 +711,6 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/stories/Checkbox.stories.ts": [
-                {
-                    "name": "Checkbox",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Checkbox.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Checkbox.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<CheckboxComponent>",
-                    "defaultValue": "(args: CheckboxComponent) => ({\n  props: {\n    propInput: {\n      label: args.label,\n    },\n  },\n  template: `<cis-checkbox [label]=\"propInput.label\"><input type=\"checkbox\"></cis-checkbox>`,\n})"
-                }
-            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -921,48 +751,6 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
-                }
-            ],
-            "src/stories/ListItem.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/ListItem.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "SubTemplate",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/ListItem.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ListItemComponent>",
-                    "defaultValue": "(args: ListItemComponent) => ({\n  props: {\n    propInput: {\n      hover: true,\n    },\n  },\n  template: `<cis-list-item>\n    <cis-title>List Item</cis-title>\n    <cis-subtitle>With Subtitle Here</cis-subtitle>\n  </cis-list-item>`,\n})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/ListItem.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ListItemComponent>",
-                    "defaultValue": "(args: ListItemComponent) => ({\n  props: {\n    propInput: {\n      hover: true,\n    },\n  },\n  template: `<cis-list-item>\n    <cis-title>List Item 1</cis-title>\n  </cis-list-item>`,\n})"
-                },
-                {
-                    "name": "WithSubtitle",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/ListItem.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "SubTemplate.bind({})"
                 }
             ],
             "src/stories/Spinner.stories.ts": [
@@ -1019,70 +807,6 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
-                }
-            ],
-            "src/stories/List.stories.ts": [
-                {
-                    "name": "Lists",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/List.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/List.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ListComponent>",
-                    "defaultValue": "(args: ListComponent) => ({\n  props: {\n    propInput: {},\n  },\n  template: `<cis-list>\n    <cis-list-item>\n      <cis-title>Item 1: </cis-title>\n      <cis-subtitle>Hello</cis-subtitle>\n    </cis-list-item>\n    <cis-list-item>\n      <cis-title>Item 2: </cis-title>\n      <cis-subtitle>Hi</cis-subtitle>\n    </cis-list-item>\n    <cis-list-item>\n      <cis-title>Item 3: </cis-title>\n      <cis-subtitle>Hope you're enjoying Rustic UI</cis-subtitle>\n    </cis-list-item>\n    <cis-list-item>\n      <cis-title>Item 4: </cis-title>\n      <cis-subtitle>Rustic UI</cis-subtitle>\n    </cis-list-item>\n  </cis-list>`,\n})"
-                }
-            ],
-            "src/stories/Button.stories.ts": [
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Secondary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      size: args.size,\n    },\n  },\n  template: `<cis-button [type]=\"propInput.type\" [size]=\"propInput.size\"> Hello World </cis-button>`,\n})"
-                },
-                {
-                    "name": "Warning",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
                 }
             ]
         },
@@ -1154,7 +878,7 @@
                 "linktype": "component",
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -1163,7 +887,7 @@
                 "linktype": "component",
                 "name": "CheckboxComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1256,126 +980,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "environment",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Secondary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Warning",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Checkbox.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Checkbox",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Checkbox.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/List.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Lists",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/List.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/ListItem.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/ListItem.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "SubTemplate",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/ListItem.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/ListItem.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "WithSubtitle",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

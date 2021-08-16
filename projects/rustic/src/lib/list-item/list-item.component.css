@@ -12,6 +12,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #f3f4f6;
 }
 
 .list__item--hover:hover {
