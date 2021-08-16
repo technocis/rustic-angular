@@ -1,0 +1,14 @@
+<div *ngIf="type == 'default'" class="spinner spinner--{{ textAlign }}">
+  <div class="loader"></div>
+  <span *ngIf="text" class="spinner__text">{{ text }}</span>
+</div>
+
+<div *ngIf="type == 'ellipsis'" class="spinner spinner--{{ textAlign }}">
+  <div class="cis-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <span *ngIf="text" class="spinner__text">{{ text }}</span>
+</div>

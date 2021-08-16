@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 import { CheckboxComponent } from '../../projects/rustic/src/lib/checkbox/checkbox.component';
 
 export default {
-  title: 'Checkbox',
+  title: 'Components/Checkbox',
   component: CheckboxComponent,
 } as Meta;
 

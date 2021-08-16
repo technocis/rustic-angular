@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 import { ButtonComponent } from '../../projects/rustic/src/lib/button/button.component';
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   component: ButtonComponent,
   argTypes: {
     type: {
