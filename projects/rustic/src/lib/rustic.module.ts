@@ -7,6 +7,7 @@ import { ListItemComponent } from './list-item/list-item.component';
 import { ListComponent } from './list/list.component';
 import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { CommonModule } from '@angular/common';
+import { ChipComponent } from './chip/chip.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CommonModule } from '@angular/common';
     ListItemComponent,
     ListComponent,
     RadioButtonComponent,
+    ChipComponent,
   ],
   imports: [CommonModule],
   exports: [

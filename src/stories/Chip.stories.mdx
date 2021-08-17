@@ -1,0 +1,60 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { ChipComponent } from "../../projects/rustic/src/lib/chip/chip.component";
+
+<Meta
+  title="Components/Chip"
+  component={ChipComponent}
+  argTypes={{
+    type: {
+      options: ["primary", "secondary"],
+      control: { type: "radio" },
+    },
+    text: {
+      control: { type: "text" },
+    },
+  }}
+/>
+
+export const TemplateChip = (args) => ({
+  component: ChipComponent,
+  props: {
+    propInput: {
+      type: args.type,
+      text: args.text,
+      showClose: args.showClose,
+    },
+  },
+  template: `<cis-chip [type]="propInput.type" [text]="propInput.text" [showClose]="propInput.showClose"></cis-chip>`,
+});
+
+<Canvas>
+  <Story
+    name="Primary"
+    args={{
+      type: "primary",
+      text: "NPM",
+      showClose: true,
+    }}
+  >
+    {TemplateChip.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-chip type="primary" text="NPM"></cis-chip>
+```
+
+<Canvas>
+  <Story
+    name="Secondary"
+    args={{
+      type: "secondary",
+      text: "PLSQL",
+      showClose: true,
+    }}
+  >
+    {TemplateChip.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable of={ChipComponent} />

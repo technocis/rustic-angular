@@ -1,0 +1,47 @@
+* {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.chip span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.chip--primary {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+.chip--secondary {
+  color: #374151;
+  background-color: #fbbf24;
+}
+
+.chip svg {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.chip--primary svg {
+  color: #fbbf24;
+}
+
+.chip--secondary svg {
+  color: #374151;
+}
