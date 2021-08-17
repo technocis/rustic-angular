@@ -9,6 +9,8 @@ import { RadioButtonComponent } from './radio-button/radio-button.component';
 import { CommonModule } from '@angular/common';
 import { ChipComponent } from './chip/chip.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { TitleComponent } from './title/title.component';
+import { SubtitleComponent } from './subtitle/subtitle.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ToggleComponent } from './toggle/toggle.component';
     RadioButtonComponent,
     ChipComponent,
     ToggleComponent,
+    TitleComponent,
+    SubtitleComponent,
   ],
   imports: [CommonModule],
   exports: [
