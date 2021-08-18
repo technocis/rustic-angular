@@ -12,6 +12,7 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { TitleComponent } from './title/title.component';
 import { SubtitleComponent } from './subtitle/subtitle.component';
 import { DividerComponent } from './divider/divider.component';
+import { SkeletonComponent } from './skeleton/skeleton.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DividerComponent } from './divider/divider.component';
     TitleComponent,
     SubtitleComponent,
     DividerComponent,
+    SkeletonComponent,
   ],
   imports: [CommonModule],
   exports: [

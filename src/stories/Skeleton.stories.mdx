@@ -1,0 +1,58 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { SkeletonComponent } from "projects/rustic/src/lib/skeleton/skeleton.component";
+
+<Meta
+  title="Components/Skeleton"
+  component={SkeletonComponent}
+  argTypes={{
+    type: {
+      options: ["text", "image"],
+      control: { type: "radio" },
+    },
+    lines: {
+      control: { type: "number" },
+    },
+  }}
+/>
+
+# Skeleton
+
+---
+
+### Text Skeleton
+
+export const Template = (args) => ({
+  props: {
+    propInput: {
+      type: args.type,
+      lines: args.lines,
+    },
+  },
+  template: `<cis-skeleton [type]="propInput.type" [lines]="propInput.lines"></cis-skeleton>`,
+});
+
+<Canvas>
+  <Story name="Text Skeleton" args={{ type: "text", lines: 4 }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-skeleton type="text" lines="4"></cis-skeleton>
+```
+
+---
+
+### Image Skeleton
+
+<Canvas>
+  <Story name="Image Skeleton" args={{ type: "image" }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-skeleton type="image"></cis-skeleton>
+```
+
+<ArgsTable of={SkeletonComponent} />
