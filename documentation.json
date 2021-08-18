@@ -1,1442 +1,1570 @@
 {
-  "pipes": [],
-  "interfaces": [],
-  "injectables": [
-    {
-      "name": "RusticService",
-      "id": "injectable-RusticService-af182939fc8ad6a91c9152385aa89da3",
-      "file": "projects/rustic/src/lib/rustic.service.ts",
-      "properties": [],
-      "methods": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "description": "",
-      "rawdescription": "\n",
-      "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class RusticService {\n\n  constructor() { }\n}\n",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 6
-      },
-      "type": "injectable"
-    }
-  ],
-  "guards": [],
-  "interceptors": [],
-  "classes": [],
-  "directives": [],
-  "components": [
-    {
-      "name": "AppComponent",
-      "id": "component-AppComponent-2c7c0464396d46d67afa925dd368bdf1",
-      "file": "src/app/app.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "app-root",
-      "styleUrls": ["./app.component.css"],
-      "styles": [],
-      "templateUrl": ["./app.component.html"],
-      "viewProviders": [],
-      "inputsClass": [],
-      "outputsClass": [],
-      "propertiesClass": [
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
         {
-          "name": "title",
-          "defaultValue": "'RusticUIAngular'",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "string",
-          "optional": false,
-          "description": "",
-          "line": 9
-        }
-      ],
-      "methodsClass": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'RusticUIAngular';\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": "",
-          "styleUrl": "./app.component.css"
-        }
-      ],
-      "stylesData": "",
-      "templateData": "<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->\n<!-- * * * * * * * to get started with your project! * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n<style>\n  :host {\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n    font-size: 14px;\n    color: #333;\n    box-sizing: border-box;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n\n  h1,\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    margin: 8px 0;\n  }\n\n  p {\n    margin: 0;\n  }\n\n  .spacer {\n    flex: 1;\n  }\n\n  .toolbar {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    height: 60px;\n    display: flex;\n    align-items: center;\n    background-color: #1976d2;\n    color: white;\n    font-weight: 600;\n  }\n\n  .toolbar img {\n    margin: 0 16px;\n  }\n\n  .toolbar #twitter-logo {\n    height: 40px;\n    margin: 0 8px;\n  }\n\n  .toolbar #youtube-logo {\n    height: 40px;\n    margin: 0 16px;\n  }\n\n  .toolbar #twitter-logo:hover,\n  .toolbar #youtube-logo:hover {\n    opacity: 0.8;\n  }\n\n  .content {\n    display: flex;\n    margin: 82px auto 32px;\n    padding: 0 16px;\n    max-width: 960px;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  svg.material-icons {\n    height: 24px;\n    width: auto;\n  }\n\n  svg.material-icons:not(:last-child) {\n    margin-right: 8px;\n  }\n\n  .card svg.material-icons path {\n    fill: #888;\n  }\n\n  .card-container {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    margin-top: 16px;\n  }\n\n  .card {\n    all: unset;\n    border-radius: 4px;\n    border: 1px solid #eee;\n    background-color: #fafafa;\n    height: 40px;\n    width: 200px;\n    margin: 0 8px 16px;\n    padding: 16px;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    transition: all 0.2s ease-in-out;\n    line-height: 24px;\n  }\n\n  .card-container .card:not(:last-child) {\n    margin-right: 0;\n  }\n\n  .card.card-small {\n    height: 16px;\n    width: 168px;\n  }\n\n  .card-container .card:not(.highlight-card) {\n    cursor: pointer;\n  }\n\n  .card-container .card:not(.highlight-card):hover {\n    transform: translateY(-3px);\n    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);\n  }\n\n  .card-container .card:not(.highlight-card):hover .material-icons path {\n    fill: rgb(105, 103, 103);\n  }\n\n  .card.highlight-card {\n    background-color: #1976d2;\n    color: white;\n    font-weight: 600;\n    border: none;\n    width: auto;\n    min-width: 30%;\n    position: relative;\n  }\n\n  .card.card.highlight-card span {\n    margin-left: 60px;\n  }\n\n  svg#rocket {\n    width: 80px;\n    position: absolute;\n    left: -10px;\n    top: -24px;\n  }\n\n  svg#rocket-smoke {\n    height: calc(100vh - 95px);\n    position: absolute;\n    top: 10px;\n    right: 180px;\n    z-index: -10;\n  }\n\n  a,\n  a:visited,\n  a:hover {\n    color: #1976d2;\n    text-decoration: none;\n  }\n\n  a:hover {\n    color: #125699;\n  }\n\n  .terminal {\n    position: relative;\n    width: 80%;\n    max-width: 600px;\n    border-radius: 6px;\n    padding-top: 45px;\n    margin-top: 8px;\n    overflow: hidden;\n    background-color: rgb(15, 15, 16);\n  }\n\n  .terminal::before {\n    content: \"\\2022 \\2022 \\2022\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 4px;\n    background: rgb(58, 58, 58);\n    color: #c2c3c4;\n    width: 100%;\n    font-size: 2rem;\n    line-height: 0;\n    padding: 14px 0;\n    text-indent: 4px;\n  }\n\n  .terminal pre {\n    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;\n    color: white;\n    padding: 0 1rem 1rem;\n    margin: 0;\n  }\n\n  .circle-link {\n    height: 40px;\n    width: 40px;\n    border-radius: 40px;\n    margin: 8px;\n    background-color: white;\n    border: 1px solid #eeeeee;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n    transition: 1s ease-out;\n  }\n\n  .circle-link:hover {\n    transform: translateY(-0.25rem);\n    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);\n  }\n\n  footer {\n    margin-top: 8px;\n    display: flex;\n    align-items: center;\n    line-height: 20px;\n  }\n\n  footer a {\n    display: flex;\n    align-items: center;\n  }\n\n  .github-star-badge {\n    color: #24292e;\n    display: flex;\n    align-items: center;\n    font-size: 12px;\n    padding: 3px 10px;\n    border: 1px solid rgba(27,31,35,.2);\n    border-radius: 3px;\n    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);\n    margin-left: 4px;\n    font-weight: 600;\n  }\n\n  .github-star-badge:hover {\n    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);\n    border-color: rgba(27,31,35,.35);\n    background-position: -.5em;\n  }\n\n  .github-star-badge .material-icons {\n    height: 16px;\n    width: 16px;\n    margin-right: 4px;\n  }\n\n  svg#clouds {\n    position: fixed;\n    bottom: -160px;\n    left: -230px;\n    z-index: -10;\n    width: 1920px;\n  }\n\n  /* Responsive Styles */\n  @media screen and (max-width: 767px) {\n    .card-container > *:not(.circle-link) ,\n    .terminal {\n      width: 100%;\n    }\n\n    .card:not(.highlight-card) {\n      height: 16px;\n      margin: 8px 0;\n    }\n\n    .card.highlight-card span {\n      margin-left: 72px;\n    }\n\n    svg#rocket-smoke {\n      right: 120px;\n      transform: rotate(-5deg);\n    }\n  }\n\n  @media screen and (max-width: 575px) {\n    svg#rocket-smoke {\n      display: none;\n      visibility: hidden;\n    }\n  }\n</style>\n\n<!-- Toolbar -->\n<div class=\"toolbar\" role=\"banner\">\n  <img\n    width=\"40\"\n    alt=\"Angular Logo\"\n    src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"\n  />\n  <span>Welcome</span>\n    <div class=\"spacer\"></div>\n    <a aria-label=\"Angular on twitter\" target=\"_blank\" rel=\"noopener\" href=\"https://twitter.com/angular\" title=\"Twitter\">\n      <svg id=\"twitter-logo\" height=\"24\" data-name=\"Logo\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\">\n        <rect width=\"400\" height=\"400\" fill=\"none\"/>\n        <path d=\"M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23\" fill=\"#fff\"/>\n      </svg>\n    </a>\n    <a aria-label=\"Angular on YouTube\" target=\"_blank\" rel=\"noopener\" href=\"https://youtube.com/angular\" title=\"YouTube\">\n      <svg id=\"youtube-logo\" height=\"24\" width=\"24\" data-name=\"Logo\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"#fff\">\n        <path d=\"M0 0h24v24H0V0z\" fill=\"none\"/>\n        <path d=\"M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z\"/>\n      </svg>\n    </a>\n</div>\n\n<div class=\"content\" role=\"main\">\n\n  <!-- Highlight Card -->\n  <div class=\"card highlight-card card-small\">\n\n    <svg id=\"rocket\" xmlns=\"http://www.w3.org/2000/svg\" width=\"101.678\" height=\"101.678\" viewBox=\"0 0 101.678 101.678\">\n      <title>Rocket Ship</title>\n      <g id=\"Group_83\" data-name=\"Group 83\" transform=\"translate(-141 -696)\">\n        <circle id=\"Ellipse_8\" data-name=\"Ellipse 8\" cx=\"50.839\" cy=\"50.839\" r=\"50.839\" transform=\"translate(141 696)\" fill=\"#dd0031\"/>\n        <g id=\"Group_47\" data-name=\"Group 47\" transform=\"translate(165.185 720.185)\">\n          <path id=\"Path_33\" data-name=\"Path 33\" d=\"M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z\" transform=\"translate(0.371 3.363)\" fill=\"#fff\"/>\n          <path id=\"Path_34\" data-name=\"Path 34\" d=\"M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z\" transform=\"translate(0 0.005)\" fill=\"#fff\"/>\n        </g>\n      </g>\n    </svg>\n\n    <span>{{ title }} app is running!</span>\n\n    <svg id=\"rocket-smoke\" xmlns=\"http://www.w3.org/2000/svg\" width=\"516.119\" height=\"1083.632\" viewBox=\"0 0 516.119 1083.632\">\n      <title>Rocket Ship Smoke</title>\n      <path id=\"Path_40\" data-name=\"Path 40\" d=\"M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z\" transform=\"translate(-147.025 -140.939)\" fill=\"#f5f5f5\"/>\n    </svg>\n\n  </div>\n\n  <!-- Resources -->\n  <h2>Resources</h2>\n  <p>Here are some links to help you get started:</p>\n\n  <div class=\"card-container\">\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z\"/></svg>\n      <span>Learn Angular</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>    </a>\n\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/cli\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z\"/></svg>\n      <span>CLI Documentation</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>\n    </a>\n\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z\"/></svg>\n      <span>Angular Blog</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>\n    </a>\n\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/devtools/\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" enable-background=\"new 0 0 24 24\" height=\"24px\" viewBox=\"0 0 24 24\" width=\"24px\" fill=\"#000000\"><g><rect fill=\"none\" height=\"24\" width=\"24\"/></g><g><g><path d=\"M14.73,13.31C15.52,12.24,16,10.93,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.43,0,2.74-0.48,3.81-1.27L19.59,21L21,19.59L14.73,13.31z M9.5,14C7.01,14,5,11.99,5,9.5S7.01,5,9.5,5S14,7.01,14,9.5 S11.99,14,9.5,14z\"/><polygon points=\"10.29,8.44 9.5,6 8.71,8.44 6.25,8.44 8.26,10.03 7.49,12.5 9.5,10.97 11.51,12.5 10.74,10.03 12.75,8.44\"/></g></g></svg>\n      <span>Angular DevTools</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>\n    </a>\n\n  </div>\n\n  <!-- Next Steps -->\n  <h2>Next Steps</h2>\n  <p>What do you want to do next with your app?</p>\n\n  <input type=\"hidden\" #selection>\n\n  <div class=\"card-container\">\n    <button class=\"card card-small\" (click)=\"selection.value = 'component'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>New Component</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'material'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Angular Material</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'pwa'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Add PWA Support</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'dependency'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Add Dependency</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'test'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Run and Watch Tests</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'build'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Build for Production</span>\n    </button>\n  </div>\n\n  <!-- Terminal -->\n  <div class=\"terminal\" [ngSwitch]=\"selection.value\">\n      <pre *ngSwitchDefault>ng generate component xyz</pre>\n      <pre *ngSwitchCase=\"'material'\">ng add @angular/material</pre>\n      <pre *ngSwitchCase=\"'pwa'\">ng add @angular/pwa</pre>\n      <pre *ngSwitchCase=\"'dependency'\">ng add _____</pre>\n      <pre *ngSwitchCase=\"'test'\">ng test</pre>\n      <pre *ngSwitchCase=\"'build'\">ng build</pre>\n  </div>\n\n  <!-- Links -->\n  <div class=\"card-container\">\n    <a class=\"circle-link\" title=\"Animations\" href=\"https://angular.io/guide/animations\" target=\"_blank\" rel=\"noopener\">\n      <svg id=\"Group_20\" data-name=\"Group 20\" xmlns=\"http://www.w3.org/2000/svg\" width=\"21.813\" height=\"23.453\" viewBox=\"0 0 21.813 23.453\">\n        <path id=\"Path_15\" data-name=\"Path 15\" d=\"M4099.584,972.736h0l-10.882,3.9,1.637,14.4,9.245,5.153,9.245-5.153,1.686-14.4Z\" transform=\"translate(-4088.702 -972.736)\" fill=\"#ffa726\"/>\n        <path id=\"Path_16\" data-name=\"Path 16\" d=\"M4181.516,972.736v23.453l9.245-5.153,1.686-14.4Z\" transform=\"translate(-4170.633 -972.736)\" fill=\"#fb8c00\"/>\n        <path id=\"Path_17\" data-name=\"Path 17\" d=\"M4137.529,1076.127l-7.7-3.723,4.417-2.721,7.753,3.723Z\" transform=\"translate(-4125.003 -1058.315)\" fill=\"#ffe0b2\"/>\n        <path id=\"Path_18\" data-name=\"Path 18\" d=\"M4137.529,1051.705l-7.7-3.723,4.417-2.721,7.753,3.723Z\" transform=\"translate(-4125.003 -1036.757)\" fill=\"#fff3e0\"/>\n        <path id=\"Path_19\" data-name=\"Path 19\" d=\"M4137.529,1027.283l-7.7-3.723,4.417-2.721,7.753,3.723Z\" transform=\"translate(-4125.003 -1015.199)\" fill=\"#fff\"/>\n      </svg>\n    </a>\n\n    <a class=\"circle-link\" title=\"CLI\" href=\"https://cli.angular.io/\" target=\"_blank\" rel=\"noopener\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21.762\" height=\"23.447\" viewBox=\"0 0 21.762 23.447\">\n        <title>Angular CLI Logo</title>\n        <g id=\"Group_21\" data-name=\"Group 21\" transform=\"translate(0)\">\n          <path id=\"Path_20\" data-name=\"Path 20\" d=\"M2660.313,313.618h0l-10.833,3.9,1.637,14.4,9.2,5.152,9.244-5.152,1.685-14.4Z\" transform=\"translate(-2649.48 -313.618)\" fill=\"#37474f\"/>\n          <path id=\"Path_21\" data-name=\"Path 21\" d=\"M2741.883,313.618v23.447l9.244-5.152,1.685-14.4Z\" transform=\"translate(-2731.05 -313.618)\" fill=\"#263238\"/>\n          <path id=\"Path_22\" data-name=\"Path 22\" d=\"M2692.293,379.169h11.724V368.618h-11.724Zm11.159-.6h-10.608v-9.345h10.621v9.345Z\" transform=\"translate(-2687.274 -362.17)\" fill=\"#fff\"/>\n          <path id=\"Path_23\" data-name=\"Path 23\" d=\"M2709.331,393.688l.4.416,2.265-2.28-2.294-2.294-.4.4,1.893,1.893Z\" transform=\"translate(-2702.289 -380.631)\" fill=\"#fff\"/>\n          <rect id=\"Rectangle_12\" data-name=\"Rectangle 12\" width=\"3.517\" height=\"0.469\" transform=\"translate(9.709 13.744)\" fill=\"#fff\"/>\n        </g>\n      </svg>\n    </a>\n\n    <a class=\"circle-link\" title=\"Find a Local Meetup\" href=\"https://www.meetup.com/find/?keywords=angular\" target=\"_blank\" rel=\"noopener\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24.607\" height=\"23.447\" viewBox=\"0 0 24.607 23.447\">\n        <title>Meetup Logo</title>\n        <path id=\"logo--mSwarm\" d=\"M21.221,14.95A4.393,4.393,0,0,1,17.6,19.281a4.452,4.452,0,0,1-.8.069c-.09,0-.125.035-.154.117a2.939,2.939,0,0,1-2.506,2.091,2.868,2.868,0,0,1-2.248-.624.168.168,0,0,0-.245-.005,3.926,3.926,0,0,1-2.589.741,4.015,4.015,0,0,1-3.7-3.347,2.7,2.7,0,0,1-.043-.38c0-.106-.042-.146-.143-.166a3.524,3.524,0,0,1-1.516-.69A3.623,3.623,0,0,1,2.23,14.557a3.66,3.66,0,0,1,1.077-3.085.138.138,0,0,0,.026-.2,3.348,3.348,0,0,1-.451-1.821,3.46,3.46,0,0,1,2.749-3.28.44.44,0,0,0,.355-.281,5.072,5.072,0,0,1,3.863-3,5.028,5.028,0,0,1,3.555.666.31.31,0,0,0,.271.03A4.5,4.5,0,0,1,18.3,4.7a4.4,4.4,0,0,1,1.334,2.751,3.658,3.658,0,0,1,.022.706.131.131,0,0,0,.1.157,2.432,2.432,0,0,1,1.574,1.645,2.464,2.464,0,0,1-.7,2.616c-.065.064-.051.1-.014.166A4.321,4.321,0,0,1,21.221,14.95ZM13.4,14.607a2.09,2.09,0,0,0,1.409,1.982,4.7,4.7,0,0,0,1.275.221,1.807,1.807,0,0,0,.9-.151.542.542,0,0,0,.321-.545.558.558,0,0,0-.359-.534,1.2,1.2,0,0,0-.254-.078c-.262-.047-.526-.086-.787-.138a.674.674,0,0,1-.617-.75,3.394,3.394,0,0,1,.218-1.109c.217-.658.509-1.286.79-1.918a15.609,15.609,0,0,0,.745-1.86,1.95,1.95,0,0,0,.06-1.073,1.286,1.286,0,0,0-1.051-1.033,1.977,1.977,0,0,0-1.521.2.339.339,0,0,1-.446-.042c-.1-.092-.2-.189-.307-.284a1.214,1.214,0,0,0-1.643-.061,7.563,7.563,0,0,1-.614.512A.588.588,0,0,1,10.883,8c-.215-.115-.437-.215-.659-.316a2.153,2.153,0,0,0-.695-.248A2.091,2.091,0,0,0,7.541,8.562a9.915,9.915,0,0,0-.405.986c-.559,1.545-1.015,3.123-1.487,4.7a1.528,1.528,0,0,0,.634,1.777,1.755,1.755,0,0,0,1.5.211,1.35,1.35,0,0,0,.824-.858c.543-1.281,1.032-2.584,1.55-3.875.142-.355.28-.712.432-1.064a.548.548,0,0,1,.851-.24.622.622,0,0,1,.185.539,2.161,2.161,0,0,1-.181.621c-.337.852-.68,1.7-1.018,2.552a2.564,2.564,0,0,0-.173.528.624.624,0,0,0,.333.71,1.073,1.073,0,0,0,.814.034,1.22,1.22,0,0,0,.657-.655q.758-1.488,1.511-2.978.35-.687.709-1.37a1.073,1.073,0,0,1,.357-.434.43.43,0,0,1,.463-.016.373.373,0,0,1,.153.387.7.7,0,0,1-.057.236c-.065.157-.127.316-.2.469-.42.883-.846,1.763-1.262,2.648A2.463,2.463,0,0,0,13.4,14.607Zm5.888,6.508a1.09,1.09,0,0,0-2.179.006,1.09,1.09,0,0,0,2.179-.006ZM1.028,12.139a1.038,1.038,0,1,0,.01-2.075,1.038,1.038,0,0,0-.01,2.075ZM13.782.528a1.027,1.027,0,1,0-.011,2.055A1.027,1.027,0,0,0,13.782.528ZM22.21,6.95a.882.882,0,0,0-1.763.011A.882.882,0,0,0,22.21,6.95ZM4.153,4.439a.785.785,0,1,0,.787-.78A.766.766,0,0,0,4.153,4.439Zm8.221,18.22a.676.676,0,1,0-.677.666A.671.671,0,0,0,12.374,22.658ZM22.872,12.2a.674.674,0,0,0-.665.665.656.656,0,0,0,.655.643.634.634,0,0,0,.655-.644A.654.654,0,0,0,22.872,12.2ZM7.171-.123A.546.546,0,0,0,6.613.43a.553.553,0,1,0,1.106,0A.539.539,0,0,0,7.171-.123ZM24.119,9.234a.507.507,0,0,0-.493.488.494.494,0,0,0,.494.494.48.48,0,0,0,.487-.483A.491.491,0,0,0,24.119,9.234Zm-19.454,9.7a.5.5,0,0,0-.488-.488.491.491,0,0,0-.487.5.483.483,0,0,0,.491.479A.49.49,0,0,0,4.665,18.936Z\" transform=\"translate(0 0.123)\" fill=\"#f64060\"/>\n      </svg>\n    </a>\n\n    <a class=\"circle-link\" title=\"Join the Conversation on Discord\" href=\"https://discord.gg/angular\" target=\"_blank\" rel=\"noopener\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"26\" height=\"26\" viewBox=\"0 0 245 240\">\n        <title>Discord Logo</title>\n        <path d=\"M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z\"/>\n        <path d=\"M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z\"/>\n      </svg>\n    </a>\n  </div>\n\n  <!-- Footer -->\n  <footer>\n      Love Angular?&nbsp;\n      <a href=\"https://github.com/angular/angular\" target=\"_blank\" rel=\"noopener\"> Give our repo a star.\n        <div class=\"github-star-badge\">\n            <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n          Star\n        </div>\n      </a>\n      <a href=\"https://github.com/angular/angular\" target=\"_blank\" rel=\"noopener\">\n        <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\" fill=\"#1976d2\"/><path d=\"M0 0h24v24H0z\" fill=\"none\"/></svg>\n      </a>\n  </footer>\n\n  <svg id=\"clouds\" xmlns=\"http://www.w3.org/2000/svg\" width=\"2611.084\" height=\"485.677\" viewBox=\"0 0 2611.084 485.677\">\n    <title>Gray Clouds Background</title>\n    <path id=\"Path_39\" data-name=\"Path 39\" d=\"M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z\" transform=\"translate(142.69 -634.312)\" fill=\"#eee\"/>\n  </svg>\n\n</div>\n\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n<router-outlet></router-outlet>\n"
-    },
-    {
-      "name": "ButtonComponent",
-      "id": "component-ButtonComponent-1a7c8b2fdba099f6f572aa713a1738c9",
-      "file": "projects/rustic/src/lib/button/button.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-button",
-      "styleUrls": ["./button.component.css"],
-      "styles": [],
-      "templateUrl": ["./button.component.html"],
-      "viewProviders": [],
-      "inputsClass": [
-        {
-          "name": "size",
-          "defaultValue": "'medium'",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 10,
-          "type": "\"small\" | \"medium\" | \"large\""
-        },
-        {
-          "name": "type",
-          "defaultValue": "'primary'",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 9,
-          "type": "\"primary\" | \"secondary\" | \"warning\""
-        }
-      ],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent {\n  @Input() type: 'primary' | 'secondary' | 'warning' = 'primary';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  constructor() {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.button {\n  margin: 0.5rem;\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border: none;\n  font-weight: bold;\n  font-size: 100%;\n}\n\n.button--secondary {\n  background-color: #fbbf24;\n  color: #1f2937;\n}\n\n.button--secondary:hover {\n  background-color: #f59e0b;\n}\n\n.button--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.button--primary:hover {\n  background-color: #1f2937;\n}\n\n.button--warning {\n  background-color: #ef4444;\n  color: #ffffff;\n}\n\n.button--warning:hover {\n  background-color: #dc2626;\n}\n\n.button--small {\n  font-size: 75%;\n}\n.button--large {\n  font-size: 125%;\n}\n",
-          "styleUrl": "./button.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 10
-      },
-      "templateData": "<button\n  class=\"button {{\n    type == 'primary'\n      ? 'button--primary'\n      : type == 'secondary'\n      ? 'button--secondary'\n      : type == 'warning'\n      ? 'button--warning'\n      : ''\n  }} {{\n    size == 'small' ? 'button--small' : size == 'large' ? 'button--large' : ''\n  }}\"\n>\n  <ng-content></ng-content>\n</button>\n"
-    },
-    {
-      "name": "CheckboxComponent",
-      "id": "component-CheckboxComponent-e1cf60734fdd13f3010063241bbd52d4",
-      "file": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-checkbox",
-      "styleUrls": ["./checkbox.component.css"],
-      "styles": [],
-      "templateUrl": ["./checkbox.component.html"],
-      "viewProviders": [],
-      "inputsClass": [
-        {
-          "name": "label",
-          "defaultValue": "''",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 9,
-          "type": "string"
-        }
-      ],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.css'],\n})\nexport class CheckboxComponent {\n  @Input() label: string = '';\n\n  constructor() {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.checkbox {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n}\n\n::ng-deep .checkbox__box input + svg {\n  display: none;\n  width: 1rem;\n  height: 1rem;\n  color: #374151;\n}\n\n::ng-deep .checkbox__box input {\n  opacity: 0;\n}\n\n::ng-deep .checkbox__box input:checked + svg {\n  display: block;\n  position: absolute;\n}\n\n.checkbox__box {\n  border: 2px solid #fbbf24;\n  border-radius: 0.25rem;\n  width: 1.25rem;\n  height: 1.25rem;\n  display: flex;\n  flex-shrink: 0;\n  justify-content: center;\n  align-items: center;\n  margin-right: 0.5rem;\n}\n\n.checkbox__label {\n  user-select: none;\n  font: inherit;\n  font-weight: bold;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n",
-          "styleUrl": "./checkbox.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 9
-      },
-      "templateData": "<label class=\"checkbox\">\n  <div class=\"checkbox__box\">\n    <ng-content select=\"input\"></ng-content>\n    <svg viewBox=\"0 0 20 20\">\n      <path d=\"M0 11l2-2 5 5L18 3l2 2L7 18z\"></path>\n    </svg>\n  </div>\n  <div class=\"checkbox__label\">{{ label }}</div>\n</label>\n"
-    },
-    {
-      "name": "ChipComponent",
-      "id": "component-ChipComponent-3a65b9142918244f99a1a59675ddac7f",
-      "file": "projects/rustic/src/lib/chip/chip.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-chip",
-      "styleUrls": ["./chip.component.css"],
-      "styles": [],
-      "templateUrl": ["./chip.component.html"],
-      "viewProviders": [],
-      "inputsClass": [
-        {
-          "name": "showClose",
-          "defaultValue": "false",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 11,
-          "type": "boolean"
-        },
-        {
-          "name": "text",
-          "defaultValue": "''",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 10,
-          "type": "string"
-        },
-        {
-          "name": "type",
-          "defaultValue": "'primary'",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 9,
-          "type": "\"primary\" | \"secondary\""
-        }
-      ],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [
-        {
-          "name": "ngOnInit",
-          "args": [],
-          "optional": false,
-          "returnType": "void",
-          "typeParameters": [],
-          "line": 14,
-          "deprecated": false,
-          "deprecationMessage": ""
-        }
-      ],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-chip',\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.css'],\n})\nexport class ChipComponent implements OnInit {\n  @Input() type: 'primary' | 'secondary' = 'primary';\n  @Input() text: string = '';\n  @Input() showClose: boolean = false;\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.chip {\n  display: flex;\n  align-items: center;\n  padding: 0.25rem;\n  padding-right: 0.75rem;\n  padding-left: 0.75rem;\n  margin-right: 0.75rem;\n  margin-left: 0.75rem;\n  border-radius: 9999px;\n  width: fit-content;\n}\n\n.chip span {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n.chip--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.chip--secondary {\n  color: #374151;\n  background-color: #fbbf24;\n}\n\n.chip svg {\n  font-size: 0.75rem;\n  line-height: 1rem;\n  margin-left: 0.5rem;\n  cursor: pointer;\n}\n\n.chip--primary svg {\n  color: #fbbf24;\n}\n\n.chip--secondary svg {\n  color: #374151;\n}\n",
-          "styleUrl": "./chip.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 11
-      },
-      "implements": ["OnInit"],
-      "templateData": "<span class=\"chip chip--{{ type }}\">\n  <span>{{ text }}</span>\n  <svg\n    *ngIf=\"showClose\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    stroke-width=\"2\"\n    viewBox=\"0 0 24 24\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n    height=\"1em\"\n    width=\"1em\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n  </svg>\n</span>\n"
-    },
-    {
-      "name": "DividerComponent",
-      "id": "component-DividerComponent-3100bd51186d3def92a27a5c142deb3a",
-      "file": "projects/rustic/src/lib/divider/divider.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-divider",
-      "styleUrls": ["./divider.component.css"],
-      "styles": [],
-      "templateUrl": ["./divider.component.html"],
-      "viewProviders": [],
-      "inputsClass": [],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [
-        {
-          "name": "ngOnInit",
-          "args": [],
-          "optional": false,
-          "returnType": "void",
-          "typeParameters": [],
-          "line": 12,
-          "deprecated": false,
-          "deprecationMessage": ""
-        }
-      ],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-divider',\n  templateUrl: './divider.component.html',\n  styleUrls: ['./divider.component.css']\n})\nexport class DividerComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": "",
-          "styleUrl": "./divider.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 8
-      },
-      "implements": ["OnInit"],
-      "templateData": "<hr />\n"
-    },
-    {
-      "name": "ListComponent",
-      "id": "component-ListComponent-f0adf254a4428a335518670e0f0fe090",
-      "file": "projects/rustic/src/lib/list/list.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-list",
-      "styleUrls": ["./list.component.css"],
-      "styles": [],
-      "templateUrl": ["./list.component.html"],
-      "viewProviders": [],
-      "inputsClass": [],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.css'],\n})\nexport class ListComponent {\n  constructor() {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": ".list {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  align-items: stretch;\n  justify-content: flex-start;\n  list-style: none;\n  padding-inline-start: 0;\n}\n",
-          "styleUrl": "./list.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 8
-      },
-      "templateData": "<ul class=\"list\">\n  <ng-content></ng-content>\n</ul>\n"
-    },
-    {
-      "name": "ListItemComponent",
-      "id": "component-ListItemComponent-77219c4f5aee904ccd18bdc98be2b190",
-      "file": "projects/rustic/src/lib/list-item/list-item.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-list-item",
-      "styleUrls": ["./list-item.component.css"],
-      "styles": [],
-      "templateUrl": ["./list-item.component.html"],
-      "viewProviders": [],
-      "inputsClass": [
-        {
-          "name": "hover",
-          "defaultValue": "true",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 9,
-          "type": "boolean"
-        }
-      ],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-list-item',\n  templateUrl: './list-item.component.html',\n  styleUrls: ['./list-item.component.css'],\n})\nexport class ListItemComponent {\n  @Input() hover: boolean = true;\n\n  constructor() {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": ".list__item {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  font-weight: bold;\n  color: #1f2937;\n  cursor: pointer;\n  width: calc(100% - 2rem);\n  list-style: none;\n  display: flex;\n  flex-direction: column;\n  border-bottom: 1px solid #f3f4f6;\n}\n\n.list__item--hover:hover {\n  background-color: #f3f4f6;\n}\n\n::ng-deep .list__item cis-subtitle {\n  font-size: 0.75em;\n  font-weight: normal;\n}\n",
-          "styleUrl": "./list-item.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 9
-      },
-      "templateData": "<li class=\"list__item {{ hover == true ? 'list__item--hover' : '' }}\">\n  <ng-content select=\"cis-title\"></ng-content>\n  <ng-content select=\"cis-subtitle\"></ng-content>\n</li>\n"
-    },
-    {
-      "name": "RadioButtonComponent",
-      "id": "component-RadioButtonComponent-96c6eb755300f5d93673c0f98e4cc7c0",
-      "file": "projects/rustic/src/lib/radio-button/radio-button.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-radio-button",
-      "styleUrls": ["./radio-button.component.css"],
-      "styles": [],
-      "templateUrl": ["./radio-button.component.html"],
-      "viewProviders": [],
-      "inputsClass": [],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-radio-button',\n  templateUrl: './radio-button.component.html',\n  styleUrls: ['./radio-button.component.css'],\n})\nexport class RadioButtonComponent {\n  constructor() {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": "::ng-deep [type=\"radio\"]:checked,\n::ng-deep [type=\"radio\"]:not(:checked) {\n  position: absolute;\n  opacity: 0;\n  /* left: -9999px; */\n}\n::ng-deep [type=\"radio\"]:checked + label,\n::ng-deep [type=\"radio\"]:not(:checked) + label {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  font-weight: bold;\n  position: relative;\n  padding-left: 28px;\n  cursor: pointer;\n  line-height: 20px;\n  display: inline-block;\n  color: #374151;\n  margin: 0.5rem;\n}\n::ng-deep [type=\"radio\"]:checked + label:before,\n::ng-deep [type=\"radio\"]:not(:checked) + label:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 18px;\n  height: 18px;\n  border: 2px solid #fbbf24;\n  border-radius: 100%;\n}\n::ng-deep [type=\"radio\"]:checked + label:after,\n::ng-deep [type=\"radio\"]:not(:checked) + label:after {\n  content: \"\";\n  width: 12px;\n  height: 12px;\n  background: #374151;\n  position: absolute;\n  top: 5px;\n  left: 5px;\n  border-radius: 100%;\n  -webkit-transition: all 0.2s ease;\n  transition: all 0.2s ease;\n}\n::ng-deep [type=\"radio\"]:not(:checked) + label:after {\n  opacity: 0;\n  -webkit-transform: scale(0);\n  transform: scale(0);\n}\n::ng-deep [type=\"radio\"]:checked + label:after {\n  opacity: 1;\n  -webkit-transform: scale(1);\n  transform: scale(1);\n}\n",
-          "styleUrl": "./radio-button.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 8
-      },
-      "templateData": "<ng-content></ng-content>\n"
-    },
-    {
-      "name": "RusticComponent",
-      "id": "component-RusticComponent-f02ca8390ef51682c8bf969c8052aae1",
-      "file": "projects/rustic/src/lib/rustic.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "lib-Rustic",
-      "styleUrls": [],
-      "styles": [],
-      "template": "<p>\n  rustic works!\n</p>\n",
-      "templateUrl": [],
-      "viewProviders": [],
-      "inputsClass": [],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [
-        {
-          "name": "ngOnInit",
-          "args": [],
-          "optional": false,
-          "returnType": "void",
-          "typeParameters": [],
-          "line": 17,
-          "deprecated": false,
-          "deprecationMessage": ""
-        }
-      ],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-Rustic',\n  template: `\n    <p>\n      rustic works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class RusticComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": "",
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 13
-      },
-      "implements": ["OnInit"]
-    },
-    {
-      "name": "SpinnerComponent",
-      "id": "component-SpinnerComponent-99ec949669e11f00ab9e43556cd006ca",
-      "file": "projects/rustic/src/lib/spinner/spinner.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-spinner",
-      "styleUrls": ["./spinner.component.css"],
-      "styles": [],
-      "templateUrl": ["./spinner.component.html"],
-      "viewProviders": [],
-      "inputsClass": [
-        {
-          "name": "text",
-          "defaultValue": "''",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 10,
-          "type": "string"
-        },
-        {
-          "name": "textAlign",
-          "defaultValue": "'horizontal'",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 11,
-          "type": "\"horizontal\" | \"vertical\""
-        },
-        {
-          "name": "type",
-          "defaultValue": "'default'",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 9,
-          "type": "\"default\" | \"ellipsis\""
-        }
-      ],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-spinner',\n  templateUrl: './spinner.component.html',\n  styleUrls: ['./spinner.component.css'],\n})\nexport class SpinnerComponent {\n  @Input() type: 'default' | 'ellipsis' = 'default';\n  @Input() text: string = '';\n  @Input() textAlign: 'horizontal' | 'vertical' = 'horizontal';\n\n  constructor() {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": ".spinner {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.spinner--horizontal {\n  flex-direction: row;\n}\n\n.spinner--vertical {\n  flex-direction: column;\n}\n\n.spinner__text {\n  margin: 0.75rem;\n  font-weight: bold;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.loader,\n.loader:after {\n  border-radius: 50%;\n  width: 3em;\n  height: 3em;\n}\n.loader {\n  font-size: 10px;\n  position: relative;\n  border-top: 0.8em solid rgba(0, 0, 0, 0.2);\n  border-right: 0.8em solid rgba(0, 0, 0, 0.2);\n  border-bottom: 0.8em solid rgba(0, 0, 0, 0.2);\n  border-left: 0.8em solid #374151;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1s infinite linear;\n  animation: load8 1s infinite linear;\n}\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.cis-ellipsis {\n  display: inline-block;\n  position: relative;\n  width: 80px;\n  height: 80px;\n}\n.cis-ellipsis div {\n  position: absolute;\n  top: 33px;\n  width: 13px;\n  height: 13px;\n  border-radius: 50%;\n  background: #374151;\n  animation-timing-function: cubic-bezier(0, 1, 1, 0);\n}\n.cis-ellipsis div:nth-child(1) {\n  left: 8px;\n  animation: cis-ellipsis1 0.6s infinite;\n}\n.cis-ellipsis div:nth-child(2) {\n  left: 8px;\n  animation: cis-ellipsis2 0.6s infinite;\n}\n.cis-ellipsis div:nth-child(3) {\n  left: 32px;\n  animation: cis-ellipsis2 0.6s infinite;\n}\n.cis-ellipsis div:nth-child(4) {\n  left: 56px;\n  animation: cis-ellipsis3 0.6s infinite;\n}\n@keyframes cis-ellipsis1 {\n  0% {\n    transform: scale(0);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n@keyframes cis-ellipsis3 {\n  0% {\n    transform: scale(1);\n  }\n  100% {\n    transform: scale(0);\n  }\n}\n@keyframes cis-ellipsis2 {\n  0% {\n    transform: translate(0, 0);\n  }\n  100% {\n    transform: translate(24px, 0);\n  }\n}\n",
-          "styleUrl": "./spinner.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 11
-      },
-      "templateData": "<div *ngIf=\"type == 'default'\" class=\"spinner spinner--{{ textAlign }}\">\n  <div class=\"loader\"></div>\n  <span *ngIf=\"text\" class=\"spinner__text\">{{ text }}</span>\n</div>\n\n<div *ngIf=\"type == 'ellipsis'\" class=\"spinner spinner--{{ textAlign }}\">\n  <div class=\"cis-ellipsis\">\n    <div></div>\n    <div></div>\n    <div></div>\n    <div></div>\n  </div>\n  <span *ngIf=\"text\" class=\"spinner__text\">{{ text }}</span>\n</div>\n"
-    },
-    {
-      "name": "SubtitleComponent",
-      "id": "component-SubtitleComponent-a88c090e404a06f11d1de379019df130",
-      "file": "projects/rustic/src/lib/subtitle/subtitle.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-subtitle",
-      "styleUrls": [],
-      "styles": [],
-      "template": "<ng-content></ng-content>",
-      "templateUrl": [],
-      "viewProviders": [],
-      "inputsClass": [],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [
-        {
-          "name": "ngOnInit",
-          "args": [],
-          "optional": false,
-          "returnType": "void",
-          "typeParameters": [],
-          "line": 11,
-          "deprecated": false,
-          "deprecationMessage": ""
-        }
-      ],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-subtitle',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class SubtitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": "",
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 8
-      },
-      "implements": ["OnInit"]
-    },
-    {
-      "name": "TitleComponent",
-      "id": "component-TitleComponent-5f2c7dff776029ae0c88bc11032bc608",
-      "file": "projects/rustic/src/lib/title/title.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-title",
-      "styleUrls": [],
-      "styles": [],
-      "template": "<ng-content></ng-content>",
-      "templateUrl": [],
-      "viewProviders": [],
-      "inputsClass": [],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [
-        {
-          "name": "ngOnInit",
-          "args": [],
-          "optional": false,
-          "returnType": "void",
-          "typeParameters": [],
-          "line": 11,
-          "deprecated": false,
-          "deprecationMessage": ""
-        }
-      ],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-title',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class TitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": "",
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 8
-      },
-      "implements": ["OnInit"]
-    },
-    {
-      "name": "ToggleComponent",
-      "id": "component-ToggleComponent-3f6ab767773591064d894ea3ede3d50d",
-      "file": "projects/rustic/src/lib/toggle/toggle.component.ts",
-      "encapsulation": [],
-      "entryComponents": [],
-      "inputs": [],
-      "outputs": [],
-      "providers": [],
-      "selector": "cis-toggle",
-      "styleUrls": ["./toggle.component.css"],
-      "styles": [],
-      "templateUrl": ["./toggle.component.html"],
-      "viewProviders": [],
-      "inputsClass": [
-        {
-          "name": "label",
-          "defaultValue": "''",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "line": 9,
-          "type": "string"
-        }
-      ],
-      "outputsClass": [],
-      "propertiesClass": [],
-      "methodsClass": [
-        {
-          "name": "ngOnInit",
-          "args": [],
-          "optional": false,
-          "returnType": "void",
-          "typeParameters": [],
-          "line": 12,
-          "deprecated": false,
-          "deprecationMessage": ""
-        }
-      ],
-      "deprecated": false,
-      "deprecationMessage": "",
-      "hostBindings": [],
-      "hostListeners": [],
-      "description": "",
-      "rawdescription": "\n",
-      "type": "component",
-      "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-toggle',\n  templateUrl: './toggle.component.html',\n  styleUrls: ['./toggle.component.css'],\n})\nexport class ToggleComponent implements OnInit {\n  @Input() label: string = '';\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
-      "assetsDirs": [],
-      "styleUrlsData": [
-        {
-          "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nlabel {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n\nlabel .switch__label {\n  font-weight: bold;\n  color: #374151;\n  margin-left: 0.5rem;\n}\n\n.switch {\n  position: relative;\n  display: inline-block;\n  width: 35px;\n  height: 13px;\n}\n\n::ng-deep .switch input {\n  opacity: 0;\n  width: 0;\n  height: 0;\n}\n\n.slider {\n  position: absolute;\n  cursor: pointer;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: #ccc;\n  -webkit-transition: 0.4s;\n  transition: 0.4s;\n}\n\n.slider:before {\n  position: absolute;\n  content: \"\";\n  height: 20px;\n  width: 20px;\n  left: -5px;\n  bottom: -3.5px;\n  background-color: #374151;\n  -webkit-transition: 0.4s;\n  transition: 0.4s;\n}\n\n::ng-deep input:checked + .slider {\n  background-color: #fbbf24;\n}\n\n::ng-deep input:checked + .slider:before {\n  -webkit-transform: translateX(24px);\n  -ms-transform: translateX(24px);\n  transform: translateX(24px);\n}\n\n/* Rounded sliders */\n.slider.round {\n  border-radius: 34px;\n}\n\n.slider.round:before {\n  border-radius: 50%;\n}\n",
-          "styleUrl": "./toggle.component.css"
-        }
-      ],
-      "stylesData": "",
-      "constructorObj": {
-        "name": "constructor",
-        "description": "",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "args": [],
-        "line": 9
-      },
-      "implements": ["OnInit"],
-      "templateData": "<label>\n  <div class=\"switch\">\n    <ng-content select=\"input\"></ng-content>\n    <span class=\"slider round\"></span>\n  </div>\n  <span class=\"switch__label\">{{ label }}</span>\n</label>\n"
-    }
-  ],
-  "modules": [
-    {
-      "name": "AppModule",
-      "id": "module-AppModule-ed657d56c28ab8e9e0f32ad46470dc94",
-      "description": "",
-      "deprecationMessage": "",
-      "deprecated": false,
-      "file": "src/app/app.module.ts",
-      "methods": [],
-      "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
-      "children": [
-        {
-          "type": "providers",
-          "elements": []
-        },
-        {
-          "type": "declarations",
-          "elements": [
-            {
-              "name": "AppComponent"
-            }
-          ]
-        },
-        {
-          "type": "imports",
-          "elements": [
-            {
-              "name": "AppRoutingModule"
-            }
-          ]
-        },
-        {
-          "type": "exports",
-          "elements": []
-        },
-        {
-          "type": "bootstrap",
-          "elements": [
-            {
-              "name": "AppComponent"
-            }
-          ]
-        },
-        {
-          "type": "classes",
-          "elements": []
-        }
-      ]
-    },
-    {
-      "name": "AppRoutingModule",
-      "id": "module-AppRoutingModule-3c1d721cfd0753406a1cfde101c59380",
-      "description": "",
-      "deprecationMessage": "",
-      "deprecated": false,
-      "file": "src/app/app-routing.module.ts",
-      "methods": [],
-      "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
-      "children": [
-        {
-          "type": "providers",
-          "elements": []
-        },
-        {
-          "type": "declarations",
-          "elements": []
-        },
-        {
-          "type": "imports",
-          "elements": []
-        },
-        {
-          "type": "exports",
-          "elements": []
-        },
-        {
-          "type": "bootstrap",
-          "elements": []
-        },
-        {
-          "type": "classes",
-          "elements": []
-        }
-      ]
-    },
-    {
-      "name": "RusticModule",
-      "id": "module-RusticModule-a9c3c7ee7e452da2c94a7c9ece79501f",
-      "description": "",
-      "deprecationMessage": "",
-      "deprecated": false,
-      "file": "projects/rustic/src/lib/rustic.module.ts",
-      "methods": [],
-      "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
-      "children": [
-        {
-          "type": "providers",
-          "elements": []
-        },
-        {
-          "type": "declarations",
-          "elements": [
-            {
-              "name": "ButtonComponent"
-            },
-            {
-              "name": "CheckboxComponent"
-            },
-            {
-              "name": "ChipComponent"
-            },
-            {
-              "name": "DividerComponent"
-            },
-            {
-              "name": "ListComponent"
-            },
-            {
-              "name": "ListItemComponent"
-            },
-            {
-              "name": "RadioButtonComponent"
-            },
-            {
-              "name": "RusticComponent"
-            },
-            {
-              "name": "SpinnerComponent"
-            },
-            {
-              "name": "SubtitleComponent"
-            },
-            {
-              "name": "TitleComponent"
-            },
-            {
-              "name": "ToggleComponent"
-            }
-          ]
-        },
-        {
-          "type": "imports",
-          "elements": []
-        },
-        {
-          "type": "exports",
-          "elements": [
-            {
-              "name": "ButtonComponent"
-            },
-            {
-              "name": "CheckboxComponent"
-            },
-            {
-              "name": "ListComponent"
-            },
-            {
-              "name": "ListItemComponent"
-            },
-            {
-              "name": "RadioButtonComponent"
-            },
-            {
-              "name": "RusticComponent"
-            },
-            {
-              "name": "SpinnerComponent"
-            }
-          ]
-        },
-        {
-          "type": "bootstrap",
-          "elements": []
-        },
-        {
-          "type": "classes",
-          "elements": []
-        }
-      ]
-    }
-  ],
-  "miscellaneous": {
-    "variables": [
-      {
-        "name": "context",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "src/test.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "",
-        "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-      },
-      {
-        "name": "context",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "projects/rustic/src/test.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "",
-        "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-      },
-      {
-        "name": "Default",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "src/stories/Spinner.stories.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "",
-        "defaultValue": "Template.bind({})"
-      },
-      {
-        "name": "Ellipsis",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "src/stories/Spinner.stories.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "",
-        "defaultValue": "Template.bind({})"
-      },
-      {
-        "name": "environment",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "src/environments/environment.prod.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "object",
-        "defaultValue": "{\n  production: true\n}"
-      },
-      {
-        "name": "environment",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "src/environments/environment.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "object",
-        "defaultValue": "{\n  production: false\n}"
-      },
-      {
-        "name": "require",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "src/test.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "literal type"
-      },
-      {
-        "name": "require",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "projects/rustic/src/test.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "literal type"
-      },
-      {
-        "name": "Template",
-        "ctype": "miscellaneous",
-        "subtype": "variable",
-        "file": "src/stories/Spinner.stories.ts",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "type": "Story<SpinnerComponent>",
-        "defaultValue": "(args: SpinnerComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      text: args.text,\n      textAlign: args.textAlign,\n    },\n  },\n  template: `<cis-spinner [type]=\"propInput.type\" [text]=\"propInput.text\" [textAlign]=\"propInput.textAlign\"></cis-spinner>`,\n})"
-      }
-    ],
-    "functions": [
-      {
-        "name": "ngAdd",
-        "file": "projects/rustic/schematics/ng-add/index.ts",
-        "ctype": "miscellaneous",
-        "subtype": "function",
-        "deprecated": false,
-        "deprecationMessage": "",
-        "description": "",
-        "args": [
-          {
-            "name": "options",
-            "deprecated": false,
-            "deprecationMessage": ""
-          }
-        ],
-        "returnType": "Rule",
-        "jsdoctags": [
-          {
-            "name": "options",
+            "name": "RusticService",
+            "id": "injectable-RusticService-af182939fc8ad6a91c9152385aa89da3",
+            "file": "projects/rustic/src/lib/rustic.service.ts",
+            "properties": [],
+            "methods": [],
             "deprecated": false,
             "deprecationMessage": "",
-            "tagName": {
-              "text": "param"
-            }
-          }
-        ]
-      }
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class RusticService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
     ],
-    "typealiases": [],
-    "enumerations": [],
-    "groupedVariables": {
-      "src/test.ts": [
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
         {
-          "name": "context",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "src/test.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "",
-          "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            "name": "AppComponent",
+            "id": "component-AppComponent-2c7c0464396d46d67afa925dd368bdf1",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'RusticUIAngular'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'RusticUIAngular';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.css"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->\n<!-- * * * * * * * to get started with your project! * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n<style>\n  :host {\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n    font-size: 14px;\n    color: #333;\n    box-sizing: border-box;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n\n  h1,\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    margin: 8px 0;\n  }\n\n  p {\n    margin: 0;\n  }\n\n  .spacer {\n    flex: 1;\n  }\n\n  .toolbar {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    height: 60px;\n    display: flex;\n    align-items: center;\n    background-color: #1976d2;\n    color: white;\n    font-weight: 600;\n  }\n\n  .toolbar img {\n    margin: 0 16px;\n  }\n\n  .toolbar #twitter-logo {\n    height: 40px;\n    margin: 0 8px;\n  }\n\n  .toolbar #youtube-logo {\n    height: 40px;\n    margin: 0 16px;\n  }\n\n  .toolbar #twitter-logo:hover,\n  .toolbar #youtube-logo:hover {\n    opacity: 0.8;\n  }\n\n  .content {\n    display: flex;\n    margin: 82px auto 32px;\n    padding: 0 16px;\n    max-width: 960px;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  svg.material-icons {\n    height: 24px;\n    width: auto;\n  }\n\n  svg.material-icons:not(:last-child) {\n    margin-right: 8px;\n  }\n\n  .card svg.material-icons path {\n    fill: #888;\n  }\n\n  .card-container {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    margin-top: 16px;\n  }\n\n  .card {\n    all: unset;\n    border-radius: 4px;\n    border: 1px solid #eee;\n    background-color: #fafafa;\n    height: 40px;\n    width: 200px;\n    margin: 0 8px 16px;\n    padding: 16px;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    transition: all 0.2s ease-in-out;\n    line-height: 24px;\n  }\n\n  .card-container .card:not(:last-child) {\n    margin-right: 0;\n  }\n\n  .card.card-small {\n    height: 16px;\n    width: 168px;\n  }\n\n  .card-container .card:not(.highlight-card) {\n    cursor: pointer;\n  }\n\n  .card-container .card:not(.highlight-card):hover {\n    transform: translateY(-3px);\n    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);\n  }\n\n  .card-container .card:not(.highlight-card):hover .material-icons path {\n    fill: rgb(105, 103, 103);\n  }\n\n  .card.highlight-card {\n    background-color: #1976d2;\n    color: white;\n    font-weight: 600;\n    border: none;\n    width: auto;\n    min-width: 30%;\n    position: relative;\n  }\n\n  .card.card.highlight-card span {\n    margin-left: 60px;\n  }\n\n  svg#rocket {\n    width: 80px;\n    position: absolute;\n    left: -10px;\n    top: -24px;\n  }\n\n  svg#rocket-smoke {\n    height: calc(100vh - 95px);\n    position: absolute;\n    top: 10px;\n    right: 180px;\n    z-index: -10;\n  }\n\n  a,\n  a:visited,\n  a:hover {\n    color: #1976d2;\n    text-decoration: none;\n  }\n\n  a:hover {\n    color: #125699;\n  }\n\n  .terminal {\n    position: relative;\n    width: 80%;\n    max-width: 600px;\n    border-radius: 6px;\n    padding-top: 45px;\n    margin-top: 8px;\n    overflow: hidden;\n    background-color: rgb(15, 15, 16);\n  }\n\n  .terminal::before {\n    content: \"\\2022 \\2022 \\2022\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 4px;\n    background: rgb(58, 58, 58);\n    color: #c2c3c4;\n    width: 100%;\n    font-size: 2rem;\n    line-height: 0;\n    padding: 14px 0;\n    text-indent: 4px;\n  }\n\n  .terminal pre {\n    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;\n    color: white;\n    padding: 0 1rem 1rem;\n    margin: 0;\n  }\n\n  .circle-link {\n    height: 40px;\n    width: 40px;\n    border-radius: 40px;\n    margin: 8px;\n    background-color: white;\n    border: 1px solid #eeeeee;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n    transition: 1s ease-out;\n  }\n\n  .circle-link:hover {\n    transform: translateY(-0.25rem);\n    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);\n  }\n\n  footer {\n    margin-top: 8px;\n    display: flex;\n    align-items: center;\n    line-height: 20px;\n  }\n\n  footer a {\n    display: flex;\n    align-items: center;\n  }\n\n  .github-star-badge {\n    color: #24292e;\n    display: flex;\n    align-items: center;\n    font-size: 12px;\n    padding: 3px 10px;\n    border: 1px solid rgba(27,31,35,.2);\n    border-radius: 3px;\n    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);\n    margin-left: 4px;\n    font-weight: 600;\n  }\n\n  .github-star-badge:hover {\n    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);\n    border-color: rgba(27,31,35,.35);\n    background-position: -.5em;\n  }\n\n  .github-star-badge .material-icons {\n    height: 16px;\n    width: 16px;\n    margin-right: 4px;\n  }\n\n  svg#clouds {\n    position: fixed;\n    bottom: -160px;\n    left: -230px;\n    z-index: -10;\n    width: 1920px;\n  }\n\n  /* Responsive Styles */\n  @media screen and (max-width: 767px) {\n    .card-container > *:not(.circle-link) ,\n    .terminal {\n      width: 100%;\n    }\n\n    .card:not(.highlight-card) {\n      height: 16px;\n      margin: 8px 0;\n    }\n\n    .card.highlight-card span {\n      margin-left: 72px;\n    }\n\n    svg#rocket-smoke {\n      right: 120px;\n      transform: rotate(-5deg);\n    }\n  }\n\n  @media screen and (max-width: 575px) {\n    svg#rocket-smoke {\n      display: none;\n      visibility: hidden;\n    }\n  }\n</style>\n\n<!-- Toolbar -->\n<div class=\"toolbar\" role=\"banner\">\n  <img\n    width=\"40\"\n    alt=\"Angular Logo\"\n    src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"\n  />\n  <span>Welcome</span>\n    <div class=\"spacer\"></div>\n    <a aria-label=\"Angular on twitter\" target=\"_blank\" rel=\"noopener\" href=\"https://twitter.com/angular\" title=\"Twitter\">\n      <svg id=\"twitter-logo\" height=\"24\" data-name=\"Logo\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\">\n        <rect width=\"400\" height=\"400\" fill=\"none\"/>\n        <path d=\"M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23\" fill=\"#fff\"/>\n      </svg>\n    </a>\n    <a aria-label=\"Angular on YouTube\" target=\"_blank\" rel=\"noopener\" href=\"https://youtube.com/angular\" title=\"YouTube\">\n      <svg id=\"youtube-logo\" height=\"24\" width=\"24\" data-name=\"Logo\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"#fff\">\n        <path d=\"M0 0h24v24H0V0z\" fill=\"none\"/>\n        <path d=\"M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z\"/>\n      </svg>\n    </a>\n</div>\n\n<div class=\"content\" role=\"main\">\n\n  <!-- Highlight Card -->\n  <div class=\"card highlight-card card-small\">\n\n    <svg id=\"rocket\" xmlns=\"http://www.w3.org/2000/svg\" width=\"101.678\" height=\"101.678\" viewBox=\"0 0 101.678 101.678\">\n      <title>Rocket Ship</title>\n      <g id=\"Group_83\" data-name=\"Group 83\" transform=\"translate(-141 -696)\">\n        <circle id=\"Ellipse_8\" data-name=\"Ellipse 8\" cx=\"50.839\" cy=\"50.839\" r=\"50.839\" transform=\"translate(141 696)\" fill=\"#dd0031\"/>\n        <g id=\"Group_47\" data-name=\"Group 47\" transform=\"translate(165.185 720.185)\">\n          <path id=\"Path_33\" data-name=\"Path 33\" d=\"M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z\" transform=\"translate(0.371 3.363)\" fill=\"#fff\"/>\n          <path id=\"Path_34\" data-name=\"Path 34\" d=\"M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z\" transform=\"translate(0 0.005)\" fill=\"#fff\"/>\n        </g>\n      </g>\n    </svg>\n\n    <span>{{ title }} app is running!</span>\n\n    <svg id=\"rocket-smoke\" xmlns=\"http://www.w3.org/2000/svg\" width=\"516.119\" height=\"1083.632\" viewBox=\"0 0 516.119 1083.632\">\n      <title>Rocket Ship Smoke</title>\n      <path id=\"Path_40\" data-name=\"Path 40\" d=\"M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z\" transform=\"translate(-147.025 -140.939)\" fill=\"#f5f5f5\"/>\n    </svg>\n\n  </div>\n\n  <!-- Resources -->\n  <h2>Resources</h2>\n  <p>Here are some links to help you get started:</p>\n\n  <div class=\"card-container\">\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z\"/></svg>\n      <span>Learn Angular</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>    </a>\n\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/cli\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z\"/></svg>\n      <span>CLI Documentation</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>\n    </a>\n\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z\"/></svg>\n      <span>Angular Blog</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>\n    </a>\n\n    <a class=\"card\" target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/devtools/\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" enable-background=\"new 0 0 24 24\" height=\"24px\" viewBox=\"0 0 24 24\" width=\"24px\" fill=\"#000000\"><g><rect fill=\"none\" height=\"24\" width=\"24\"/></g><g><g><path d=\"M14.73,13.31C15.52,12.24,16,10.93,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.43,0,2.74-0.48,3.81-1.27L19.59,21L21,19.59L14.73,13.31z M9.5,14C7.01,14,5,11.99,5,9.5S7.01,5,9.5,5S14,7.01,14,9.5 S11.99,14,9.5,14z\"/><polygon points=\"10.29,8.44 9.5,6 8.71,8.44 6.25,8.44 8.26,10.03 7.49,12.5 9.5,10.97 11.51,12.5 10.74,10.03 12.75,8.44\"/></g></g></svg>\n      <span>Angular DevTools</span>\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\"/></svg>\n    </a>\n\n  </div>\n\n  <!-- Next Steps -->\n  <h2>Next Steps</h2>\n  <p>What do you want to do next with your app?</p>\n\n  <input type=\"hidden\" #selection>\n\n  <div class=\"card-container\">\n    <button class=\"card card-small\" (click)=\"selection.value = 'component'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>New Component</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'material'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Angular Material</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'pwa'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Add PWA Support</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'dependency'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Add Dependency</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'test'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Run and Watch Tests</span>\n    </button>\n\n    <button class=\"card card-small\" (click)=\"selection.value = 'build'\" tabindex=\"0\">\n      <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z\"/></svg>\n      <span>Build for Production</span>\n    </button>\n  </div>\n\n  <!-- Terminal -->\n  <div class=\"terminal\" [ngSwitch]=\"selection.value\">\n      <pre *ngSwitchDefault>ng generate component xyz</pre>\n      <pre *ngSwitchCase=\"'material'\">ng add @angular/material</pre>\n      <pre *ngSwitchCase=\"'pwa'\">ng add @angular/pwa</pre>\n      <pre *ngSwitchCase=\"'dependency'\">ng add _____</pre>\n      <pre *ngSwitchCase=\"'test'\">ng test</pre>\n      <pre *ngSwitchCase=\"'build'\">ng build</pre>\n  </div>\n\n  <!-- Links -->\n  <div class=\"card-container\">\n    <a class=\"circle-link\" title=\"Animations\" href=\"https://angular.io/guide/animations\" target=\"_blank\" rel=\"noopener\">\n      <svg id=\"Group_20\" data-name=\"Group 20\" xmlns=\"http://www.w3.org/2000/svg\" width=\"21.813\" height=\"23.453\" viewBox=\"0 0 21.813 23.453\">\n        <path id=\"Path_15\" data-name=\"Path 15\" d=\"M4099.584,972.736h0l-10.882,3.9,1.637,14.4,9.245,5.153,9.245-5.153,1.686-14.4Z\" transform=\"translate(-4088.702 -972.736)\" fill=\"#ffa726\"/>\n        <path id=\"Path_16\" data-name=\"Path 16\" d=\"M4181.516,972.736v23.453l9.245-5.153,1.686-14.4Z\" transform=\"translate(-4170.633 -972.736)\" fill=\"#fb8c00\"/>\n        <path id=\"Path_17\" data-name=\"Path 17\" d=\"M4137.529,1076.127l-7.7-3.723,4.417-2.721,7.753,3.723Z\" transform=\"translate(-4125.003 -1058.315)\" fill=\"#ffe0b2\"/>\n        <path id=\"Path_18\" data-name=\"Path 18\" d=\"M4137.529,1051.705l-7.7-3.723,4.417-2.721,7.753,3.723Z\" transform=\"translate(-4125.003 -1036.757)\" fill=\"#fff3e0\"/>\n        <path id=\"Path_19\" data-name=\"Path 19\" d=\"M4137.529,1027.283l-7.7-3.723,4.417-2.721,7.753,3.723Z\" transform=\"translate(-4125.003 -1015.199)\" fill=\"#fff\"/>\n      </svg>\n    </a>\n\n    <a class=\"circle-link\" title=\"CLI\" href=\"https://cli.angular.io/\" target=\"_blank\" rel=\"noopener\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21.762\" height=\"23.447\" viewBox=\"0 0 21.762 23.447\">\n        <title>Angular CLI Logo</title>\n        <g id=\"Group_21\" data-name=\"Group 21\" transform=\"translate(0)\">\n          <path id=\"Path_20\" data-name=\"Path 20\" d=\"M2660.313,313.618h0l-10.833,3.9,1.637,14.4,9.2,5.152,9.244-5.152,1.685-14.4Z\" transform=\"translate(-2649.48 -313.618)\" fill=\"#37474f\"/>\n          <path id=\"Path_21\" data-name=\"Path 21\" d=\"M2741.883,313.618v23.447l9.244-5.152,1.685-14.4Z\" transform=\"translate(-2731.05 -313.618)\" fill=\"#263238\"/>\n          <path id=\"Path_22\" data-name=\"Path 22\" d=\"M2692.293,379.169h11.724V368.618h-11.724Zm11.159-.6h-10.608v-9.345h10.621v9.345Z\" transform=\"translate(-2687.274 -362.17)\" fill=\"#fff\"/>\n          <path id=\"Path_23\" data-name=\"Path 23\" d=\"M2709.331,393.688l.4.416,2.265-2.28-2.294-2.294-.4.4,1.893,1.893Z\" transform=\"translate(-2702.289 -380.631)\" fill=\"#fff\"/>\n          <rect id=\"Rectangle_12\" data-name=\"Rectangle 12\" width=\"3.517\" height=\"0.469\" transform=\"translate(9.709 13.744)\" fill=\"#fff\"/>\n        </g>\n      </svg>\n    </a>\n\n    <a class=\"circle-link\" title=\"Find a Local Meetup\" href=\"https://www.meetup.com/find/?keywords=angular\" target=\"_blank\" rel=\"noopener\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24.607\" height=\"23.447\" viewBox=\"0 0 24.607 23.447\">\n        <title>Meetup Logo</title>\n        <path id=\"logo--mSwarm\" d=\"M21.221,14.95A4.393,4.393,0,0,1,17.6,19.281a4.452,4.452,0,0,1-.8.069c-.09,0-.125.035-.154.117a2.939,2.939,0,0,1-2.506,2.091,2.868,2.868,0,0,1-2.248-.624.168.168,0,0,0-.245-.005,3.926,3.926,0,0,1-2.589.741,4.015,4.015,0,0,1-3.7-3.347,2.7,2.7,0,0,1-.043-.38c0-.106-.042-.146-.143-.166a3.524,3.524,0,0,1-1.516-.69A3.623,3.623,0,0,1,2.23,14.557a3.66,3.66,0,0,1,1.077-3.085.138.138,0,0,0,.026-.2,3.348,3.348,0,0,1-.451-1.821,3.46,3.46,0,0,1,2.749-3.28.44.44,0,0,0,.355-.281,5.072,5.072,0,0,1,3.863-3,5.028,5.028,0,0,1,3.555.666.31.31,0,0,0,.271.03A4.5,4.5,0,0,1,18.3,4.7a4.4,4.4,0,0,1,1.334,2.751,3.658,3.658,0,0,1,.022.706.131.131,0,0,0,.1.157,2.432,2.432,0,0,1,1.574,1.645,2.464,2.464,0,0,1-.7,2.616c-.065.064-.051.1-.014.166A4.321,4.321,0,0,1,21.221,14.95ZM13.4,14.607a2.09,2.09,0,0,0,1.409,1.982,4.7,4.7,0,0,0,1.275.221,1.807,1.807,0,0,0,.9-.151.542.542,0,0,0,.321-.545.558.558,0,0,0-.359-.534,1.2,1.2,0,0,0-.254-.078c-.262-.047-.526-.086-.787-.138a.674.674,0,0,1-.617-.75,3.394,3.394,0,0,1,.218-1.109c.217-.658.509-1.286.79-1.918a15.609,15.609,0,0,0,.745-1.86,1.95,1.95,0,0,0,.06-1.073,1.286,1.286,0,0,0-1.051-1.033,1.977,1.977,0,0,0-1.521.2.339.339,0,0,1-.446-.042c-.1-.092-.2-.189-.307-.284a1.214,1.214,0,0,0-1.643-.061,7.563,7.563,0,0,1-.614.512A.588.588,0,0,1,10.883,8c-.215-.115-.437-.215-.659-.316a2.153,2.153,0,0,0-.695-.248A2.091,2.091,0,0,0,7.541,8.562a9.915,9.915,0,0,0-.405.986c-.559,1.545-1.015,3.123-1.487,4.7a1.528,1.528,0,0,0,.634,1.777,1.755,1.755,0,0,0,1.5.211,1.35,1.35,0,0,0,.824-.858c.543-1.281,1.032-2.584,1.55-3.875.142-.355.28-.712.432-1.064a.548.548,0,0,1,.851-.24.622.622,0,0,1,.185.539,2.161,2.161,0,0,1-.181.621c-.337.852-.68,1.7-1.018,2.552a2.564,2.564,0,0,0-.173.528.624.624,0,0,0,.333.71,1.073,1.073,0,0,0,.814.034,1.22,1.22,0,0,0,.657-.655q.758-1.488,1.511-2.978.35-.687.709-1.37a1.073,1.073,0,0,1,.357-.434.43.43,0,0,1,.463-.016.373.373,0,0,1,.153.387.7.7,0,0,1-.057.236c-.065.157-.127.316-.2.469-.42.883-.846,1.763-1.262,2.648A2.463,2.463,0,0,0,13.4,14.607Zm5.888,6.508a1.09,1.09,0,0,0-2.179.006,1.09,1.09,0,0,0,2.179-.006ZM1.028,12.139a1.038,1.038,0,1,0,.01-2.075,1.038,1.038,0,0,0-.01,2.075ZM13.782.528a1.027,1.027,0,1,0-.011,2.055A1.027,1.027,0,0,0,13.782.528ZM22.21,6.95a.882.882,0,0,0-1.763.011A.882.882,0,0,0,22.21,6.95ZM4.153,4.439a.785.785,0,1,0,.787-.78A.766.766,0,0,0,4.153,4.439Zm8.221,18.22a.676.676,0,1,0-.677.666A.671.671,0,0,0,12.374,22.658ZM22.872,12.2a.674.674,0,0,0-.665.665.656.656,0,0,0,.655.643.634.634,0,0,0,.655-.644A.654.654,0,0,0,22.872,12.2ZM7.171-.123A.546.546,0,0,0,6.613.43a.553.553,0,1,0,1.106,0A.539.539,0,0,0,7.171-.123ZM24.119,9.234a.507.507,0,0,0-.493.488.494.494,0,0,0,.494.494.48.48,0,0,0,.487-.483A.491.491,0,0,0,24.119,9.234Zm-19.454,9.7a.5.5,0,0,0-.488-.488.491.491,0,0,0-.487.5.483.483,0,0,0,.491.479A.49.49,0,0,0,4.665,18.936Z\" transform=\"translate(0 0.123)\" fill=\"#f64060\"/>\n      </svg>\n    </a>\n\n    <a class=\"circle-link\" title=\"Join the Conversation on Discord\" href=\"https://discord.gg/angular\" target=\"_blank\" rel=\"noopener\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"26\" height=\"26\" viewBox=\"0 0 245 240\">\n        <title>Discord Logo</title>\n        <path d=\"M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z\"/>\n        <path d=\"M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z\"/>\n      </svg>\n    </a>\n  </div>\n\n  <!-- Footer -->\n  <footer>\n      Love Angular?&nbsp;\n      <a href=\"https://github.com/angular/angular\" target=\"_blank\" rel=\"noopener\"> Give our repo a star.\n        <div class=\"github-star-badge\">\n            <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n          Star\n        </div>\n      </a>\n      <a href=\"https://github.com/angular/angular\" target=\"_blank\" rel=\"noopener\">\n        <svg class=\"material-icons\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z\" fill=\"#1976d2\"/><path d=\"M0 0h24v24H0z\" fill=\"none\"/></svg>\n      </a>\n  </footer>\n\n  <svg id=\"clouds\" xmlns=\"http://www.w3.org/2000/svg\" width=\"2611.084\" height=\"485.677\" viewBox=\"0 0 2611.084 485.677\">\n    <title>Gray Clouds Background</title>\n    <path id=\"Path_39\" data-name=\"Path 39\" d=\"M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z\" transform=\"translate(142.69 -634.312)\" fill=\"#eee\"/>\n  </svg>\n\n</div>\n\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n<router-outlet></router-outlet>\n"
         },
         {
-          "name": "require",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "src/test.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "literal type"
-        }
-      ],
-      "projects/rustic/src/test.ts": [
-        {
-          "name": "context",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "projects/rustic/src/test.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "",
-          "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-1a7c8b2fdba099f6f572aa713a1738c9",
+            "file": "projects/rustic/src/lib/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-button",
+            "styleUrls": [
+                "./button.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "\"small\" | \"medium\" | \"large\""
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"primary\" | \"secondary\" | \"warning\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent {\n  @Input() type: 'primary' | 'secondary' | 'warning' = 'primary';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.button {\n  margin: 0.5rem;\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border: none;\n  font-weight: bold;\n  font-size: 100%;\n}\n\n.button--secondary {\n  background-color: #fbbf24;\n  color: #1f2937;\n}\n\n.button--secondary:hover {\n  background-color: #f59e0b;\n}\n\n.button--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.button--primary:hover {\n  background-color: #1f2937;\n}\n\n.button--warning {\n  background-color: #ef4444;\n  color: #ffffff;\n}\n\n.button--warning:hover {\n  background-color: #dc2626;\n}\n\n.button--small {\n  font-size: 75%;\n}\n.button--large {\n  font-size: 125%;\n}\n",
+                    "styleUrl": "./button.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 10
+            },
+            "templateData": "<button\n  class=\"button {{\n    type == 'primary'\n      ? 'button--primary'\n      : type == 'secondary'\n      ? 'button--secondary'\n      : type == 'warning'\n      ? 'button--warning'\n      : ''\n  }} {{\n    size == 'small' ? 'button--small' : size == 'large' ? 'button--large' : ''\n  }}\"\n>\n  <ng-content></ng-content>\n</button>\n"
         },
         {
-          "name": "require",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "projects/rustic/src/test.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "literal type"
-        }
-      ],
-      "src/stories/Spinner.stories.ts": [
-        {
-          "name": "Default",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "src/stories/Spinner.stories.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "",
-          "defaultValue": "Template.bind({})"
+            "name": "CheckboxComponent",
+            "id": "component-CheckboxComponent-e1cf60734fdd13f3010063241bbd52d4",
+            "file": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-checkbox",
+            "styleUrls": [
+                "./checkbox.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./checkbox.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.css'],\n})\nexport class CheckboxComponent {\n  @Input() label: string = '';\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.checkbox {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n}\n\n::ng-deep .checkbox__box input + svg {\n  display: none;\n  width: 1rem;\n  height: 1rem;\n  color: #374151;\n}\n\n::ng-deep .checkbox__box input {\n  opacity: 0;\n}\n\n::ng-deep .checkbox__box input:checked + svg {\n  display: block;\n  position: absolute;\n}\n\n.checkbox__box {\n  border: 2px solid #fbbf24;\n  border-radius: 0.25rem;\n  width: 1.25rem;\n  height: 1.25rem;\n  display: flex;\n  flex-shrink: 0;\n  justify-content: center;\n  align-items: center;\n  margin-right: 0.5rem;\n}\n\n.checkbox__label {\n  user-select: none;\n  font: inherit;\n  font-weight: bold;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n",
+                    "styleUrl": "./checkbox.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "templateData": "<label class=\"checkbox\">\n  <div class=\"checkbox__box\">\n    <ng-content select=\"input\"></ng-content>\n    <svg viewBox=\"0 0 20 20\">\n      <path d=\"M0 11l2-2 5 5L18 3l2 2L7 18z\"></path>\n    </svg>\n  </div>\n  <div class=\"checkbox__label\">{{ label }}</div>\n</label>\n"
         },
         {
-          "name": "Ellipsis",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "src/stories/Spinner.stories.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "",
-          "defaultValue": "Template.bind({})"
+            "name": "ChipComponent",
+            "id": "component-ChipComponent-dfd6ea1cc027f96343bec8331eb89cf7",
+            "file": "projects/rustic/src/lib/chip/chip.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-chip",
+            "styleUrls": [
+                "./chip.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./chip.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "showClose",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean"
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"primary\" | \"secondary\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-chip',\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.css'],\n})\nexport class ChipComponent {\n  @Input() type: 'primary' | 'secondary' = 'primary';\n  @Input() text: string = '';\n  @Input() showClose: boolean = false;\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.chip {\n  display: flex;\n  align-items: center;\n  padding: 0.25rem;\n  padding-right: 0.75rem;\n  padding-left: 0.75rem;\n  margin-right: 0.75rem;\n  margin-left: 0.75rem;\n  border-radius: 9999px;\n  width: fit-content;\n}\n\n.chip span {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n.chip--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.chip--secondary {\n  color: #374151;\n  background-color: #fbbf24;\n}\n\n.chip svg {\n  font-size: 0.75rem;\n  line-height: 1rem;\n  margin-left: 0.5rem;\n  cursor: pointer;\n}\n\n.chip--primary svg {\n  color: #fbbf24;\n}\n\n.chip--secondary svg {\n  color: #374151;\n}\n",
+                    "styleUrl": "./chip.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "templateData": "<span class=\"chip chip--{{ type }}\">\n  <span>{{ text }}</span>\n  <svg\n    *ngIf=\"showClose\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    stroke-width=\"2\"\n    viewBox=\"0 0 24 24\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n    height=\"1em\"\n    width=\"1em\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n  </svg>\n</span>\n"
         },
         {
-          "name": "Template",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "src/stories/Spinner.stories.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "Story<SpinnerComponent>",
-          "defaultValue": "(args: SpinnerComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      text: args.text,\n      textAlign: args.textAlign,\n    },\n  },\n  template: `<cis-spinner [type]=\"propInput.type\" [text]=\"propInput.text\" [textAlign]=\"propInput.textAlign\"></cis-spinner>`,\n})"
-        }
-      ],
-      "src/environments/environment.prod.ts": [
+            "name": "DividerComponent",
+            "id": "component-DividerComponent-565cfcd7e6439486114c6e89552cd191",
+            "file": "projects/rustic/src/lib/divider/divider.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-divider",
+            "styleUrls": [
+                "./divider.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./divider.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "type",
+                    "defaultValue": "'horizontal'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"horizontal\" | \"vertical\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-divider',\n  templateUrl: './divider.component.html',\n  styleUrls: ['./divider.component.css'],\n})\nexport class DividerComponent {\n  @Input() type: 'horizontal' | 'vertical' = 'horizontal';\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "::ng-deep * {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nhr {\n  border: 1px solid #e5e7eb;\n}\n\n.vertical {\n  width: 1px;\n  height: 1rem;\n  border: 1px solid #e5e7eb;\n  display: inline;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n",
+                    "styleUrl": "./divider.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "templateData": "<hr class=\"{{ type }}\" />\n"
+        },
         {
-          "name": "environment",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "src/environments/environment.prod.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "object",
-          "defaultValue": "{\n  production: true\n}"
-        }
-      ],
-      "src/environments/environment.ts": [
+            "name": "ListComponent",
+            "id": "component-ListComponent-f0adf254a4428a335518670e0f0fe090",
+            "file": "projects/rustic/src/lib/list/list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-list",
+            "styleUrls": [
+                "./list.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.css'],\n})\nexport class ListComponent {\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".list {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  align-items: stretch;\n  justify-content: flex-start;\n  list-style: none;\n  padding-inline-start: 0;\n}\n",
+                    "styleUrl": "./list.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "templateData": "<ul class=\"list\">\n  <ng-content></ng-content>\n</ul>\n"
+        },
         {
-          "name": "environment",
-          "ctype": "miscellaneous",
-          "subtype": "variable",
-          "file": "src/environments/environment.ts",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "type": "object",
-          "defaultValue": "{\n  production: false\n}"
-        }
-      ]
-    },
-    "groupedFunctions": {
-      "projects/rustic/schematics/ng-add/index.ts": [
+            "name": "ListItemComponent",
+            "id": "component-ListItemComponent-77219c4f5aee904ccd18bdc98be2b190",
+            "file": "projects/rustic/src/lib/list-item/list-item.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-list-item",
+            "styleUrls": [
+                "./list-item.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./list-item.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "hover",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "boolean"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-list-item',\n  templateUrl: './list-item.component.html',\n  styleUrls: ['./list-item.component.css'],\n})\nexport class ListItemComponent {\n  @Input() hover: boolean = true;\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".list__item {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  font-weight: bold;\n  color: #1f2937;\n  cursor: pointer;\n  width: calc(100% - 2rem);\n  list-style: none;\n  display: flex;\n  flex-direction: column;\n  border-bottom: 1px solid #f3f4f6;\n}\n\n.list__item--hover:hover {\n  background-color: #f3f4f6;\n}\n\n::ng-deep .list__item cis-subtitle {\n  font-size: 0.75em;\n  font-weight: normal;\n}\n",
+                    "styleUrl": "./list-item.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "templateData": "<li class=\"list__item {{ hover == true ? 'list__item--hover' : '' }}\">\n  <ng-content select=\"cis-title\"></ng-content>\n  <ng-content select=\"cis-subtitle\"></ng-content>\n</li>\n"
+        },
         {
-          "name": "ngAdd",
-          "file": "projects/rustic/schematics/ng-add/index.ts",
-          "ctype": "miscellaneous",
-          "subtype": "function",
-          "deprecated": false,
-          "deprecationMessage": "",
-          "description": "",
-          "args": [
+            "name": "RadioButtonComponent",
+            "id": "component-RadioButtonComponent-96c6eb755300f5d93673c0f98e4cc7c0",
+            "file": "projects/rustic/src/lib/radio-button/radio-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-radio-button",
+            "styleUrls": [
+                "./radio-button.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./radio-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-radio-button',\n  templateUrl: './radio-button.component.html',\n  styleUrls: ['./radio-button.component.css'],\n})\nexport class RadioButtonComponent {\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "::ng-deep [type=\"radio\"]:checked,\n::ng-deep [type=\"radio\"]:not(:checked) {\n  position: absolute;\n  opacity: 0;\n  /* left: -9999px; */\n}\n::ng-deep [type=\"radio\"]:checked + label,\n::ng-deep [type=\"radio\"]:not(:checked) + label {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  font-weight: bold;\n  position: relative;\n  padding-left: 28px;\n  cursor: pointer;\n  line-height: 20px;\n  display: inline-block;\n  color: #374151;\n  margin: 0.5rem;\n}\n::ng-deep [type=\"radio\"]:checked + label:before,\n::ng-deep [type=\"radio\"]:not(:checked) + label:before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 18px;\n  height: 18px;\n  border: 2px solid #fbbf24;\n  border-radius: 100%;\n}\n::ng-deep [type=\"radio\"]:checked + label:after,\n::ng-deep [type=\"radio\"]:not(:checked) + label:after {\n  content: \"\";\n  width: 12px;\n  height: 12px;\n  background: #374151;\n  position: absolute;\n  top: 5px;\n  left: 5px;\n  border-radius: 100%;\n  -webkit-transition: all 0.2s ease;\n  transition: all 0.2s ease;\n}\n::ng-deep [type=\"radio\"]:not(:checked) + label:after {\n  opacity: 0;\n  -webkit-transform: scale(0);\n  transform: scale(0);\n}\n::ng-deep [type=\"radio\"]:checked + label:after {\n  opacity: 1;\n  -webkit-transform: scale(1);\n  transform: scale(1);\n}\n",
+                    "styleUrl": "./radio-button.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "templateData": "<ng-content></ng-content>\n"
+        },
+        {
+            "name": "RusticComponent",
+            "id": "component-RusticComponent-f02ca8390ef51682c8bf969c8052aae1",
+            "file": "projects/rustic/src/lib/rustic.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-Rustic",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  rustic works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-Rustic',\n  template: `\n    <p>\n      rustic works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class RusticComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "SkeletonComponent",
+            "id": "component-SkeletonComponent-a1a2d7c1875841f3f6cb4c16ddc1b19b",
+            "file": "projects/rustic/src/lib/skeleton/skeleton.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-skeleton",
+            "styleUrls": [
+                "./skeleton.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./skeleton.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "lines",
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "number"
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"text\" | \"image\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "counter",
+                    "args": [
+                        {
+                            "name": "i",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        120
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "i",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-skeleton',\n  templateUrl: './skeleton.component.html',\n  styleUrls: ['./skeleton.component.css'],\n})\nexport class SkeletonComponent {\n  @Input() type: 'text' | 'image' = 'text';\n  @Input() lines = 1;\n  constructor() {}\n  private counter(i: number) {\n    return new Array(i);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".skeleton-box {\n  display: inline-block;\n  height: 1em;\n  width: 100%;\n  position: relative;\n  overflow: hidden;\n  background-color: #e5e7eb;\n  margin-bottom: 0.5rem;\n}\n.skeleton-box::after {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  transform: translateX(-100%);\n  background: linear-gradient(\n    90deg,\n    rgba(255, 255, 255, 0) 0,\n    rgba(255, 255, 255, 0.2) 20%,\n    rgba(255, 255, 255, 0.5) 60%,\n    rgba(255, 255, 255, 0) 100%\n  );\n  animation: shimmer 2s infinite;\n  content: \"\";\n}\n\n.skeleton-box--image {\n  height: 8em;\n}\n\n@keyframes shimmer {\n  100% {\n    transform: translateX(100%);\n  }\n}\n",
+                    "styleUrl": "./skeleton.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 10
+            },
+            "templateData": "<div class=\"skeleton-container\">\n  <span\n    class=\"skeleton-box skeleton-box--{{ type }}\"\n    *ngFor=\"let in of counter(lines)\"\n  ></span>\n</div>\n"
+        },
+        {
+            "name": "SpinnerComponent",
+            "id": "component-SpinnerComponent-99ec949669e11f00ab9e43556cd006ca",
+            "file": "projects/rustic/src/lib/spinner/spinner.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-spinner",
+            "styleUrls": [
+                "./spinner.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./spinner.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "text",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string"
+                },
+                {
+                    "name": "textAlign",
+                    "defaultValue": "'horizontal'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "\"horizontal\" | \"vertical\""
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"default\" | \"ellipsis\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-spinner',\n  templateUrl: './spinner.component.html',\n  styleUrls: ['./spinner.component.css'],\n})\nexport class SpinnerComponent {\n  @Input() type: 'default' | 'ellipsis' = 'default';\n  @Input() text: string = '';\n  @Input() textAlign: 'horizontal' | 'vertical' = 'horizontal';\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".spinner {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.spinner--horizontal {\n  flex-direction: row;\n}\n\n.spinner--vertical {\n  flex-direction: column;\n}\n\n.spinner__text {\n  margin: 0.75rem;\n  font-weight: bold;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.loader,\n.loader:after {\n  border-radius: 50%;\n  width: 3em;\n  height: 3em;\n}\n.loader {\n  font-size: 10px;\n  position: relative;\n  border-top: 0.8em solid rgba(0, 0, 0, 0.2);\n  border-right: 0.8em solid rgba(0, 0, 0, 0.2);\n  border-bottom: 0.8em solid rgba(0, 0, 0, 0.2);\n  border-left: 0.8em solid #374151;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1s infinite linear;\n  animation: load8 1s infinite linear;\n}\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.cis-ellipsis {\n  display: inline-block;\n  position: relative;\n  width: 80px;\n  height: 80px;\n}\n.cis-ellipsis div {\n  position: absolute;\n  top: 33px;\n  width: 13px;\n  height: 13px;\n  border-radius: 50%;\n  background: #374151;\n  animation-timing-function: cubic-bezier(0, 1, 1, 0);\n}\n.cis-ellipsis div:nth-child(1) {\n  left: 8px;\n  animation: cis-ellipsis1 0.6s infinite;\n}\n.cis-ellipsis div:nth-child(2) {\n  left: 8px;\n  animation: cis-ellipsis2 0.6s infinite;\n}\n.cis-ellipsis div:nth-child(3) {\n  left: 32px;\n  animation: cis-ellipsis2 0.6s infinite;\n}\n.cis-ellipsis div:nth-child(4) {\n  left: 56px;\n  animation: cis-ellipsis3 0.6s infinite;\n}\n@keyframes cis-ellipsis1 {\n  0% {\n    transform: scale(0);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n@keyframes cis-ellipsis3 {\n  0% {\n    transform: scale(1);\n  }\n  100% {\n    transform: scale(0);\n  }\n}\n@keyframes cis-ellipsis2 {\n  0% {\n    transform: translate(0, 0);\n  }\n  100% {\n    transform: translate(24px, 0);\n  }\n}\n",
+                    "styleUrl": "./spinner.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "templateData": "<div *ngIf=\"type == 'default'\" class=\"spinner spinner--{{ textAlign }}\">\n  <div class=\"loader\"></div>\n  <span *ngIf=\"text\" class=\"spinner__text\">{{ text }}</span>\n</div>\n\n<div *ngIf=\"type == 'ellipsis'\" class=\"spinner spinner--{{ textAlign }}\">\n  <div class=\"cis-ellipsis\">\n    <div></div>\n    <div></div>\n    <div></div>\n    <div></div>\n  </div>\n  <span *ngIf=\"text\" class=\"spinner__text\">{{ text }}</span>\n</div>\n"
+        },
+        {
+            "name": "SubtitleComponent",
+            "id": "component-SubtitleComponent-a88c090e404a06f11d1de379019df130",
+            "file": "projects/rustic/src/lib/subtitle/subtitle.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-subtitle",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-subtitle',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class SubtitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "TitleComponent",
+            "id": "component-TitleComponent-5f2c7dff776029ae0c88bc11032bc608",
+            "file": "projects/rustic/src/lib/title/title.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-title",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-title',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class TitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "ToggleComponent",
+            "id": "component-ToggleComponent-f1e59dff5283f936fdfc3d7c9e1957ca",
+            "file": "projects/rustic/src/lib/toggle/toggle.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-toggle",
+            "styleUrls": [
+                "./toggle.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./toggle.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-toggle',\n  templateUrl: './toggle.component.html',\n  styleUrls: ['./toggle.component.css'],\n})\nexport class ToggleComponent {\n  @Input() label: string = '';\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nlabel {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n\nlabel .switch__label {\n  font-weight: bold;\n  color: #374151;\n  margin-left: 0.5rem;\n}\n\n.switch {\n  position: relative;\n  display: inline-block;\n  width: 35px;\n  height: 13px;\n}\n\n::ng-deep .switch input {\n  opacity: 0;\n  width: 0;\n  height: 0;\n}\n\n.slider {\n  position: absolute;\n  cursor: pointer;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: #ccc;\n  -webkit-transition: 0.4s;\n  transition: 0.4s;\n}\n\n.slider:before {\n  position: absolute;\n  content: \"\";\n  height: 20px;\n  width: 20px;\n  left: -5px;\n  bottom: -3.5px;\n  background-color: #374151;\n  -webkit-transition: 0.4s;\n  transition: 0.4s;\n}\n\n::ng-deep input:checked + .slider {\n  background-color: #fbbf24;\n}\n\n::ng-deep input:checked + .slider:before {\n  -webkit-transform: translateX(24px);\n  -ms-transform: translateX(24px);\n  transform: translateX(24px);\n}\n\n/* Rounded sliders */\n.slider.round {\n  border-radius: 34px;\n}\n\n.slider.round:before {\n  border-radius: 50%;\n}\n",
+                    "styleUrl": "./toggle.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "templateData": "<label>\n  <div class=\"switch\">\n    <ng-content select=\"input\"></ng-content>\n    <span class=\"slider round\"></span>\n  </div>\n  <span class=\"switch__label\">{{ label }}</span>\n</label>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-ed657d56c28ab8e9e0f32ad46470dc94",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-3c1d721cfd0753406a1cfde101c59380",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "RusticModule",
+            "id": "module-RusticModule-727d3147d54d04c25a128d0d6f830c41",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/rustic/src/lib/rustic.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
+                        },
+                        {
+                            "name": "ChipComponent"
+                        },
+                        {
+                            "name": "DividerComponent"
+                        },
+                        {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "ListItemComponent"
+                        },
+                        {
+                            "name": "RadioButtonComponent"
+                        },
+                        {
+                            "name": "RusticComponent"
+                        },
+                        {
+                            "name": "SkeletonComponent"
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        },
+                        {
+                            "name": "SubtitleComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        },
+                        {
+                            "name": "ToggleComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CheckboxComponent"
+                        },
+                        {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "ListItemComponent"
+                        },
+                        {
+                            "name": "RadioButtonComponent"
+                        },
+                        {
+                            "name": "RusticComponent"
+                        },
+                        {
+                            "name": "SpinnerComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
             {
-              "name": "options",
-              "deprecated": false,
-              "deprecationMessage": ""
-            }
-          ],
-          "returnType": "Rule",
-          "jsdoctags": [
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
             {
-              "name": "options",
-              "deprecated": false,
-              "deprecationMessage": "",
-              "tagName": {
-                "text": "param"
-              }
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/rustic/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Spinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Ellipsis",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Spinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/rustic/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Spinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SpinnerComponent>",
+                "defaultValue": "(args: SpinnerComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      text: args.text,\n      textAlign: args.textAlign,\n    },\n  },\n  template: `<cis-spinner [type]=\"propInput.type\" [text]=\"propInput.text\" [textAlign]=\"propInput.textAlign\"></cis-spinner>`,\n})"
             }
-          ]
-        }
-      ]
+        ],
+        "functions": [
+            {
+                "name": "ngAdd",
+                "file": "projects/rustic/schematics/ng-add/index.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": [
+                    {
+                        "name": "options",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "returnType": "Rule",
+                "jsdoctags": [
+                    {
+                        "name": "options",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        ],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/rustic/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/rustic/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/rustic/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/stories/Spinner.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Spinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Ellipsis",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Spinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Spinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SpinnerComponent>",
+                    "defaultValue": "(args: SpinnerComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      text: args.text,\n      textAlign: args.textAlign,\n    },\n  },\n  template: `<cis-spinner [type]=\"propInput.type\" [text]=\"propInput.text\" [textAlign]=\"propInput.textAlign\"></cis-spinner>`,\n})"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {
+            "projects/rustic/schematics/ng-add/index.ts": [
+                {
+                    "name": "ngAdd",
+                    "file": "projects/rustic/schematics/ng-add/index.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": [
+                        {
+                            "name": "options",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "returnType": "Rule",
+                    "jsdoctags": [
+                        {
+                            "name": "options",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
     },
-    "groupedEnumerations": {},
-    "groupedTypeAliases": {}
-  },
-  "routes": {
-    "name": "<root>",
-    "kind": "module",
-    "className": "AppModule",
-    "children": [
-      {
-        "name": "routes",
-        "filename": "src/app/app-routing.module.ts",
-        "module": "AppRoutingModule",
-        "children": [],
-        "kind": "module"
-      }
-    ]
-  },
-  "coverage": {
-    "count": 0,
-    "status": "low",
-    "files": [
-      {
-        "filePath": "projects/rustic/schematics/ng-add/index.ts",
-        "type": "function",
-        "linktype": "miscellaneous",
-        "linksubtype": "function",
-        "name": "ngAdd",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/button/button.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "ButtonComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/4",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "CheckboxComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/3",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/chip/chip.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "ChipComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/6",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/divider/divider.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "DividerComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/3",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/list-item/list-item.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "ListItemComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/3",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/list/list.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "ListComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/2",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/radio-button/radio-button.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "RadioButtonComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/2",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/rustic.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "RusticComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/3",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/rustic.service.ts",
-        "type": "injectable",
-        "linktype": "injectable",
-        "name": "RusticService",
-        "coveragePercent": 0,
-        "coverageCount": "0/2",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/spinner/spinner.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "SpinnerComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/5",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/subtitle/subtitle.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "SubtitleComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/3",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/title/title.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "TitleComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/3",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/lib/toggle/toggle.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "ToggleComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/4",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/test.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "context",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "projects/rustic/src/test.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "require",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "src/app/app.component.ts",
-        "type": "component",
-        "linktype": "component",
-        "name": "AppComponent",
-        "coveragePercent": 0,
-        "coverageCount": "0/2",
-        "status": "low"
-      },
-      {
-        "filePath": "src/environments/environment.prod.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "environment",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "src/environments/environment.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "environment",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "src/stories/Spinner.stories.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "Default",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "src/stories/Spinner.stories.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "Ellipsis",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "src/stories/Spinner.stories.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "Template",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "src/test.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "context",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      },
-      {
-        "filePath": "src/test.ts",
-        "type": "variable",
-        "linktype": "miscellaneous",
-        "linksubtype": "variable",
-        "name": "require",
-        "coveragePercent": 0,
-        "coverageCount": "0/1",
-        "status": "low"
-      }
-    ]
-  }
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/rustic/schematics/ng-add/index.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "ngAdd",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CheckboxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/chip/chip.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ChipComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/divider/divider.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DividerComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/list-item/list-item.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListItemComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/list/list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/radio-button/radio-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RadioButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/rustic.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RusticComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/rustic.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "RusticService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/skeleton/skeleton.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SkeletonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/spinner/spinner.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SpinnerComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/subtitle/subtitle.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SubtitleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/title/title.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TitleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/toggle/toggle.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ToggleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Spinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Spinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Ellipsis",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Spinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
 }
