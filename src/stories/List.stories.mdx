@@ -3,13 +3,20 @@ import { CommonModule } from "@angular/common";
 import { moduleMetadata } from "@storybook/angular";
 import { ListItemComponent } from "projects/rustic/src/lib/list-item/list-item.component";
 import { ListComponent } from "projects/rustic/src/lib/list/list.component";
+import { TitleComponent } from "projects/rustic/src/lib/title/title.component";
+import { SubtitleComponent } from "projects/rustic/src/lib/subtitle/subtitle.component";
 
 <Meta
   title="Components/Lists"
   component={ListComponent}
   decorators={[
     moduleMetadata({
-      declarations: [ListItemComponent, ListComponent],
+      declarations: [
+        ListItemComponent,
+        ListComponent,
+        TitleComponent,
+        SubtitleComponent,
+      ],
       imports: [CommonModule],
     }),
   ]}
