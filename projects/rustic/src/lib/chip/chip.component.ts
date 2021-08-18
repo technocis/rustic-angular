@@ -1,15 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'cis-chip',
   templateUrl: './chip.component.html',
   styleUrls: ['./chip.component.css'],
 })
-export class ChipComponent implements OnInit {
+export class ChipComponent {
   @Input() type: 'primary' | 'secondary' = 'primary';
   @Input() text: string = '';
   @Input() showClose: boolean = false;
   constructor() {}
-
-  ngOnInit(): void {}
 }

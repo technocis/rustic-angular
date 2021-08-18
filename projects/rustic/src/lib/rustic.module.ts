@@ -11,6 +11,7 @@ import { ChipComponent } from './chip/chip.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { TitleComponent } from './title/title.component';
 import { SubtitleComponent } from './subtitle/subtitle.component';
+import { DividerComponent } from './divider/divider.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SubtitleComponent } from './subtitle/subtitle.component';
     ToggleComponent,
     TitleComponent,
     SubtitleComponent,
+    DividerComponent,
   ],
   imports: [CommonModule],
   exports: [

@@ -1,13 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'cis-toggle',
   templateUrl: './toggle.component.html',
   styleUrls: ['./toggle.component.css'],
 })
-export class ToggleComponent implements OnInit {
+export class ToggleComponent {
   @Input() label: string = '';
   constructor() {}
-
-  ngOnInit(): void {}
 }

@@ -203,6 +203,155 @@
             "templateData": "<label class=\"checkbox\">\n  <div class=\"checkbox__box\">\n    <ng-content select=\"input\"></ng-content>\n    <svg viewBox=\"0 0 20 20\">\n      <path d=\"M0 11l2-2 5 5L18 3l2 2L7 18z\"></path>\n    </svg>\n  </div>\n  <div class=\"checkbox__label\">{{ label }}</div>\n</label>\n"
         },
         {
+            "name": "ChipComponent",
+            "id": "component-ChipComponent-3a65b9142918244f99a1a59675ddac7f",
+            "file": "projects/rustic/src/lib/chip/chip.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-chip",
+            "styleUrls": [
+                "./chip.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./chip.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "showClose",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean"
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"primary\" | \"secondary\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-chip',\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.css'],\n})\nexport class ChipComponent implements OnInit {\n  @Input() type: 'primary' | 'secondary' = 'primary';\n  @Input() text: string = '';\n  @Input() showClose: boolean = false;\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.chip {\n  display: flex;\n  align-items: center;\n  padding: 0.25rem;\n  padding-right: 0.75rem;\n  padding-left: 0.75rem;\n  margin-right: 0.75rem;\n  margin-left: 0.75rem;\n  border-radius: 9999px;\n  width: fit-content;\n}\n\n.chip span {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n.chip--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.chip--secondary {\n  color: #374151;\n  background-color: #fbbf24;\n}\n\n.chip svg {\n  font-size: 0.75rem;\n  line-height: 1rem;\n  margin-left: 0.5rem;\n  cursor: pointer;\n}\n\n.chip--primary svg {\n  color: #fbbf24;\n}\n\n.chip--secondary svg {\n  color: #374151;\n}\n",
+                    "styleUrl": "./chip.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<span class=\"chip chip--{{ type }}\">\n  <span>{{ text }}</span>\n  <svg\n    *ngIf=\"showClose\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    stroke-width=\"2\"\n    viewBox=\"0 0 24 24\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n    height=\"1em\"\n    width=\"1em\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n  </svg>\n</span>\n"
+        },
+        {
+            "name": "DividerComponent",
+            "id": "component-DividerComponent-3100bd51186d3def92a27a5c142deb3a",
+            "file": "projects/rustic/src/lib/divider/divider.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-divider",
+            "styleUrls": [
+                "./divider.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./divider.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-divider',\n  templateUrl: './divider.component.html',\n  styleUrls: ['./divider.component.css']\n})\nexport class DividerComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./divider.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<hr />\n"
+        },
+        {
             "name": "ListComponent",
             "id": "component-ListComponent-f0adf254a4428a335518670e0f0fe090",
             "file": "projects/rustic/src/lib/list/list.component.ts",
@@ -480,6 +629,183 @@
                 "line": 11
             },
             "templateData": "<div *ngIf=\"type == 'default'\" class=\"spinner spinner--{{ textAlign }}\">\n  <div class=\"loader\"></div>\n  <span *ngIf=\"text\" class=\"spinner__text\">{{ text }}</span>\n</div>\n\n<div *ngIf=\"type == 'ellipsis'\" class=\"spinner spinner--{{ textAlign }}\">\n  <div class=\"cis-ellipsis\">\n    <div></div>\n    <div></div>\n    <div></div>\n    <div></div>\n  </div>\n  <span *ngIf=\"text\" class=\"spinner__text\">{{ text }}</span>\n</div>\n"
+        },
+        {
+            "name": "SubtitleComponent",
+            "id": "component-SubtitleComponent-a88c090e404a06f11d1de379019df130",
+            "file": "projects/rustic/src/lib/subtitle/subtitle.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-subtitle",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-subtitle',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class SubtitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "TitleComponent",
+            "id": "component-TitleComponent-5f2c7dff776029ae0c88bc11032bc608",
+            "file": "projects/rustic/src/lib/title/title.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-title",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-title',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class TitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
+            "name": "ToggleComponent",
+            "id": "component-ToggleComponent-3f6ab767773591064d894ea3ede3d50d",
+            "file": "projects/rustic/src/lib/toggle/toggle.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-toggle",
+            "styleUrls": [
+                "./toggle.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./toggle.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-toggle',\n  templateUrl: './toggle.component.html',\n  styleUrls: ['./toggle.component.css'],\n})\nexport class ToggleComponent implements OnInit {\n  @Input() label: string = '';\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nlabel {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n\nlabel .switch__label {\n  font-weight: bold;\n  color: #374151;\n  margin-left: 0.5rem;\n}\n\n.switch {\n  position: relative;\n  display: inline-block;\n  width: 35px;\n  height: 13px;\n}\n\n::ng-deep .switch input {\n  opacity: 0;\n  width: 0;\n  height: 0;\n}\n\n.slider {\n  position: absolute;\n  cursor: pointer;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: #ccc;\n  -webkit-transition: 0.4s;\n  transition: 0.4s;\n}\n\n.slider:before {\n  position: absolute;\n  content: \"\";\n  height: 20px;\n  width: 20px;\n  left: -5px;\n  bottom: -3.5px;\n  background-color: #374151;\n  -webkit-transition: 0.4s;\n  transition: 0.4s;\n}\n\n::ng-deep input:checked + .slider {\n  background-color: #fbbf24;\n}\n\n::ng-deep input:checked + .slider:before {\n  -webkit-transform: translateX(24px);\n  -ms-transform: translateX(24px);\n  transform: translateX(24px);\n}\n\n/* Rounded sliders */\n.slider.round {\n  border-radius: 34px;\n}\n\n.slider.round:before {\n  border-radius: 50%;\n}\n",
+                    "styleUrl": "./toggle.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<label>\n  <div class=\"switch\">\n    <ng-content select=\"input\"></ng-content>\n    <span class=\"slider round\"></span>\n  </div>\n  <span class=\"switch__label\">{{ label }}</span>\n</label>\n"
         }
     ],
     "modules": [
@@ -569,13 +895,13 @@
         },
         {
             "name": "RusticModule",
-            "id": "module-RusticModule-65594e1051358293536d2f591193e332",
+            "id": "module-RusticModule-a9c3c7ee7e452da2c94a7c9ece79501f",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/rustic/src/lib/rustic.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -591,6 +917,12 @@
                             "name": "CheckboxComponent"
                         },
                         {
+                            "name": "ChipComponent"
+                        },
+                        {
+                            "name": "DividerComponent"
+                        },
+                        {
                             "name": "ListComponent"
                         },
                         {
@@ -604,6 +936,15 @@
                         },
                         {
                             "name": "SpinnerComponent"
+                        },
+                        {
+                            "name": "SubtitleComponent"
+                        },
+                        {
+                            "name": "TitleComponent"
+                        },
+                        {
+                            "name": "ToggleComponent"
                         }
                     ]
                 },
@@ -951,6 +1292,24 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/rustic/src/lib/chip/chip.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ChipComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/divider/divider.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DividerComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/rustic/src/lib/list-item/list-item.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1002,6 +1361,33 @@
                 "name": "SpinnerComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/subtitle/subtitle.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SubtitleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/title/title.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TitleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/toggle/toggle.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ToggleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
