@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'cis-title',
+  selector: 'cis-prefix',
   template: '<ng-content></ng-content>',
   styles: [],
 })
-export class TitleComponent {
+export class PrefixComponent {
   constructor() {}
 }
