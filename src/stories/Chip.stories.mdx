@@ -27,6 +27,12 @@ export const TemplateChip = (args) => ({
   template: `<cis-chip [type]="propInput.type" [text]="propInput.text" [showClose]="propInput.showClose"></cis-chip>`,
 });
 
+# Chips
+
+---
+
+### Primary Chip
+
 <Canvas>
   <Story
     name="Primary"
@@ -40,9 +46,17 @@ export const TemplateChip = (args) => ({
   </Story>
 </Canvas>
 
+#### Code
+
 ```html
 <cis-chip type="primary" text="NPM"></cis-chip>
 ```
+
+<ArgsTable story="Primary" />
+
+---
+
+### Secondary Chip
 
 <Canvas>
   <Story
@@ -56,5 +70,3 @@ export const TemplateChip = (args) => ({
     {TemplateChip.bind({})}
   </Story>
 </Canvas>
-
-<ArgsTable of={ChipComponent} />

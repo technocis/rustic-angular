@@ -1,0 +1,9 @@
+<div
+  class="progressbar {{ indefinite && 'progressbar--indefinite' }} {{
+    rounded && 'progressbar--rounded'
+  }} progressbar--{{ size }} progressbar--{{ color }}"
+>
+  <span style="width: {{ indefinite ? 100 : value }}%"
+    ><span *ngIf="indefinite"></span
+  ></span>
+</div>

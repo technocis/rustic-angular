@@ -1,0 +1,131 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { ProgressbarComponent } from "projects/rustic/src/lib/progressbar/progressbar.component";
+
+<Meta
+  title="Components/Progress Bar"
+  component={ProgressbarComponent}
+  argTypes={{
+    indefinite: {
+      options: [true, false],
+      control: { type: "radio" },
+    },
+    rounded: {
+      options: [true, false],
+      control: { type: "radio" },
+    },
+    color: {
+      options: ["primary", "secondary", "success", "warning"],
+      control: { type: "radio" },
+    },
+    size: {
+      options: ["small", "default", "large"],
+      control: { type: "radio" },
+    },
+    value: {
+      control: { type: "number" },
+    },
+  }}
+/>
+
+# Progress Bar
+
+---
+
+### Definite Progress Bar
+
+export const Template = (args) => ({
+  props: {
+    propInput: {
+      indefinite: args.indefinite,
+      rounded: args.rounded,
+      value: args.value,
+      color: args.color,
+      size: args.size,
+    },
+  },
+  template: `<cis-progressbar
+    [indefinite]="propInput.indefinite"
+    [rounded]="propInput.rounded"
+    [value]="propInput.value"
+    [color]="propInput.color"
+    [size]="propInput.size"
+  ></cis-progressbar>`,
+});
+
+export const ColorsTemplate = (args) => ({
+  props: {
+    propInput: {
+      indefinite: args.indefinite,
+      rounded: args.rounded,
+      value: args.value,
+      color: args.color,
+      size: args.size,
+    },
+  },
+  template: `
+  <cis-progressbar
+    [indefinite]="propInput.indefinite"
+    [rounded]="propInput.rounded"
+    [value]="propInput.value"
+    color="primary"
+    size="small"
+  ></cis-progressbar>
+    <cis-progressbar
+    [indefinite]="propInput.indefinite"
+    [rounded]="propInput.rounded"
+    [value]="propInput.value"
+    color="secondary"
+    size="default"
+  ></cis-progressbar>
+    <cis-progressbar
+    [indefinite]="propInput.indefinite"
+    [rounded]="propInput.rounded"
+    [value]="propInput.value"
+    color="success"
+    size="large"
+  ></cis-progressbar>
+    <cis-progressbar
+    [indefinite]="propInput.indefinite"
+    [rounded]="propInput.rounded"
+    [value]="propInput.value"
+    color="warning"
+    [size]="propInput.size"
+  ></cis-progressbar>
+  `,
+});
+
+<Canvas>
+  <Story name="Definite Progress Bar" args={{ value: 40 }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-progressbar value="40"></cis-progressbar>
+```
+
+<ArgsTable story="Definite Progress Bar" />
+
+---
+
+### Indefinite Progress Bar
+
+<Canvas>
+  <Story name="Indefinite Progress Bar" args={{ indefinite: true }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-progressbar indefinite="true"></cis-progressbar>
+```
+
+### Colors, Shapes and Sizes
+
+Play with the variations in the canvas
+
+<Canvas>
+  <Story name="Variants" args={{ indefinite: true, rounded: true }}>
+    {ColorsTemplate.bind({})}
+  </Story>
+</Canvas>

@@ -13,6 +13,10 @@ import { TitleComponent } from './title/title.component';
 import { SubtitleComponent } from './subtitle/subtitle.component';
 import { DividerComponent } from './divider/divider.component';
 import { SkeletonComponent } from './skeleton/skeleton.component';
+import { ProgressbarComponent } from './progressbar/progressbar.component';
+import { PrefixComponent } from './prefix/prefix.component';
+import { SuffixComponent } from './suffix/suffix.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import { SkeletonComponent } from './skeleton/skeleton.component';
     SubtitleComponent,
     DividerComponent,
     SkeletonComponent,
+    ProgressbarComponent,
+    PrefixComponent,
+    SuffixComponent,
+    InputComponent,
   ],
   imports: [CommonModule],
   exports: [

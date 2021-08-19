@@ -5,7 +5,6 @@
 }
 
 .button {
-  margin: 0.5rem;
   padding: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -46,4 +45,10 @@
 }
 .button--large {
   font-size: 125%;
+}
+
+::ng-deep .button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
