@@ -204,7 +204,7 @@
         },
         {
             "name": "ChipComponent",
-            "id": "component-ChipComponent-3a65b9142918244f99a1a59675ddac7f",
+            "id": "component-ChipComponent-dfd6ea1cc027f96343bec8331eb89cf7",
             "file": "projects/rustic/src/lib/chip/chip.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -248,18 +248,7 @@
             ],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 14,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -267,7 +256,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-chip',\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.css'],\n})\nexport class ChipComponent implements OnInit {\n  @Input() type: 'primary' | 'secondary' = 'primary';\n  @Input() text: string = '';\n  @Input() showClose: boolean = false;\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-chip',\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.css'],\n})\nexport class ChipComponent {\n  @Input() type: 'primary' | 'secondary' = 'primary';\n  @Input() text: string = '';\n  @Input() showClose: boolean = false;\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -284,14 +273,11 @@
                 "args": [],
                 "line": 11
             },
-            "implements": [
-                "OnInit"
-            ],
             "templateData": "<span class=\"chip chip--{{ type }}\">\n  <span>{{ text }}</span>\n  <svg\n    *ngIf=\"showClose\"\n    stroke=\"currentColor\"\n    fill=\"none\"\n    stroke-width=\"2\"\n    viewBox=\"0 0 24 24\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n    height=\"1em\"\n    width=\"1em\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n  >\n    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n  </svg>\n</span>\n"
         },
         {
             "name": "DividerComponent",
-            "id": "component-DividerComponent-3100bd51186d3def92a27a5c142deb3a",
+            "id": "component-DividerComponent-565cfcd7e6439486114c6e89552cd191",
             "file": "projects/rustic/src/lib/divider/divider.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -307,21 +293,19 @@
                 "./divider.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
+            "inputsClass": [
                 {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12,
+                    "name": "type",
+                    "defaultValue": "'horizontal'",
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"horizontal\" | \"vertical\""
                 }
             ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -329,11 +313,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-divider',\n  templateUrl: './divider.component.html',\n  styleUrls: ['./divider.component.css']\n})\nexport class DividerComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-divider',\n  templateUrl: './divider.component.html',\n  styleUrls: ['./divider.component.css'],\n})\nexport class DividerComponent {\n  @Input() type: 'horizontal' | 'vertical' = 'horizontal';\n\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": "::ng-deep * {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nhr {\n  border: 1px solid #e5e7eb;\n}\n\n.vertical {\n  width: 1px;\n  height: 1rem;\n  border: 1px solid #e5e7eb;\n  display: inline;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n",
                     "styleUrl": "./divider.component.css"
                 }
             ],
@@ -344,12 +328,9 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 8
+                "line": 9
             },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<hr />\n"
+            "templateData": "<hr class=\"{{ type }}\" />\n"
         },
         {
             "name": "ListComponent",
@@ -558,6 +539,103 @@
             ]
         },
         {
+            "name": "SkeletonComponent",
+            "id": "component-SkeletonComponent-a1a2d7c1875841f3f6cb4c16ddc1b19b",
+            "file": "projects/rustic/src/lib/skeleton/skeleton.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-skeleton",
+            "styleUrls": [
+                "./skeleton.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./skeleton.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "lines",
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "number"
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"text\" | \"image\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "counter",
+                    "args": [
+                        {
+                            "name": "i",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        120
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "i",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-skeleton',\n  templateUrl: './skeleton.component.html',\n  styleUrls: ['./skeleton.component.css'],\n})\nexport class SkeletonComponent {\n  @Input() type: 'text' | 'image' = 'text';\n  @Input() lines = 1;\n  constructor() {}\n  private counter(i: number) {\n    return new Array(i);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".skeleton-box {\n  display: inline-block;\n  height: 1em;\n  width: 100%;\n  position: relative;\n  overflow: hidden;\n  background-color: #e5e7eb;\n  margin-bottom: 0.5rem;\n}\n.skeleton-box::after {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  transform: translateX(-100%);\n  background: linear-gradient(\n    90deg,\n    rgba(255, 255, 255, 0) 0,\n    rgba(255, 255, 255, 0.2) 20%,\n    rgba(255, 255, 255, 0.5) 60%,\n    rgba(255, 255, 255, 0) 100%\n  );\n  animation: shimmer 2s infinite;\n  content: \"\";\n}\n\n.skeleton-box--image {\n  height: 8em;\n}\n\n@keyframes shimmer {\n  100% {\n    transform: translateX(100%);\n  }\n}\n",
+                    "styleUrl": "./skeleton.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 10
+            },
+            "templateData": "<div class=\"skeleton-container\">\n  <span\n    class=\"skeleton-box skeleton-box--{{ type }}\"\n    *ngFor=\"let in of counter(lines)\"\n  ></span>\n</div>\n"
+        },
+        {
             "name": "SpinnerComponent",
             "id": "component-SpinnerComponent-99ec949669e11f00ab9e43556cd006ca",
             "file": "projects/rustic/src/lib/spinner/spinner.component.ts",
@@ -738,7 +816,7 @@
         },
         {
             "name": "ToggleComponent",
-            "id": "component-ToggleComponent-3f6ab767773591064d894ea3ede3d50d",
+            "id": "component-ToggleComponent-f1e59dff5283f936fdfc3d7c9e1957ca",
             "file": "projects/rustic/src/lib/toggle/toggle.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -766,18 +844,7 @@
             ],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -785,7 +852,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-toggle',\n  templateUrl: './toggle.component.html',\n  styleUrls: ['./toggle.component.css'],\n})\nexport class ToggleComponent implements OnInit {\n  @Input() label: string = '';\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-toggle',\n  templateUrl: './toggle.component.html',\n  styleUrls: ['./toggle.component.css'],\n})\nexport class ToggleComponent {\n  @Input() label: string = '';\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -802,9 +869,6 @@
                 "args": [],
                 "line": 9
             },
-            "implements": [
-                "OnInit"
-            ],
             "templateData": "<label>\n  <div class=\"switch\">\n    <ng-content select=\"input\"></ng-content>\n    <span class=\"slider round\"></span>\n  </div>\n  <span class=\"switch__label\">{{ label }}</span>\n</label>\n"
         }
     ],
@@ -895,13 +959,13 @@
         },
         {
             "name": "RusticModule",
-            "id": "module-RusticModule-a9c3c7ee7e452da2c94a7c9ece79501f",
+            "id": "module-RusticModule-727d3147d54d04c25a128d0d6f830c41",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/rustic/src/lib/rustic.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -933,6 +997,9 @@
                         },
                         {
                             "name": "RusticComponent"
+                        },
+                        {
+                            "name": "SkeletonComponent"
                         },
                         {
                             "name": "SpinnerComponent"
@@ -1297,7 +1364,7 @@
                 "linktype": "component",
                 "name": "ChipComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
@@ -1355,6 +1422,15 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/rustic/src/lib/skeleton/skeleton.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SkeletonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/rustic/src/lib/spinner/spinner.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1387,7 +1463,7 @@
                 "linktype": "component",
                 "name": "ToggleComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {

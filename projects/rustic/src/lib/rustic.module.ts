@@ -13,6 +13,7 @@ import { TitleComponent } from './title/title.component';
 import { SubtitleComponent } from './subtitle/subtitle.component';
 import { DividerComponent } from './divider/divider.component';
 import { SkeletonComponent } from './skeleton/skeleton.component';
+import { ProgressbarComponent } from './progressbar/progressbar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SkeletonComponent } from './skeleton/skeleton.component';
     SubtitleComponent,
     DividerComponent,
     SkeletonComponent,
+    ProgressbarComponent,
   ],
   imports: [CommonModule],
   exports: [

@@ -47,3 +47,9 @@
 .button--large {
   font-size: 125%;
 }
+
+::ng-deep .button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
