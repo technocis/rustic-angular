@@ -1,0 +1,74 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { CommonModule } from "@angular/common";
+import { moduleMetadata } from "@storybook/angular";
+import { CardComponent } from "../../projects/rustic/src/lib/card/card.component";
+import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.component";
+
+<Meta
+  title="Components/Card"
+  component={CardComponent}
+  decorators={[
+    moduleMetadata({
+      declarations: [CardComponent, ButtonComponent],
+      imports: [CommonModule],
+    }),
+  ]}
+  argTypes={{
+    title: {
+      control: {
+        type: "text",
+      },
+    },
+    subtitle: {
+      control: {
+        type: "text",
+      },
+    },
+  }}
+/>
+
+# Card
+
+export const Template = (args) => ({
+  component: CardComponent,
+  props: {
+    propInput: {
+      title: args.title,
+      subtitle: args.subtitle,
+    },
+  },
+  template: `<div style="width:30%;"><cis-card [title]="propInput.title" [subtitle]="propInput.subtitle" [actions]="cardActions">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab accusantium rerum? Veritatis qui dicta exercitationem repudiandae nemo. Consequuntur numquam sit libero vitae at corrupti delectus similique adipisci aperiam nostrum!
+  </cis-card></div> <ng-template #cardActions>
+    <cis-button>Like</cis-button>&nbsp;
+    <cis-button type="secondary">Share</cis-button>
+  </ng-template>`,
+});
+
+<Canvas>
+  <Story
+    name="Card"
+    args={{ title: "Hachiko", subtitle: "Type: Dog | Breed: Shiba Inu" }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-card
+  [title]="propInput.title"
+  [subtitle]="propInput.subtitle"
+  [actions]="cardActions"
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab accusantium
+  rerum? Veritatis qui dicta exercitationem repudiandae nemo. Consequuntur
+  numquam sit libero vitae at corrupti delectus similique adipisci aperiam
+  nostrum!
+</cis-card>
+<ng-template #cardActions>
+  <cis-button>Like</cis-button>&nbsp;
+  <cis-button type="secondary">Share</cis-button>
+</ng-template>
+```
+
+<ArgsTable story="Card" />

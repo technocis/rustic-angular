@@ -14,15 +14,13 @@ This is a component library for Angular 11.2 and up built by TechnoCIS
 
 Create and Angular App and run `ng add @technocis/rustic-angular`
 
-**USE SCSS STYLING ONLY**
-
 ```bash
 ng new app-name
 cd app-name
 ng add @technocis/rustic-angular
 ```
 
-This will install the library and configure tailwindcss
+This will install the library.
 
 ## Documentation
 
@@ -30,7 +28,7 @@ The documentation is available at https://technocis.github.io/rustic-angular
 
 ## Development
 
-Clone/Fork this repository and run `npm install`. The library folder is available at `./projects/rustic`. The Documentation and Debug Angular Application is at the root of the folder. Run `ng serve` for the dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source library or application files.
+Clone/Fork this repository and run `npm install`. The library folder is available at `./projects/rustic`. Run `npm run storybook` for the storybook dev server. Navigate to `http://localhost:6006/`. The app will automatically reload if you change any of the source library or application files.
 
 ## Scaffolding
 
@@ -40,7 +38,7 @@ Run `ng generate component component-name` to generate a new component in the de
 
 ## Build
 
-Run `ng build Rustic --prod` to build the production version of the library . Run just `ng build` to build the angular app project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build:lib` to build the production version of the library . Run just `ng build` to build the angular app project. The build artifacts will be stored in the `dist/` directory.
 
 ## NPM
 

@@ -1,0 +1,56 @@
+.select-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+}
+
+::ng-deep .select-container select:focus {
+  outline: none;
+}
+
+::ng-deep .select-container select {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: #e5e7eb;
+  color: #374151;
+  font-weight: bold;
+  border: none;
+  font-size: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+::ng-deep cis-select .select-container button,
+::ng-deep .select-container div,
+::ng-deep .select-container span,
+::ng-deep .select-container i {
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #374151;
+  background-color: #fbbf24;
+  font-size: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+::ng-deep .select-container i {
+  height: calc(100% - 1rem);
+}
+
+::ng-deep .select-container--secondary select {
+  background-color: #374151;
+  color: #fbbf24;
+}
+
+::ng-deep .select-container select option:before {
+  padding: 0.5rem;
+}

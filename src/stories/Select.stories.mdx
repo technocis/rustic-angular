@@ -1,0 +1,218 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { CommonModule } from "@angular/common";
+import { moduleMetadata } from "@storybook/angular";
+import { SelectComponent } from "../../projects/rustic/src/lib/select/select.component";
+import { PrefixComponent } from "../../projects/rustic/src/lib/prefix/prefix.component";
+import { SuffixComponent } from "../../projects/rustic/src/lib/suffix/suffix.component";
+import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.component";
+
+<Meta
+  title="Components/Select"
+  component={SelectComponent}
+  decorators={[
+    moduleMetadata({
+      declarations: [
+        SelectComponent,
+        PrefixComponent,
+        SuffixComponent,
+        ButtonComponent,
+      ],
+      imports: [CommonModule],
+    }),
+  ]}
+  argTypes={{
+    color: {
+      options: ["primary", "secondary"],
+      control: { type: "radio" },
+    },
+  }}
+/>
+
+export const TemplateSelect = (args) => ({
+  component: SelectComponent,
+  props: {
+    propSelect: {
+      color: args.color,
+    },
+  },
+  template: `<div style="width: 30%;"><cis-select [color]="propSelect.color"><select placeholder="Choose Your City">
+    <option value=0>Chennai</option>
+    <option value=1>Vellore</option>
+    <option value=2>Bangalore</option>
+  </select></cis-select></div>`,
+});
+
+export const PrefixTemplateSelect = (args) => ({
+  component: SelectComponent,
+  props: {
+    propSelect: {
+      color: args.color,
+    },
+  },
+  template: `<div style="width: 30%;">
+  <cis-select [color]="propSelect.color">
+    <cis-prefix>
+      <i>
+        <svg
+          stroke="currentColor"
+          fill="none"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+      </i>
+    </cis-prefix>
+    <select placeholder="Choose Your City">
+      <option value=0>Chennai</option>
+      <option value=1>Vellore</option>
+      <option value=2>Bangalore</option>
+    </select>
+  </cis-select>
+  </div>`,
+});
+
+export const SuffixTemplateSelect = (args) => ({
+  component: SelectComponent,
+  props: {
+    propSelect: {
+      color: args.color,
+    },
+  },
+  template: `
+  <div style="width: 30%;">
+  <cis-select [color]="propSelect.color">
+    <select placeholder="Choose Your City">
+      <option value=0>Chennai</option>
+      <option value=1>Vellore</option>
+      <option value=2>Bangalore</option>
+    </select>
+    <cis-suffix>
+      <button type="submit">Search</button>
+    </cis-suffix>
+  </cis-select>
+  </div>`,
+});
+
+# Select Box
+
+---
+
+### Primary Select
+
+<Canvas>
+  <Story
+    name="Primary"
+    args={{
+      color: "primary",
+    }}
+  >
+    {TemplateSelect.bind({})}
+  </Story>
+</Canvas>
+
+#### Code
+
+```html
+<cis-select [color]="propSelect.color">
+  <select placeholder="Choose Your City">
+    <option value="0">Chennai</option>
+    <option value="1">Vellore</option>
+    <option value="2">Bangalore</option>
+  </select>
+</cis-select>
+```
+
+<ArgsTable story="Primary" />
+
+---
+
+### Secondary Select
+
+<Canvas>
+  <Story
+    name="Secondary"
+    args={{
+      color: "secondary",
+    }}
+  >
+    {TemplateSelect.bind({})}
+  </Story>
+</Canvas>
+
+### Select Prefix
+
+<Canvas>
+  <Story
+    name="With Prefix"
+    args={{
+      color: "primary",
+    }}
+  >
+    {PrefixTemplateSelect.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-select [color]="propSelect.color">
+  <cis-prefix>
+    <i>
+      <svg
+        stroke="currentColor"
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </i>
+  </cis-prefix>
+  <select placeholder="Choose Your City">
+    <option value="0">Chennai</option>
+    <option value="1">Vellore</option>
+    <option value="2">Bangalore</option>
+  </select>
+</cis-select>
+```
+
+---
+
+### Select Suffix
+
+<Canvas>
+  <Story
+    name="With Suffix"
+    args={{
+      color: "secondary",
+    }}
+  >
+    {SuffixTemplateSelect.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-select [color]="propSelect.color">
+  <select placeholder="Choose Your City">
+    <option value="0">Chennai</option>
+    <option value="1">Vellore</option>
+    <option value="2">Bangalore</option>
+  </select>
+  <cis-suffix>
+    <button type="submit">Search</button>
+  </cis-suffix>
+</cis-select>
+```
+
+---

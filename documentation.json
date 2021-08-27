@@ -724,6 +724,68 @@
             ]
         },
         {
+            "name": "SelectComponent",
+            "id": "component-SelectComponent-7a096ba96bc24aec42a44917d750fea6",
+            "file": "projects/rustic/src/lib/select/select.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-select",
+            "styleUrls": [
+                "./select.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./select.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-select',\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.css']\n})\nexport class SelectComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./select.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>select works!</p>\n"
+        },
+        {
             "name": "SkeletonComponent",
             "id": "component-SkeletonComponent-a1a2d7c1875841f3f6cb4c16ddc1b19b",
             "file": "projects/rustic/src/lib/skeleton/skeleton.component.ts",
@@ -1155,13 +1217,21 @@
         },
         {
             "name": "RusticModule",
+<<<<<<< HEAD
             "id": "module-RusticModule-0e37e77b5b36c04dd47f0cace0bd36a9",
+=======
+            "id": "module-RusticModule-ffa99b299ea79b0e9d5ed0008ac5a9f8",
+>>>>>>> dev
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/rustic/src/lib/rustic.module.ts",
             "methods": [],
+<<<<<<< HEAD
             "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\nimport { ProgressbarComponent } from './progressbar/progressbar.component';\nimport { PrefixComponent } from './prefix/prefix.component';\nimport { SuffixComponent } from './suffix/suffix.component';\nimport { InputComponent } from './input/input.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n    ProgressbarComponent,\n    PrefixComponent,\n    SuffixComponent,\n    InputComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
+=======
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\nimport { ProgressbarComponent } from './progressbar/progressbar.component';\nimport { PrefixComponent } from './prefix/prefix.component';\nimport { SuffixComponent } from './suffix/suffix.component';\nimport { InputComponent } from './input/input.component';\nimport { SelectComponent } from './select/select.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n    ProgressbarComponent,\n    PrefixComponent,\n    SuffixComponent,\n    InputComponent,\n    SelectComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
+>>>>>>> dev
             "children": [
                 {
                     "type": "providers",
@@ -1202,6 +1272,9 @@
                         },
                         {
                             "name": "RusticComponent"
+                        },
+                        {
+                            "name": "SelectComponent"
                         },
                         {
                             "name": "SkeletonComponent"
@@ -1654,6 +1727,15 @@
                 "name": "RusticService",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/select/select.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SelectComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
