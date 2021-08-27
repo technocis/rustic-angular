@@ -146,6 +146,78 @@
             "templateData": "<button\n  class=\"button {{\n    type == 'primary'\n      ? 'button--primary'\n      : type == 'secondary'\n      ? 'button--secondary'\n      : type == 'warning'\n      ? 'button--warning'\n      : ''\n  }} {{\n    size == 'small' ? 'button--small' : size == 'large' ? 'button--large' : ''\n  }}\"\n>\n  <ng-content></ng-content>\n</button>\n"
         },
         {
+            "name": "CardComponent",
+            "id": "component-CardComponent-d9708c50da9b9ccf492195817cbb6a82",
+            "file": "projects/rustic/src/lib/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-card",
+            "styleUrls": [
+                "./card.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "actions",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "TemplateRef<any>"
+                },
+                {
+                    "name": "subtitle",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, TemplateRef } from '@angular/core';\n\n@Component({\n  selector: 'cis-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.css'],\n})\nexport class CardComponent {\n  @Input() title: string = '';\n  @Input() subtitle: string = '';\n  @Input() actions: TemplateRef<any>;\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.card-container {\n  padding: 1rem;\n  background-color: #f9fafb;\n}\n\n.card-container__header {\n  border-bottom: 1px solid #d1d5db;\n  padding-bottom: 1rem;\n  margin-bottom: 1rem;\n}\n\n.card-container__actions {\n  border-top: 1px solid #d1d5db;\n  padding-top: 1rem;\n  margin-top: 1rem;\n}\n\n.card-container__header__title {\n  font-weight: bold;\n  font-size: 1.5rem;\n}\n\n.card-container__header__subtitle {\n  font-weight: bold;\n}\n",
+                    "styleUrl": "./card.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "templateData": "<div class=\"card-container\">\n  <div class=\"card-container__header\" *ngIf=\"title || subtitle\">\n    <div class=\"card-container__header__title\" *ngIf=\"title\">{{ title }}</div>\n    <div class=\"card-container__header__subtitle\" *ngIf=\"subtitle\">\n      {{ subtitle }}\n    </div>\n  </div>\n  <div class=\"card-container__body\">\n    <ng-content></ng-content>\n  </div>\n  <div class=\"card-container__border\" *ngIf=\"actions\"></div>\n  <div *ngIf=\"actions\" class=\"card-container__actions\">\n    <ng-container [ngTemplateOutlet]=\"actions\"></ng-container>\n  </div>\n</div>\n"
+        },
+        {
             "name": "CheckboxComponent",
             "id": "component-CheckboxComponent-e1cf60734fdd13f3010063241bbd52d4",
             "file": "projects/rustic/src/lib/checkbox/checkbox.component.ts",
@@ -725,7 +797,7 @@
         },
         {
             "name": "SelectComponent",
-            "id": "component-SelectComponent-7a096ba96bc24aec42a44917d750fea6",
+            "id": "component-SelectComponent-c1324a0261bc33bd38d86b6a6425e9ca",
             "file": "projects/rustic/src/lib/select/select.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -741,21 +813,19 @@
                 "./select.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
+            "inputsClass": [
                 {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12,
+                    "name": "color",
+                    "defaultValue": "'primary'",
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"primary\" | \"secondary\""
                 }
             ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -763,11 +833,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-select',\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.css']\n})\nexport class SelectComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-select',\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.css'],\n})\nexport class SelectComponent {\n  @Input() color: 'primary' | 'secondary' = 'primary';\n\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": ".select-container {\n  display: flex;\n  flex-direction: row;\n  align-items: stretch;\n  width: 100%;\n}\n\n::ng-deep .select-container select:focus {\n  outline: none;\n}\n\n::ng-deep .select-container select {\n  width: 100%;\n  padding: 0.5rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  background-color: #e5e7eb;\n  color: #374151;\n  font-weight: bold;\n  border: none;\n  font-size: 100%;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n::ng-deep cis-select .select-container button,\n::ng-deep .select-container div,\n::ng-deep .select-container span,\n::ng-deep .select-container i {\n  border: none;\n  display: flex;\n  align-items: center;\n  height: 100%;\n  font-weight: bold;\n  padding: 0.5rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  color: #374151;\n  background-color: #fbbf24;\n  font-size: 100%;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n::ng-deep .select-container i {\n  height: calc(100% - 1rem);\n}\n\n::ng-deep .select-container--secondary select {\n  background-color: #374151;\n  color: #fbbf24;\n}\n\n::ng-deep .select-container select option:before {\n  padding: 0.5rem;\n}\n",
                     "styleUrl": "./select.component.css"
                 }
             ],
@@ -778,12 +848,9 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 8
+                "line": 9
             },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<p>select works!</p>\n"
+            "templateData": "<div class=\"select-container select-container--{{ color }}\">\n  <ng-content select=\"cis-prefix\"></ng-content>\n  <ng-content></ng-content>\n  <ng-content select=\"cis-suffix\"></ng-content>\n</div>\n"
         },
         {
             "name": "SkeletonComponent",
@@ -1217,21 +1284,13 @@
         },
         {
             "name": "RusticModule",
-<<<<<<< HEAD
-            "id": "module-RusticModule-0e37e77b5b36c04dd47f0cace0bd36a9",
-=======
-            "id": "module-RusticModule-ffa99b299ea79b0e9d5ed0008ac5a9f8",
->>>>>>> dev
+            "id": "module-RusticModule-c6bdf03428ddce382f4a437c35c374b8",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/rustic/src/lib/rustic.module.ts",
             "methods": [],
-<<<<<<< HEAD
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\nimport { ProgressbarComponent } from './progressbar/progressbar.component';\nimport { PrefixComponent } from './prefix/prefix.component';\nimport { SuffixComponent } from './suffix/suffix.component';\nimport { InputComponent } from './input/input.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n    ProgressbarComponent,\n    PrefixComponent,\n    SuffixComponent,\n    InputComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
-=======
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\nimport { ProgressbarComponent } from './progressbar/progressbar.component';\nimport { PrefixComponent } from './prefix/prefix.component';\nimport { SuffixComponent } from './suffix/suffix.component';\nimport { InputComponent } from './input/input.component';\nimport { SelectComponent } from './select/select.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n    ProgressbarComponent,\n    PrefixComponent,\n    SuffixComponent,\n    InputComponent,\n    SelectComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
->>>>>>> dev
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\nimport { ProgressbarComponent } from './progressbar/progressbar.component';\nimport { PrefixComponent } from './prefix/prefix.component';\nimport { SuffixComponent } from './suffix/suffix.component';\nimport { InputComponent } from './input/input.component';\nimport { SelectComponent } from './select/select.component';\nimport { CardComponent } from './card/card.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n    ProgressbarComponent,\n    PrefixComponent,\n    SuffixComponent,\n    InputComponent,\n    SelectComponent,\n    CardComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1242,6 +1301,9 @@
                     "elements": [
                         {
                             "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CardComponent"
                         },
                         {
                             "name": "CheckboxComponent"
@@ -1383,21 +1445,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "require",
@@ -1534,18 +1596,6 @@
                     "defaultValue": "(args: SpinnerComponent) => ({\n  props: {\n    propInput: {\n      type: args.type,\n      text: args.text,\n      textAlign: args.textAlign,\n    },\n  },\n  template: `<cis-spinner [type]=\"propInput.type\" [text]=\"propInput.text\" [textAlign]=\"propInput.textAlign\"></cis-spinner>`,\n})"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -1556,6 +1606,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
                 }
             ]
         },
@@ -1628,6 +1690,15 @@
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
