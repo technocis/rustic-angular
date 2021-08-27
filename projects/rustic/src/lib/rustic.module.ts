@@ -17,6 +17,8 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { PrefixComponent } from './prefix/prefix.component';
 import { SuffixComponent } from './suffix/suffix.component';
 import { InputComponent } from './input/input.component';
+import { SelectComponent } from './select/select.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { InputComponent } from './input/input.component';
     PrefixComponent,
     SuffixComponent,
     InputComponent,
+    SelectComponent,
+    CardComponent,
   ],
   imports: [CommonModule],
   exports: [

@@ -130,7 +130,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.button {\n  margin: 0.5rem;\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border: none;\n  font-weight: bold;\n  font-size: 100%;\n}\n\n.button--secondary {\n  background-color: #fbbf24;\n  color: #1f2937;\n}\n\n.button--secondary:hover {\n  background-color: #f59e0b;\n}\n\n.button--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.button--primary:hover {\n  background-color: #1f2937;\n}\n\n.button--warning {\n  background-color: #ef4444;\n  color: #ffffff;\n}\n\n.button--warning:hover {\n  background-color: #dc2626;\n}\n\n.button--small {\n  font-size: 75%;\n}\n.button--large {\n  font-size: 125%;\n}\n",
+                    "data": "* {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\n.button {\n  padding: 0.5rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border: none;\n  font-weight: bold;\n  font-size: 100%;\n}\n\n.button--secondary {\n  background-color: #fbbf24;\n  color: #1f2937;\n}\n\n.button--secondary:hover {\n  background-color: #f59e0b;\n}\n\n.button--primary {\n  background-color: #374151;\n  color: #ffffff;\n}\n\n.button--primary:hover {\n  background-color: #1f2937;\n}\n\n.button--warning {\n  background-color: #ef4444;\n  color: #ffffff;\n}\n\n.button--warning:hover {\n  background-color: #dc2626;\n}\n\n.button--small {\n  font-size: 75%;\n}\n.button--large {\n  font-size: 125%;\n}\n\n::ng-deep .button i {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n",
                     "styleUrl": "./button.component.css"
                 }
             ],
@@ -333,6 +333,63 @@
             "templateData": "<hr class=\"{{ type }}\" />\n"
         },
         {
+            "name": "InputComponent",
+            "id": "component-InputComponent-ff3cbd7933a8125a1f3f61a12391cd9e",
+            "file": "projects/rustic/src/lib/input/input.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-input",
+            "styleUrls": [
+                "./input.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./input.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"primary\" | \"secondary\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.css'],\n})\nexport class InputComponent {\n  @Input() color: 'primary' | 'secondary' = 'primary';\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".input-container {\n  display: flex;\n  flex-direction: row;\n  align-items: stretch;\n  width: 100%;\n}\n::ng-deep .input-container input:focus,\n::ng-deep .input-container textarea:focus {\n  outline: none;\n}\n\n::ng-deep .input-container input,\n::ng-deep .input-container textarea {\n  width: 100%;\n  padding: 0.5rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  background-color: #e5e7eb;\n  color: #374151;\n  font-weight: bold;\n  border: none;\n  font-size: 100%;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n::ng-deep cis-input .input-container button,\n::ng-deep .input-container div,\n::ng-deep .input-container span,\n::ng-deep .input-container i {\n  border: none;\n  display: flex;\n  align-items: center;\n  height: 100%;\n  font-weight: bold;\n  padding: 0.5rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  color: #374151;\n  background-color: #fbbf24;\n  font-size: 100%;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,\n    \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n::ng-deep .input-container i {\n  height: calc(100% - 1rem);\n}\n\n::ng-deep .input-container--secondary input,\n::ng-deep .input-container--secondary textarea {\n  background-color: #374151;\n  color: #fbbf24;\n}\n",
+                    "styleUrl": "./input.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "templateData": "<div class=\"input-container input-container--{{ color }}\">\n  <ng-content select=\"cis-prefix\"></ng-content>\n  <ng-content></ng-content>\n  <ng-content select=\"cis-suffix\"></ng-content>\n</div>\n"
+        },
+        {
             "name": "ListComponent",
             "id": "component-ListComponent-f0adf254a4428a335518670e0f0fe090",
             "file": "projects/rustic/src/lib/list/list.component.ts",
@@ -438,6 +495,134 @@
             "templateData": "<li class=\"list__item {{ hover == true ? 'list__item--hover' : '' }}\">\n  <ng-content select=\"cis-title\"></ng-content>\n  <ng-content select=\"cis-subtitle\"></ng-content>\n</li>\n"
         },
         {
+            "name": "PrefixComponent",
+            "id": "component-PrefixComponent-0aceb0e8569175b6cbf34572fea1735a",
+            "file": "projects/rustic/src/lib/prefix/prefix.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-prefix",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-prefix',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class PrefixComponent {\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            }
+        },
+        {
+            "name": "ProgressbarComponent",
+            "id": "component-ProgressbarComponent-530c373691633515325ba4fa53daccea",
+            "file": "projects/rustic/src/lib/progressbar/progressbar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-progressbar",
+            "styleUrls": [
+                "./progressbar.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./progressbar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "\"primary\" | \"secondary\" | \"success\" | \"warning\""
+                },
+                {
+                    "name": "indefinite",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "boolean"
+                },
+                {
+                    "name": "rounded",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean"
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "\"small\" | \"default\" | \"large\""
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "number"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'cis-progressbar',\n  templateUrl: './progressbar.component.html',\n  styleUrls: ['./progressbar.component.css'],\n})\nexport class ProgressbarComponent {\n  @Input() indefinite?: boolean = false;\n  @Input() rounded?: boolean = false;\n  @Input() value?: number = 0;\n  @Input() color?: 'primary' | 'secondary' | 'success' | 'warning' = 'primary';\n  @Input() size?: 'small' | 'default' | 'large' = 'default';\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".progressbar {\n  box-sizing: content-box;\n  position: relative;\n  margin: 0.5rem;\n  background: #f3f4f6;\n  height: 1em;\n}\n\n.progressbar > span {\n  display: block;\n  height: 100%;\n  background-color: #374151;\n  position: relative;\n  overflow: hidden;\n}\n\n.progressbar--indefinite > span:after,\n.progressbar--indefinite > span > span {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  background-image: linear-gradient(\n    -45deg,\n    rgba(255, 255, 255, 0.2) 25%,\n    transparent 25%,\n    transparent 50%,\n    rgba(255, 255, 255, 0.2) 50%,\n    rgba(255, 255, 255, 0.2) 75%,\n    transparent 75%,\n    transparent\n  );\n  z-index: 1;\n  background-size: 50px 50px;\n  animation: move 2s linear infinite;\n  border-top-right-radius: 8px;\n  border-bottom-right-radius: 8px;\n  border-top-left-radius: 20px;\n  border-bottom-left-radius: 20px;\n  overflow: hidden;\n}\n\n.progressbar--indefinite > span:after {\n  display: none;\n}\n\n.progressbar--rounded,\n.progressbar--rounded > span,\n.progressbar--rounded > span > span {\n  border-radius: 9999px;\n}\n\n.progressbar--small,\n.progressbar--small > span,\n.progressbar--small > span > span {\n  height: 0.5rem;\n}\n.progressbar--large,\n.progressbar--large > span,\n.progressbar--large > span > span {\n  height: 1.5rem;\n}\n\n.progressbar--secondary > span {\n  background-color: #fbbf24;\n}\n\n.progressbar--success > span {\n  background-color: #10b981;\n}\n\n.progressbar--warning > span {\n  background-color: #ef4444;\n}\n\n@keyframes move {\n  0% {\n    background-position: 0 0;\n  }\n  100% {\n    background-position: 50px 50px;\n  }\n}\n",
+                    "styleUrl": "./progressbar.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "templateData": "<div\n  class=\"progressbar {{ indefinite && 'progressbar--indefinite' }} {{\n    rounded && 'progressbar--rounded'\n  }} progressbar--{{ size }} progressbar--{{ color }}\"\n>\n  <span style=\"width: {{ indefinite ? 100 : value }}%\"\n    ><span *ngIf=\"indefinite\"></span\n  ></span>\n</div>\n"
+        },
+        {
             "name": "RadioButtonComponent",
             "id": "component-RadioButtonComponent-96c6eb755300f5d93673c0f98e4cc7c0",
             "file": "projects/rustic/src/lib/radio-button/radio-button.component.ts",
@@ -537,6 +722,68 @@
             "implements": [
                 "OnInit"
             ]
+        },
+        {
+            "name": "SelectComponent",
+            "id": "component-SelectComponent-7a096ba96bc24aec42a44917d750fea6",
+            "file": "projects/rustic/src/lib/select/select.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-select",
+            "styleUrls": [
+                "./select.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./select.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-select',\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.css']\n})\nexport class SelectComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./select.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>select works!</p>\n"
         },
         {
             "name": "SkeletonComponent",
@@ -710,7 +957,7 @@
         },
         {
             "name": "SubtitleComponent",
-            "id": "component-SubtitleComponent-a88c090e404a06f11d1de379019df130",
+            "id": "component-SubtitleComponent-80aec7ecaf202c35055482c25e19cf35",
             "file": "projects/rustic/src/lib/subtitle/subtitle.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -726,18 +973,7 @@
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -745,7 +981,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-subtitle',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class SubtitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-subtitle',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class SubtitleComponent {\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -756,14 +992,50 @@
                 "deprecationMessage": "",
                 "args": [],
                 "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ]
+            }
+        },
+        {
+            "name": "SuffixComponent",
+            "id": "component-SuffixComponent-8cdc78260bf1f28e79647bc127da2d05",
+            "file": "projects/rustic/src/lib/suffix/suffix.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "cis-suffix",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-suffix',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class SuffixComponent {\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            }
         },
         {
             "name": "TitleComponent",
-            "id": "component-TitleComponent-5f2c7dff776029ae0c88bc11032bc608",
+            "id": "component-TitleComponent-0d1a467a2fd2805995af6dfb1659156c",
             "file": "projects/rustic/src/lib/title/title.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -779,18 +1051,7 @@
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -798,7 +1059,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'cis-title',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class TitleComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'cis-title',\n  template: '<ng-content></ng-content>',\n  styles: [],\n})\nexport class TitleComponent {\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -809,10 +1070,7 @@
                 "deprecationMessage": "",
                 "args": [],
                 "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ]
+            }
         },
         {
             "name": "ToggleComponent",
@@ -959,13 +1217,13 @@
         },
         {
             "name": "RusticModule",
-            "id": "module-RusticModule-727d3147d54d04c25a128d0d6f830c41",
+            "id": "module-RusticModule-ffa99b299ea79b0e9d5ed0008ac5a9f8",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/rustic/src/lib/rustic.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RusticComponent } from './rustic.component';\nimport { ButtonComponent } from './button/button.component';\nimport { CheckboxComponent } from './checkbox/checkbox.component';\nimport { SpinnerComponent } from './spinner/spinner.component';\nimport { ListItemComponent } from './list-item/list-item.component';\nimport { ListComponent } from './list/list.component';\nimport { RadioButtonComponent } from './radio-button/radio-button.component';\nimport { CommonModule } from '@angular/common';\nimport { ChipComponent } from './chip/chip.component';\nimport { ToggleComponent } from './toggle/toggle.component';\nimport { TitleComponent } from './title/title.component';\nimport { SubtitleComponent } from './subtitle/subtitle.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { SkeletonComponent } from './skeleton/skeleton.component';\nimport { ProgressbarComponent } from './progressbar/progressbar.component';\nimport { PrefixComponent } from './prefix/prefix.component';\nimport { SuffixComponent } from './suffix/suffix.component';\nimport { InputComponent } from './input/input.component';\nimport { SelectComponent } from './select/select.component';\n\n@NgModule({\n  declarations: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n    ChipComponent,\n    ToggleComponent,\n    TitleComponent,\n    SubtitleComponent,\n    DividerComponent,\n    SkeletonComponent,\n    ProgressbarComponent,\n    PrefixComponent,\n    SuffixComponent,\n    InputComponent,\n    SelectComponent,\n  ],\n  imports: [CommonModule],\n  exports: [\n    RusticComponent,\n    ButtonComponent,\n    CheckboxComponent,\n    SpinnerComponent,\n    ListItemComponent,\n    ListComponent,\n    RadioButtonComponent,\n  ],\n})\nexport class RusticModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -987,16 +1245,28 @@
                             "name": "DividerComponent"
                         },
                         {
+                            "name": "InputComponent"
+                        },
+                        {
                             "name": "ListComponent"
                         },
                         {
                             "name": "ListItemComponent"
                         },
                         {
+                            "name": "PrefixComponent"
+                        },
+                        {
+                            "name": "ProgressbarComponent"
+                        },
+                        {
                             "name": "RadioButtonComponent"
                         },
                         {
                             "name": "RusticComponent"
+                        },
+                        {
+                            "name": "SelectComponent"
                         },
                         {
                             "name": "SkeletonComponent"
@@ -1006,6 +1276,9 @@
                         },
                         {
                             "name": "SubtitleComponent"
+                        },
+                        {
+                            "name": "SuffixComponent"
                         },
                         {
                             "name": "TitleComponent"
@@ -1377,6 +1650,15 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/rustic/src/lib/input/input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/rustic/src/lib/list-item/list-item.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1392,6 +1674,24 @@
                 "name": "ListComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/prefix/prefix.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PrefixComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/progressbar/progressbar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ProgressbarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {
@@ -1422,6 +1722,15 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/rustic/src/lib/select/select.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SelectComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/rustic/src/lib/skeleton/skeleton.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1445,7 +1754,16 @@
                 "linktype": "component",
                 "name": "SubtitleComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/rustic/src/lib/suffix/suffix.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SuffixComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -1454,7 +1772,7 @@
                 "linktype": "component",
                 "name": "TitleComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {

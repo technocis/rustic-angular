@@ -1,0 +1,206 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { CommonModule } from "@angular/common";
+import { moduleMetadata } from "@storybook/angular";
+import { SelectComponent } from "../../projects/rustic/src/lib/select/select.component";
+import { PrefixComponent } from "../../projects/rustic/src/lib/prefix/prefix.component";
+import { SuffixComponent } from "../../projects/rustic/src/lib/suffix/suffix.component";
+import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.component";
+
+<Meta
+  title="Components/Select"
+  component={SelectComponent}
+  decorators={[
+    moduleMetadata({
+      declarations: [
+        SelectComponent,
+        PrefixComponent,
+        SuffixComponent,
+        ButtonComponent,
+      ],
+      imports: [CommonModule],
+    }),
+  ]}
+  argTypes={{
+    color: {
+      options: ["primary", "secondary"],
+      control: { type: "radio" },
+    },
+  }}
+/>
+
+export const TemplateInput = (args) => ({
+  component: SelectComponent,
+  props: {
+    propInput: {
+      color: args.color,
+    },
+  },
+  template: `<div style="width: 30%;"><cis-select [color]="propInput.color"><select placeholder="Choose Your City">
+    <option value=0>Chennai</option>
+    <option value=1>Vellore</option>
+    <option value=2>Bangalore</option>
+  </select></cis-select></div>`,
+});
+
+export const PrefixTemplateInput = (args) => ({
+  component: SelectComponent,
+  props: {
+    propInput: {
+      color: args.color,
+    },
+  },
+  template: `<div style="width: 30%;">
+  <cis-select [color]="propInput.color">
+    <cis-prefix>
+      <i>
+        <svg
+          stroke="currentColor"
+          fill="none"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+      </i>
+    </cis-prefix>
+    <select placeholder="Choose Your City">
+      <option value=0>Chennai</option>
+      <option value=1>Vellore</option>
+      <option value=2>Bangalore</option>
+    </select>
+  </cis-select>
+  </div>`,
+});
+
+export const SuffixTemplateInput = (args) => ({
+  component: SelectComponent,
+  props: {
+    propInput: {
+      color: args.color,
+    },
+  },
+  template: `
+  <div style="width: 30%;">
+  <cis-select [color]="propInput.color">
+    <select placeholder="Choose Your City">
+      <option value=0>Chennai</option>
+      <option value=1>Vellore</option>
+      <option value=2>Bangalore</option>
+    </select>
+    <cis-suffix>
+      <button type="submit">Search</button>
+    </cis-suffix>
+  </cis-select>
+  </div>`,
+});
+
+# Inputs
+
+---
+
+### Primary Input
+
+<Canvas>
+  <Story
+    name="Primary"
+    args={{
+      color: "primary",
+    }}
+  >
+    {TemplateInput.bind({})}
+  </Story>
+</Canvas>
+
+#### Code
+
+```html
+<cis-input color="primary">
+  <input placeholder="Enter E-Mail" type="email" />
+</cis-input>
+```
+
+<ArgsTable story="Primary" />
+
+---
+
+### Secondary Input
+
+<Canvas>
+  <Story
+    name="Secondary"
+    args={{
+      color: "secondary",
+    }}
+  >
+    {TemplateInput.bind({})}
+  </Story>
+</Canvas>
+
+### Input Prefix
+
+<Canvas>
+  <Story
+    name="With Prefix"
+    args={{
+      color: "primary",
+    }}
+  >
+    {PrefixTemplateInput.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-input color="primary">
+  <cis-prefix>
+    <i>
+      <svg
+        stroke="currentColor"
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </i>
+  </cis-prefix>
+  <input placeholder="Enter Password" type="password" />
+</cis-input>
+```
+
+---
+
+### Input Suffix
+
+<Canvas>
+  <Story
+    name="With Suffix"
+    args={{
+      color: "secondary",
+    }}
+  >
+    {SuffixTemplateInput.bind({})}
+  </Story>
+</Canvas>
+
+```html
+<cis-input color="secondary">
+  <input placeholder="Search" />
+  <cis-suffix>
+    <button type="submit">Search</button>
+  </cis-suffix>
+</cis-input>
+```
+
+---
