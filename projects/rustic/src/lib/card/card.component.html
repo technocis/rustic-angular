@@ -1,1 +1,15 @@
-<p>card works!</p>
+<div class="card-container">
+  <div class="card-container__header" *ngIf="title || subtitle">
+    <div class="card-container__header__title" *ngIf="title">{{ title }}</div>
+    <div class="card-container__header__subtitle" *ngIf="subtitle">
+      {{ subtitle }}
+    </div>
+  </div>
+  <div class="card-container__body">
+    <ng-content></ng-content>
+  </div>
+  <div class="card-container__border" *ngIf="actions"></div>
+  <div *ngIf="actions" class="card-container__actions">
+    <ng-container [ngTemplateOutlet]="actions"></ng-container>
+  </div>
+</div>

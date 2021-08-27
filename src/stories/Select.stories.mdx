@@ -28,29 +28,29 @@ import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.com
   }}
 />
 
-export const TemplateInput = (args) => ({
+export const TemplateSelect = (args) => ({
   component: SelectComponent,
   props: {
-    propInput: {
+    propSelect: {
       color: args.color,
     },
   },
-  template: `<div style="width: 30%;"><cis-select [color]="propInput.color"><select placeholder="Choose Your City">
+  template: `<div style="width: 30%;"><cis-select [color]="propSelect.color"><select placeholder="Choose Your City">
     <option value=0>Chennai</option>
     <option value=1>Vellore</option>
     <option value=2>Bangalore</option>
   </select></cis-select></div>`,
 });
 
-export const PrefixTemplateInput = (args) => ({
+export const PrefixTemplateSelect = (args) => ({
   component: SelectComponent,
   props: {
-    propInput: {
+    propSelect: {
       color: args.color,
     },
   },
   template: `<div style="width: 30%;">
-  <cis-select [color]="propInput.color">
+  <cis-select [color]="propSelect.color">
     <cis-prefix>
       <i>
         <svg
@@ -78,16 +78,16 @@ export const PrefixTemplateInput = (args) => ({
   </div>`,
 });
 
-export const SuffixTemplateInput = (args) => ({
+export const SuffixTemplateSelect = (args) => ({
   component: SelectComponent,
   props: {
-    propInput: {
+    propSelect: {
       color: args.color,
     },
   },
   template: `
   <div style="width: 30%;">
-  <cis-select [color]="propInput.color">
+  <cis-select [color]="propSelect.color">
     <select placeholder="Choose Your City">
       <option value=0>Chennai</option>
       <option value=1>Vellore</option>
@@ -100,11 +100,11 @@ export const SuffixTemplateInput = (args) => ({
   </div>`,
 });
 
-# Inputs
+# Select Box
 
 ---
 
-### Primary Input
+### Primary Select
 
 <Canvas>
   <Story
@@ -113,23 +113,27 @@ export const SuffixTemplateInput = (args) => ({
       color: "primary",
     }}
   >
-    {TemplateInput.bind({})}
+    {TemplateSelect.bind({})}
   </Story>
 </Canvas>
 
 #### Code
 
 ```html
-<cis-input color="primary">
-  <input placeholder="Enter E-Mail" type="email" />
-</cis-input>
+<cis-select [color]="propSelect.color">
+  <select placeholder="Choose Your City">
+    <option value="0">Chennai</option>
+    <option value="1">Vellore</option>
+    <option value="2">Bangalore</option>
+  </select>
+</cis-select>
 ```
 
 <ArgsTable story="Primary" />
 
 ---
 
-### Secondary Input
+### Secondary Select
 
 <Canvas>
   <Story
@@ -138,11 +142,11 @@ export const SuffixTemplateInput = (args) => ({
       color: "secondary",
     }}
   >
-    {TemplateInput.bind({})}
+    {TemplateSelect.bind({})}
   </Story>
 </Canvas>
 
-### Input Prefix
+### Select Prefix
 
 <Canvas>
   <Story
@@ -151,12 +155,12 @@ export const SuffixTemplateInput = (args) => ({
       color: "primary",
     }}
   >
-    {PrefixTemplateInput.bind({})}
+    {PrefixTemplateSelect.bind({})}
   </Story>
 </Canvas>
 
 ```html
-<cis-input color="primary">
+<cis-select [color]="propSelect.color">
   <cis-prefix>
     <i>
       <svg
@@ -175,13 +179,17 @@ export const SuffixTemplateInput = (args) => ({
       </svg>
     </i>
   </cis-prefix>
-  <input placeholder="Enter Password" type="password" />
-</cis-input>
+  <select placeholder="Choose Your City">
+    <option value="0">Chennai</option>
+    <option value="1">Vellore</option>
+    <option value="2">Bangalore</option>
+  </select>
+</cis-select>
 ```
 
 ---
 
-### Input Suffix
+### Select Suffix
 
 <Canvas>
   <Story
@@ -190,17 +198,21 @@ export const SuffixTemplateInput = (args) => ({
       color: "secondary",
     }}
   >
-    {SuffixTemplateInput.bind({})}
+    {SuffixTemplateSelect.bind({})}
   </Story>
 </Canvas>
 
 ```html
-<cis-input color="secondary">
-  <input placeholder="Search" />
+<cis-select [color]="propSelect.color">
+  <select placeholder="Choose Your City">
+    <option value="0">Chennai</option>
+    <option value="1">Vellore</option>
+    <option value="2">Bangalore</option>
+  </select>
   <cis-suffix>
     <button type="submit">Search</button>
   </cis-suffix>
-</cis-input>
+</cis-select>
 ```
 
 ---
