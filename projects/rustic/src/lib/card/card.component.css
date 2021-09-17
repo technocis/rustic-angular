@@ -6,17 +6,17 @@
 
 .card-container {
   padding: 1rem;
-  background-color: #f9fafb;
+  background-color: var(--surface);
 }
 
 .card-container__header {
-  border-bottom: 1px solid #d1d5db;
+  border-bottom: 1px solid var(--on-surface);
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
 .card-container__actions {
-  border-top: 1px solid #d1d5db;
+  border-top: 1px solid var(--on-surface);
   padding-top: 1rem;
   margin-top: 1rem;
 }

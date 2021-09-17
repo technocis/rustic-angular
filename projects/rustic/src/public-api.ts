@@ -6,6 +6,11 @@ export * from './lib/rustic.service';
 export * from './lib/rustic.component';
 export * from './lib/rustic.module';
 
+export * from './lib/theme/theme.module';
+export * from './lib/theme/theme.service';
+export * from './lib/theme/theme.directive';
+export * from './lib/theme/theme';
+
 export { RusticComponent } from './lib/rustic.component';
 export { ButtonComponent } from './lib/button/button.component';
 export { CheckboxComponent } from './lib/checkbox/checkbox.component';
