@@ -27,7 +27,7 @@
 }
 
 .checkbox__box {
-  border: 2px solid #fbbf24;
+  border: 2px solid var(--secondary);
   border-radius: 0.25rem;
   width: 1.25rem;
   height: 1.25rem;

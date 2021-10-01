@@ -3,6 +3,8 @@ import { CommonModule } from "@angular/common";
 import { moduleMetadata } from "@storybook/angular";
 import { CardComponent } from "../../projects/rustic/src/lib/card/card.component";
 import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.component";
+import { ThemeModule } from "../../projects/rustic/src/lib/theme/theme.module";
+import { lightTheme, darkTheme } from "../themes.ts";
 
 <Meta
   title="Components/Card"
@@ -10,7 +12,13 @@ import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.com
   decorators={[
     moduleMetadata({
       declarations: [CardComponent, ButtonComponent],
-      imports: [CommonModule],
+      imports: [
+        CommonModule,
+        ThemeModule.forRoot({
+          themes: [lightTheme, darkTheme],
+          active: "light",
+        }),
+      ],
     }),
   ]}
   argTypes={{

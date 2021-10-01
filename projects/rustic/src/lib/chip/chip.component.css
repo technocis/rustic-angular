@@ -22,26 +22,29 @@
 }
 
 .chip--primary {
-  background-color: #374151;
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--text-primary);
 }
 
 .chip--secondary {
-  color: #374151;
-  background-color: #fbbf24;
+  background-color: var(--secondary);
+  color: var(--text-secondary);
 }
 
-.chip svg {
+.chip svg,
+.chip i {
   font-size: 0.75rem;
   line-height: 1rem;
   margin-left: 0.5rem;
   cursor: pointer;
 }
 
-.chip--primary svg {
-  color: #fbbf24;
+.chip--primary svg,
+.chip--primary i {
+  color: var(--secondary);
 }
 
-.chip--secondary svg {
-  color: #374151;
+.chip--secondary svg,
+.chip--secondary i {
+  color: var(--primary);
 }

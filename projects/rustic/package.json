@@ -1,6 +1,6 @@
 {
   "name": "@technocis/rustic-angular",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "schematics": "./schematics/collection.json",
   "scripts": {
     "build": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
@@ -13,5 +13,6 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "license": "MIT"
 }

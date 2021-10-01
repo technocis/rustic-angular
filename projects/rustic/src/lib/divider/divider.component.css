@@ -5,13 +5,13 @@
 }
 
 hr {
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--on-surface);
 }
 
 .vertical {
   width: 1px;
   height: 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--on-surface);
   display: inline;
   margin-left: 0.5rem;
   margin-right: 0.5rem;

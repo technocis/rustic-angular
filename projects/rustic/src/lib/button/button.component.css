@@ -14,30 +14,30 @@
 }
 
 .button--secondary {
-  background-color: #fbbf24;
-  color: #1f2937;
+  background-color: var(--secondary);
+  color: var(--text-secondary);
 }
 
 .button--secondary:hover {
-  background-color: #f59e0b;
+  background-color: var(--on-secondary);
 }
 
 .button--primary {
-  background-color: #374151;
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--text-primary);
 }
 
 .button--primary:hover {
-  background-color: #1f2937;
+  background-color: var(--on-primary);
 }
 
 .button--warning {
-  background-color: #ef4444;
-  color: #ffffff;
+  background-color: var(--error);
+  color: var(--text-error);
 }
 
 .button--warning:hover {
-  background-color: #dc2626;
+  background-color: var(--on-error);
 }
 
 .button--small {

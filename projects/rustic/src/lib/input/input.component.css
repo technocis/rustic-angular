@@ -15,8 +15,8 @@
   padding: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  background-color: #e5e7eb;
-  color: #374151;
+  background-color: var(--surface-alt);
+  color: var(--primary);
   font-weight: bold;
   border: none;
   font-size: 100%;
@@ -36,8 +36,8 @@
   padding: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  color: #374151;
-  background-color: #fbbf24;
+  color: var(--primary);
+  background-color: var(--secondary);
   font-size: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -49,6 +49,6 @@
 
 ::ng-deep .input-container--secondary input,
 ::ng-deep .input-container--secondary textarea {
-  background-color: #374151;
-  color: #fbbf24;
+  background-color: var(--primary);
+  color: var(--secondary);
 }

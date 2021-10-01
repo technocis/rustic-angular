@@ -9,7 +9,7 @@ export class SkeletonComponent {
   @Input() type: 'text' | 'image' = 'text';
   @Input() lines = 1;
   constructor() {}
-  private counter(i: number) {
+  public counter(i: number) {
     return new Array(i);
   }
 }
