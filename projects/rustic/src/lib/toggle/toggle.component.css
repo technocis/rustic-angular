@@ -12,7 +12,7 @@ label {
 
 label .switch__label {
   font-weight: bold;
-  color: #374151;
+  color: var(--text-secondary);
   margin-left: 0.5rem;
 }
 
@@ -36,7 +36,7 @@ label .switch__label {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--surface-alt);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -48,13 +48,13 @@ label .switch__label {
   width: 20px;
   left: -5px;
   bottom: -3.5px;
-  background-color: #374151;
+  background-color: var(--text-secondary);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 ::ng-deep input:checked + .slider {
-  background-color: #fbbf24;
+  background-color: var(--secondary);
 }
 
 ::ng-deep input:checked + .slider:before {

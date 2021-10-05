@@ -1,9 +1,25 @@
 import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { CommonModule } from "@angular/common";
+import { moduleMetadata } from "@storybook/angular";
+import { lightTheme, darkTheme } from "../themes.ts";
+import { ThemeModule } from "../../projects/rustic/src/lib/theme/theme.module";
 import { ToggleComponent } from "../../projects/rustic/src/lib/toggle/toggle.component";
 
 <Meta
   title="Components/Toggle"
   component={ToggleComponent}
+  decorators={[
+    moduleMetadata({
+      declarations: [ToggleComponent],
+      imports: [
+        CommonModule,
+        ThemeModule.forRoot({
+          themes: [lightTheme, darkTheme],
+          active: "light",
+        }),
+      ],
+    }),
+  ]}
   argTypes={{
     label: {
       control: {

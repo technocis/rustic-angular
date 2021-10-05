@@ -14,8 +14,8 @@
   padding: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  background-color: #e5e7eb;
-  color: #374151;
+  background-color: var(--surface-alt);
+  color: var(--text-secondary);
   font-weight: bold;
   border: none;
   font-size: 100%;
@@ -35,8 +35,8 @@
   padding: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  color: #374151;
-  background-color: #fbbf24;
+  color: var(--text-secondary);
+  background-color: var(--secondary);
   font-size: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -47,8 +47,8 @@
 }
 
 ::ng-deep .select-container--secondary select {
-  background-color: #374151;
-  color: #fbbf24;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 ::ng-deep .select-container select option:before {

@@ -2,14 +2,14 @@
   box-sizing: content-box;
   position: relative;
   margin: 0.5rem;
-  background: #f3f4f6;
+  background: var(--surface);
   height: 1em;
 }
 
 .progressbar > span {
   display: block;
   height: 100%;
-  background-color: #374151;
+  background-color: var(--primary);
   position: relative;
   overflow: hidden;
 }
@@ -64,7 +64,7 @@
 }
 
 .progressbar--secondary > span {
-  background-color: #fbbf24;
+  background-color: var(--secondary);
 }
 
 .progressbar--success > span {
@@ -72,7 +72,7 @@
 }
 
 .progressbar--warning > span {
-  background-color: #ef4444;
+  background-color: var(--error);
 }
 
 @keyframes move {

@@ -1,6 +1,8 @@
 import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
 import { CommonModule } from "@angular/common";
 import { moduleMetadata } from "@storybook/angular";
+import { lightTheme, darkTheme } from "../themes.ts";
+import { ThemeModule } from "../../projects/rustic/src/lib/theme/theme.module";
 import { SelectComponent } from "../../projects/rustic/src/lib/select/select.component";
 import { PrefixComponent } from "../../projects/rustic/src/lib/prefix/prefix.component";
 import { SuffixComponent } from "../../projects/rustic/src/lib/suffix/suffix.component";
@@ -17,7 +19,13 @@ import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.com
         SuffixComponent,
         ButtonComponent,
       ],
-      imports: [CommonModule],
+      imports: [
+        CommonModule,
+        ThemeModule.forRoot({
+          themes: [lightTheme, darkTheme],
+          active: "light",
+        }),
+      ],
     }),
   ]}
   argTypes={{

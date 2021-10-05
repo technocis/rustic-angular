@@ -6,17 +6,17 @@
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
-  color: #1f2937;
+  color: var(--text-secondary);
   cursor: pointer;
   width: calc(100% - 2rem);
   list-style: none;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid var(--surface);
 }
 
 .list__item--hover:hover {
-  background-color: #f3f4f6;
+  background-color: var(--surface);
 }
 
 ::ng-deep .list__item cis-subtitle {

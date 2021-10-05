@@ -1,14 +1,33 @@
 import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { CommonModule } from "@angular/common";
+import { moduleMetadata } from "@storybook/angular";
+import { lightTheme, darkTheme } from "../themes.ts";
+import { ThemeModule } from "../../projects/rustic/src/lib/theme/theme.module";
 import { RadioButtonComponent } from "../../projects/rustic/src/lib/radio-button/radio-button.component";
 
-<Meta title="Components/Radio Button" component={RadioButtonComponent} />
+<Meta
+  title="Components/Radio Button"
+  component={RadioButtonComponent}
+  decorators={[
+    moduleMetadata({
+      declarations: [RadioButtonComponent],
+      imports: [
+        CommonModule,
+        ThemeModule.forRoot({
+          themes: [lightTheme, darkTheme],
+          active: "light",
+        }),
+      ],
+    }),
+  ]}
+/>
 
 # Radio Button
 
 export const Template = (args) => ({
   component: RadioButtonComponent,
   props: {},
-  template: `<cis-radio-button>
+  template: `<cis-radio-button cisTheme>
     <input id="yes" type="radio" name="demo" checked />
     <label for="yes">Yes</label>
     <input id="no" type="radio" name="demo" />
