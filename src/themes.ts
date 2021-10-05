@@ -31,7 +31,7 @@ export const lightTheme: Theme = {
     '--secondary': '#fbbf24',
     '--on-secondary': '#f59e0b',
     '--text-secondary': '#1f2937',
-    '--surface': '#f9fafb',
+    '--surface': '#F3F4F6',
     '--surface-alt': '#e5e7eb',
     '--on-surface': '#d1d5db',
     '--error': '#ef4444',

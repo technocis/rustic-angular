@@ -11,6 +11,7 @@
   border: none;
   font-weight: bold;
   font-size: 100%;
+  cursor: pointer;
 }
 
 .button--secondary {

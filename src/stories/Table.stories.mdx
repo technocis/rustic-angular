@@ -1,0 +1,294 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { TableComponent } from "../../projects/rustic/src/lib/table/table.component";
+import { ButtonComponent } from "../../projects/rustic/src/lib/button/button.component";
+import { moduleMetadata } from "@storybook/angular";
+import { CommonModule } from "@angular/common";
+import { lightTheme, darkTheme } from "../themes.ts";
+import { ThemeModule } from "../../projects/rustic/src/lib/theme/theme.module";
+
+<Meta
+  title="Components/Table"
+  component={TableComponent}
+  decorators={[
+    moduleMetadata({
+      declarations: [TableComponent, ButtonComponent],
+      imports: [
+        CommonModule,
+        ThemeModule.forRoot({
+          themes: [lightTheme, darkTheme],
+          active: "light",
+        }),
+      ],
+    }),
+  ]}
+/>
+
+# Table
+
+export const Template = (args) => ({
+  component: TableComponent,
+  props: {
+    propInput: {
+      cisData: [
+        {
+          _id: "614c30acd391ac2bb3e5396d",
+          sku: "VK-M-PUMA-WHITE-XL-47",
+          name: "Puma T-shirt - New Model",
+          quantity: 4,
+          costPrice: 300,
+          preDiscountPrice: 400,
+          price: 291.6666666666667,
+          provider: "Puma Factory Outlet",
+          providerSku: "PUM8547",
+          gst: 20,
+          hsn: "520941",
+          productType: "dress",
+          description: "Puma white Cotton T-shirt,Regular fit ",
+          categories: ["6146eea063aebbb03da58974"],
+          likes: 0,
+          reviews: [
+            {
+              _id: "615a9c803a453da51ce12dab",
+              title: "Quality",
+              review: "Good Quality & Nice Design.",
+              createdAt: "2021-10-04T06:17:36.656Z",
+              updatedAt: "2021-10-04T06:17:36.656Z",
+              __v: 0,
+            },
+            {
+              _id: "615a9d323a453da51ce12dc5",
+              title: "quality",
+              review: "good quality ",
+              createdAt: "2021-10-04T06:20:34.102Z",
+              updatedAt: "2021-10-04T06:20:34.102Z",
+              __v: 0,
+            },
+          ],
+          images: [
+            {
+              _id: "6146f4f363aebbb03da58984",
+              url:
+                "https://s3.ap-south-1.amazonaws.com/vkdelightapparel.in/1632040178456Puma%20-%2018112.jpg",
+              name: "1632040178456Puma - 18112.jpg",
+              createdAt: "2021-09-19T08:29:39.108Z",
+              updatedAt: "2021-09-19T08:29:39.108Z",
+              __v: 0,
+            },
+          ],
+          sizes: [
+            { label: "L", quantity: 24, _id: "6150542234cae592092fece7" },
+            { label: "XL", quantity: 55, _id: "6150542234cae592092fece8" },
+            { label: "XXL", quantity: 0, _id: "61506025d994d86341a818f7" },
+          ],
+          specifications: [
+            {
+              name: "Fit",
+              description: "Regular",
+              _id: "6146f5e963aebbb03da58989",
+            },
+            {
+              name: "Color",
+              description: "White",
+              _id: "6146f5e963aebbb03da5898a",
+            },
+            {
+              name: "Fabric",
+              description: "100% mill made Cotton",
+              _id: "6146f5e963aebbb03da5898b",
+            },
+          ],
+          recommendations: [],
+          variations: [],
+          createdAt: "2021-09-23T07:45:48.824Z",
+          updatedAt: "2021-10-05T06:27:52.020Z",
+          __v: 0,
+        },
+        {
+          _id: "61499a2cbe56468d10726f6c",
+          sku: "500",
+          name: "Puma T-shirt",
+          quantity: 4,
+          costPrice: 300,
+          preDiscountPrice: 400,
+          price: 291.6666666666667,
+          provider: "testProvider",
+          providerSku: "",
+          gst: 20,
+          hsn: "520941",
+          productType: "dress",
+          description: "Puma black Cotton T-shirt,Regular fit ",
+          categories: ["6146eea063aebbb03da58974"],
+          likes: 0,
+          reviews: [],
+          images: [
+            {
+              _id: "61499a0dbe56468d10726f6a",
+              url:
+                "https://s3.ap-south-1.amazonaws.com/vkdelightapparel.in/1632213517221Puma%20-%2018110.jpg",
+              name: "1632213517221Puma - 18110.jpg",
+              createdAt: "2021-09-21T08:38:37.896Z",
+              updatedAt: "2021-09-21T08:38:37.896Z",
+              __v: 0,
+            },
+          ],
+          sizes: [
+            { label: "S", quantity: 10, _id: "6150540c34cae592092fecbf" },
+            { label: "M", quantity: 12, _id: "6150540c34cae592092fecc0" },
+            { label: "L", quantity: 13, _id: "6150540c34cae592092fecc1" },
+            { label: "XL", quantity: 42, _id: "6150540c34cae592092fecc2" },
+          ],
+          specifications: [
+            {
+              name: "Fit",
+              description: "Regular",
+              _id: "6146f5e963aebbb03da58989",
+            },
+            {
+              name: "Color",
+              description: "White",
+              _id: "6146f5e963aebbb03da5898a",
+            },
+            {
+              name: "Fabric",
+              description: "100% mill made Cotton",
+              _id: "6146f5e963aebbb03da5898b",
+            },
+          ],
+          recommendations: [],
+          variations: [],
+          createdAt: "2021-09-21T08:39:08.030Z",
+          updatedAt: "2021-09-26T11:05:48.271Z",
+          __v: 0,
+        },
+        {
+          _id: "6146f5e963aebbb03da58988",
+          sku: "500",
+          name: "Puma T-shirt",
+          quantity: 4,
+          costPrice: 300,
+          preDiscountPrice: 400,
+          price: 291.6666666666667,
+          provider: "testProvider",
+          providerSku: "",
+          gst: 20,
+          hsn: "520941",
+          productType: "dress",
+          description: "Puma white Cotton T-shirt,Regular fit ",
+          categories: ["6146eea063aebbb03da58974"],
+          likes: 0,
+          reviews: [],
+          images: [
+            {
+              _id: "6146f4f363aebbb03da58984",
+              url:
+                "https://s3.ap-south-1.amazonaws.com/vkdelightapparel.in/1632040178456Puma%20-%2018112.jpg",
+              name: "1632040178456Puma - 18112.jpg",
+              createdAt: "2021-09-19T08:29:39.108Z",
+              updatedAt: "2021-09-19T08:29:39.108Z",
+              __v: 0,
+            },
+          ],
+          sizes: [
+            { label: "S", quantity: 10, _id: "6150523234cae592092febe8" },
+            { label: "M", quantity: 15, _id: "6150523234cae592092febe9" },
+            { label: "XL", quantity: 30, _id: "6150523234cae592092febeb" },
+            { label: "XXL", quantity: 5, _id: "6150523234cae592092febec" },
+          ],
+          specifications: [
+            {
+              name: "Fit",
+              description: "Regular",
+              _id: "6146f5e963aebbb03da58989",
+            },
+            {
+              name: "Color",
+              description: "White",
+              _id: "6146f5e963aebbb03da5898a",
+            },
+            {
+              name: "Fabric",
+              description: "100% mill made Cotton",
+              _id: "6146f5e963aebbb03da5898b",
+            },
+          ],
+          recommendations: [],
+          variations: [],
+          createdAt: "2021-09-19T08:33:45.118Z",
+          updatedAt: "2021-09-26T11:05:16.660Z",
+          __v: 0,
+        },
+      ],
+    },
+  },
+  template: `<cis-table [data]="propInput.cisData" #productTable>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Created</th>
+        <th>Updated</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of productTable.data; let i = index">
+        <td>
+          <cis-button size="small" type="secondary">{{i+1}}</cis-button>
+        </td>
+        <td>{{ item._id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price | currency:'INR' }}</td>
+        <td>{{ item.createdAt }}</td>
+        <td>{{ item.updatedAt }}</td>
+        <td>
+          <cis-button size="small">Edit</cis-button>
+          <cis-button size="small" type="warning">Delete</cis-button>
+        </td>
+      </tr>
+    </tbody>  
+  </cis-table>`,
+});
+
+<Canvas>
+  <Story name="Table">{Template.bind({})}</Story>
+</Canvas>
+
+```html
+<cis-table [data]="yourData" #productTable>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of productTable.data; let i = index">
+      <td>
+        <cis-button size="small" type="secondary">{{i+1}}</cis-button>
+      </td>
+      <td>{{ item._id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>{{ item.price | currency:'INR' }}</td>
+      <td>{{ item.createdAt }}</td>
+      <td>{{ item.updatedAt }}</td>
+      <td>
+        <cis-button size="small">Edit</cis-button>
+        <cis-button size="small" type="warning">Delete</cis-button>
+      </td>
+    </tr>
+  </tbody>
+</cis-table>
+```
+
+<ArgsTable story="Table" />

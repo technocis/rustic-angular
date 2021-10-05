@@ -19,6 +19,7 @@ import { SuffixComponent } from './suffix/suffix.component';
 import { InputComponent } from './input/input.component';
 import { SelectComponent } from './select/select.component';
 import { CardComponent } from './card/card.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CardComponent } from './card/card.component';
     InputComponent,
     SelectComponent,
     CardComponent,
+    TableComponent,
   ],
   imports: [CommonModule],
   exports: [
